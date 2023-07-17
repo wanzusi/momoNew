@@ -1,0 +1,98 @@
+D:\DOCUMENTS\Directory\Ronnie_Project\billinginterfaceUI\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll.config
+D:\DOCUMENTS\Directory\Ronnie_Project\billinginterfaceUI\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\billinginterfaceUI\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.pdb
+D:\DOCUMENTS\Directory\Ronnie_Project\billinginterfaceUI\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\billinginterfaceUI\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ResolveAssemblyReference.cache
+D:\DOCUMENTS\Directory\Ronnie_Project\billinginterfaceUI\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\billinginterfaceUI\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.pdb
+D:\DOCUMENTS\Directory\Ronnie_Project\ronnie_current\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll.config
+D:\DOCUMENTS\Directory\Ronnie_Project\ronnie_current\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\ronnie_current\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.pdb
+D:\DOCUMENTS\Directory\Ronnie_Project\ronnie_current\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\ronnie_current\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ResolveAssemblyReference.cache
+D:\DOCUMENTS\Directory\Ronnie_Project\ronnie_current\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\ronnie_current\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.pdb
+D:\DOCUMENTS\Directory\Ronnie_Project\Project__29012011\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll.config
+D:\DOCUMENTS\Directory\Ronnie_Project\Project__29012011\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\Project__29012011\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.pdb
+D:\DOCUMENTS\Directory\Ronnie_Project\Project__29012011\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ResolveAssemblyReference.cache
+D:\DOCUMENTS\Directory\Ronnie_Project\Project__29012011\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\Project__29012011\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.pdb
+C:\Documents and Settings\andrew.gombya\Desktop\PostBank_Complete_InTheMorning\temp\PostBanK_02022011\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll.config
+C:\Documents and Settings\andrew.gombya\Desktop\PostBank_Complete_InTheMorning\temp\PostBanK_02022011\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll
+C:\Documents and Settings\andrew.gombya\Desktop\PostBank_Complete_InTheMorning\temp\PostBanK_02022011\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.pdb
+C:\Documents and Settings\andrew.gombya\Desktop\PostBank_Complete_InTheMorning\temp\PostBanK_02022011\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\andrew.gombya\Desktop\PostBank_Complete_InTheMorning\temp\PostBanK_02022011\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.dll
+C:\Documents and Settings\andrew.gombya\Desktop\PostBank_Complete_InTheMorning\temp\PostBanK_02022011\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.pdb
+D:\DOCUMENTS\Directory\Ronnie_Project\NEW APPLICATION\POSTBANK\2\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll.config
+D:\DOCUMENTS\Directory\Ronnie_Project\NEW APPLICATION\POSTBANK\2\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\NEW APPLICATION\POSTBANK\2\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.pdb
+D:\DOCUMENTS\Directory\Ronnie_Project\NEW APPLICATION\POSTBANK\2\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ResolveAssemblyReference.cache
+D:\DOCUMENTS\Directory\Ronnie_Project\NEW APPLICATION\POSTBANK\2\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\NEW APPLICATION\POSTBANK\2\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.pdb
+D:\DOCUMENTS\Directory\Ronnie_Project\NEW APPLICATION 2\SB\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll.config
+D:\DOCUMENTS\Directory\Ronnie_Project\NEW APPLICATION 2\SB\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\NEW APPLICATION 2\SB\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.pdb
+D:\DOCUMENTS\Directory\Ronnie_Project\NEW APPLICATION 2\SB\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ResolveAssemblyReference.cache
+D:\DOCUMENTS\Directory\Ronnie_Project\NEW APPLICATION 2\SB\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\NEW APPLICATION 2\SB\apps\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.pdb
+D:\DOCUMENTS\Directory\Ronnie_Project\Stanbic__20032010\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll.config
+D:\DOCUMENTS\Directory\Ronnie_Project\Stanbic__20032010\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\Stanbic__20032010\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.pdb
+D:\DOCUMENTS\Directory\Ronnie_Project\Stanbic__20032010\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ResolveAssemblyReference.cache
+D:\DOCUMENTS\Directory\Ronnie_Project\Stanbic__20032010\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\Stanbic__20032010\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.pdb
+D:\DOCUMENTS\Directory\Ronnie_Project\STANBIC_ED\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll.config
+D:\DOCUMENTS\Directory\Ronnie_Project\STANBIC_ED\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\STANBIC_ED\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.pdb
+D:\DOCUMENTS\Directory\Ronnie_Project\STANBIC_ED\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ResolveAssemblyReference.cache
+D:\DOCUMENTS\Directory\Ronnie_Project\STANBIC_ED\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\STANBIC_ED\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.pdb
+D:\DOCUMENTS\Directory\Ronnie_Project\Stanbic__06042011\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll.config
+D:\DOCUMENTS\Directory\Ronnie_Project\Stanbic__06042011\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\Stanbic__06042011\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.pdb
+D:\DOCUMENTS\Directory\Ronnie_Project\Stanbic__06042011\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ResolveAssemblyReference.cache
+D:\DOCUMENTS\Directory\Ronnie_Project\Stanbic__06042011\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.dll
+D:\DOCUMENTS\Directory\Ronnie_Project\Stanbic__06042011\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.pdb
+D:\My Projects\BankProjects\stanbic\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll.config
+D:\My Projects\BankProjects\stanbic\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll
+D:\My Projects\BankProjects\stanbic\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.pdb
+D:\My Projects\BankProjects\stanbic\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ResolveAssemblyReference.cache
+D:\My Projects\BankProjects\stanbic\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.dll
+D:\My Projects\BankProjects\stanbic\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.pdb
+D:\My Projects\BankProjects\Global Trust Bank\PegPay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll.config
+D:\My Projects\BankProjects\Global Trust Bank\PegPay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll
+D:\My Projects\BankProjects\Global Trust Bank\PegPay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.pdb
+D:\My Projects\BankProjects\Global Trust Bank\PegPay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ResolveAssemblyReference.cache
+D:\My Projects\BankProjects\Global Trust Bank\PegPay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.dll
+D:\My Projects\BankProjects\Global Trust Bank\PegPay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.pdb
+D:\Projects\PegPay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll.config
+D:\Projects\PegPay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll
+D:\Projects\PegPay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.pdb
+D:\Projects\PegPay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\PegPay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.dll
+D:\Projects\PegPay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.pdb
+D:\pegpay\FINAL\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll.config
+D:\pegpay\FINAL\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll
+D:\pegpay\FINAL\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.pdb
+D:\pegpay\FINAL\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ResolveAssemblyReference.cache
+D:\pegpay\FINAL\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.dll
+D:\pegpay\FINAL\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.pdb
+D:\pegpay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll.config
+D:\pegpay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll
+D:\pegpay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.pdb
+D:\pegpay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ResolveAssemblyReference.cache
+D:\pegpay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.dll
+D:\pegpay\app\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.pdb
+D:\Applications\projects\BILLING\application\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll.config
+D:\Applications\projects\BILLING\application\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll
+D:\Applications\projects\BILLING\application\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.pdb
+D:\Applications\projects\BILLING\application\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ResolveAssemblyReference.cache
+D:\Applications\projects\BILLING\application\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.dll
+D:\Applications\projects\BILLING\application\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.pdb
+D:\Projects\BILLING\application\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll.config
+D:\Projects\BILLING\application\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.dll
+D:\Projects\BILLING\application\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\bin\Debug\ThirdPartiInterfaceApi.pdb
+D:\Projects\BILLING\application\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\BILLING\application\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.dll
+D:\Projects\BILLING\application\InterfaceApi\ThirdPartiInterfaceApi\ThirdPartiInterfaceApi\obj\Debug\ThirdPartiInterfaceApi.pdb

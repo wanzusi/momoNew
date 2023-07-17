@@ -1,0 +1,26 @@
+E:\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.csprojResolveAssemblyReference.cache
+E:\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\KENNETH\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\KENNETH\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\KENNETH\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\KENNETH\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.csprojResolveAssemblyReference.cache
+E:\KENNETH\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\KENNETH\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\Pepay\MoMo\Test MomoPortal\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\Pepay\MoMo\Test MomoPortal\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\Pepay\MoMo\Test MomoPortal\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\Pepay\MoMo\Test MomoPortal\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.csproj.AssemblyReference.cache
+E:\Pepay\MoMo\Test MomoPortal\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.csproj.CoreCompileInputs.cache
+E:\Pepay\MoMo\Test MomoPortal\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\Pepay\MoMo\Test MomoPortal\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\Wanzu\momo\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\Wanzu\momo\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\Wanzu\momo\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\Wanzu\momo\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.csproj.AssemblyReference.cache
+E:\Wanzu\momo\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.csproj.CoreCompileInputs.cache
+E:\Wanzu\momo\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\Wanzu\momo\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb

@@ -1,0 +1,240 @@
+D:\Projects\PWR\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+D:\Projects\PWR\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+D:\Projects\PWR\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+D:\Projects\PWR\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\PWR\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+D:\Projects\PWR\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+D:\Projects\PWR\Umeme\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+D:\Projects\PWR\Umeme\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+D:\Projects\PWR\Umeme\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+D:\Projects\PWR\Umeme\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\PWR\Umeme\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+D:\Projects\PWR\Umeme\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+D:\PegPay\Umeme\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+D:\PegPay\Umeme\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+D:\PegPay\Umeme\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+D:\PegPay\Umeme\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+D:\PegPay\Umeme\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+D:\PegPay\Umeme\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+D:\PegPay\Umeme1\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+D:\PegPay\Umeme1\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+D:\PegPay\Umeme1\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+D:\PegPay\Umeme1\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+D:\PegPay\Umeme1\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+D:\PegPay\Umeme1\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\pegpay\Umeme1\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\pegpay\Umeme1\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\pegpay\Umeme1\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\pegpay\Umeme1\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\pegpay\Umeme1\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\pegpay\Umeme1\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+D:\My Projects\BankProjects\Pegasus Technologies Projects\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+D:\My Projects\BankProjects\Pegasus Technologies Projects\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+D:\My Projects\BankProjects\Pegasus Technologies Projects\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+D:\My Projects\BankProjects\Pegasus Technologies Projects\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+D:\My Projects\BankProjects\Pegasus Technologies Projects\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+D:\My Projects\BankProjects\Pegasus Technologies Projects\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+F:\PePay\PegPayGenericApi\Api\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+F:\PePay\PegPayGenericApi\Api\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+F:\PePay\PegPayGenericApi\Api\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+F:\PePay\PegPayGenericApi\Api\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+F:\PePay\PegPayGenericApi\Api\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+F:\PePay\PegPayGenericApi\Api\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+F:\PePay\PegPayGenericApi\Api\application\Level2Api\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+F:\PePay\PegPayGenericApi\Api\application\Level2Api\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+F:\PePay\PegPayGenericApi\Api\application\Level2Api\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+F:\PePay\PegPayGenericApi\Api\application\Level2Api\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+F:\PePay\PegPayGenericApi\Api\application\Level2Api\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+F:\PePay\PegPayGenericApi\Api\application\Level2Api\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\PePay\GenericApi\Api\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\PePay\GenericApi\Api\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\PePay\GenericApi\Api\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\PePay\GenericApi\Api\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\PePay\GenericApi\Api\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\PePay\GenericApi\Api\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+D:\Work\Pegasus\Mobile Money\MoMo\FinalMTN\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+D:\Work\Pegasus\Mobile Money\MoMo\FinalMTN\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+D:\Work\Pegasus\Mobile Money\MoMo\FinalMTN\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+D:\Work\Pegasus\Mobile Money\MoMo\FinalMTN\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\Pegasus\Mobile Money\MoMo\FinalMTN\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+D:\Work\Pegasus\Mobile Money\MoMo\FinalMTN\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\FinalMTN\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\PePay\MoMo\FinalMTN\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\PePay\MoMo\FinalMTN\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\FinalMTN\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\PePay\MoMo\FinalMTN\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\PePay\MoMo\FinalMTN\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+D:\Work\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+D:\Work\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+D:\Work\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+D:\Work\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+D:\Work\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+D:\Windows Software\pegasus\Mobile Money Portal\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+D:\Windows Software\pegasus\Mobile Money Portal\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+D:\Windows Software\pegasus\Mobile Money Portal\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+D:\Windows Software\pegasus\Mobile Money Portal\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+D:\Windows Software\pegasus\Mobile Money Portal\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+D:\Windows Software\pegasus\Mobile Money Portal\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+D:\Windows Software\pegasus\MobileMoneyBackup\Mobile Money Portal\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+D:\Windows Software\pegasus\MobileMoneyBackup\Mobile Money Portal\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+D:\Windows Software\pegasus\MobileMoneyBackup\Mobile Money Portal\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+D:\Windows Software\pegasus\MobileMoneyBackup\Mobile Money Portal\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+D:\Windows Software\pegasus\MobileMoneyBackup\Mobile Money Portal\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+D:\Windows Software\pegasus\MobileMoneyBackup\Mobile Money Portal\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\Test\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\PePay\MoMo\Test\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Test\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\Test\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\PePay\MoMo\Test\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Test\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+C:\Users\hbt\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+C:\Users\hbt\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+C:\Users\hbt\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+C:\Users\hbt\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hbt\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+C:\Users\hbt\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+C:\Users\Administrator\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+C:\Users\Administrator\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+C:\Users\Administrator\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+C:\Users\Administrator\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+C:\Users\Administrator\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+C:\Users\hbt\Desktop\test\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+C:\Users\hbt\Desktop\test\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+C:\Users\hbt\Desktop\test\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+C:\Users\hbt\Desktop\test\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hbt\Desktop\test\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+C:\Users\hbt\Desktop\test\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+C:\Users\Software World\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+C:\Users\Software World\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+C:\Users\Software World\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+C:\Users\Software World\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Software World\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+C:\Users\Software World\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\Mobile Money Portal Edition\application\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\Mobile Money Portal Edition\application\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\Mobile Money Portal Edition\application\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\Mobile Money Portal Edition\application\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\Mobile Money Portal Edition\application\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\Mobile Money Portal Edition\application\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\Production\application_18\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\PePay\MoMo\Production\application_18\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Production\application_18\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\Production\application_18\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\PePay\MoMo\Production\application_18\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Production\application_18\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\Visual studio 2005\Projects\production\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\Visual studio 2005\Projects\production\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\Visual studio 2005\Projects\production\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\Visual studio 2005\Projects\production\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\Visual studio 2005\Projects\production\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\Visual studio 2005\Projects\production\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - solomonbackup\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - solomonbackup\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - solomonbackup\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - solomonbackup\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - solomonbackup\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - solomonbackup\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - current\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - current\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - current\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - current\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - current\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - current\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - currentV1\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - currentV1\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - currentV1\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - currentV1\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - currentV1\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - currentV1\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - currentV2\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - currentV2\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - currentV2\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - currentV2\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - currentV2\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL\application - currentV2\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\application - currentV2\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\application - currentV2\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\application - currentV2\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\application - currentV2\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\application - currentV2\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\application - currentV2\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\application - currentV3\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\application - currentV3\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\application - currentV3\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\application - currentV3\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\application - currentV3\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\application - currentV3\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\LiveMobileMoney application - currentV3\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\LiveMobileMoney application - currentV3\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\LiveMobileMoney application - currentV3\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\LiveMobileMoney application - currentV3\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\LiveMobileMoney application - currentV3\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\LiveMobileMoney application - currentV3\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\LiveMobileMoney application - currentV4\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\LiveMobileMoney application - currentV4\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\LiveMobileMoney application - currentV4\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\LiveMobileMoney application - currentV4\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\LiveMobileMoney application - currentV4\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\CHANGES BY SOLOMON MOMO\PEGPAY TEST PORTAL serious\LiveMobileMoney application - currentV4\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\Production\application41\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\PePay\MoMo\Production\application41\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Production\application41\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\Production\application41\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\PePay\MoMo\Production\application41\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Production\application41\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\Production\application_41\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\PePay\MoMo\Production\application_41\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Production\application_41\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\Production\application_41\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\PePay\MoMo\Production\application_41\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Production\application_41\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\Production\application_44\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\PePay\MoMo\Production\application_44\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Production\application_44\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\Production\application_44\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\PePay\MoMo\Production\application_44\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Production\application_44\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+C:\Users\Nsubugak\Documents\MomoPortal\application\application_44\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+C:\Users\Nsubugak\Documents\MomoPortal\application\application_44\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+C:\Users\Nsubugak\Documents\MomoPortal\application\application_44\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+C:\Users\Nsubugak\Documents\MomoPortal\application\application_44\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Nsubugak\Documents\MomoPortal\application\application_44\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+C:\Users\Nsubugak\Documents\MomoPortal\application\application_44\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+D:\Work\Pegasus\MobileMoneyPortal\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+D:\Work\Pegasus\MobileMoneyPortal\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+D:\Work\Pegasus\MobileMoneyPortal\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+D:\Work\Pegasus\MobileMoneyPortal\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\Pegasus\MobileMoneyPortal\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+D:\Work\Pegasus\MobileMoneyPortal\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+C:\Users\ApplicationsAccount\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+C:\Users\ApplicationsAccount\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+C:\Users\ApplicationsAccount\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+C:\Users\ApplicationsAccount\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ApplicationsAccount\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+C:\Users\ApplicationsAccount\Desktop\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\Production\application_49\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\PePay\MoMo\Production\application_49\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Production\application_49\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\Production\application_49\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\PePay\MoMo\Production\application_49\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Production\application_49\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+\\192.168.0.3\e$\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+\\192.168.0.3\e$\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+\\192.168.0.3\e$\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+\\192.168.0.3\e$\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+\\192.168.0.3\e$\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+\\192.168.0.3\e$\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Production\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\Production\application-CustomerProfiles\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
+E:\PePay\MoMo\Production\application-CustomerProfiles\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Production\application-CustomerProfiles\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
+E:\PePay\MoMo\Production\application-CustomerProfiles\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\ResolveAssemblyReference.cache
+E:\PePay\MoMo\Production\application-CustomerProfiles\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
+E:\PePay\MoMo\Production\application-CustomerProfiles\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb

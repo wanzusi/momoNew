@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:ns0="http://WebServices.BillerCore/" targetNamespace="http://WebServices.BillerCore/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="operationReturn">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="returnCode" type="xsd:int" />
+      <xsd:element minOccurs="0" name="returnMessage" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ProcessWithdrawal">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="BillerCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="RetailerAccount" type="xsd:string" />
+      <xsd:element minOccurs="0" name="RetailerAccountPIN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TransactionSignature" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CustomerPhone" type="xsd:string" />
+      <xsd:element minOccurs="0" name="SecretCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="RequestId" type="xsd:string" />
+      <xsd:element minOccurs="0" name="Amount" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="PayOutResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="ns0:payoutResponse" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="customerVerificationResponse">
+    <xsd:complexContent mixed="false">
+      <xsd:extension base="ns0:operationReturn">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="customerName" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="cashDispenseResponse">
+    <xsd:complexContent mixed="false">
+      <xsd:extension base="ns0:operationReturn">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="amount" type="xsd:string" />
+          <xsd:element minOccurs="0" name="dateInitiated" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="transactionId" type="xsd:string" />
+          <xsd:element minOccurs="0" name="withdrawalStatus" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="VerifyWaridpesaCustomerResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="ns0:customerVerificationResponse" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="NoSuchAlgorithmException">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="message" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ProcessWithdrawalResponse">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="return" type="ns0:cashDispenseResponse" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="payoutResponse">
+    <xsd:complexContent mixed="false">
+      <xsd:extension base="ns0:operationReturn">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="transactionID" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="PayOut">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="BillerCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PayoutPhone" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PayoutPhonePIN" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TransactionSignature" type="xsd:string" />
+      <xsd:element minOccurs="0" name="Recipient" type="xsd:string" />
+      <xsd:element minOccurs="0" name="Amount" type="xsd:string" />
+      <xsd:element minOccurs="0" name="PaymentMemo" type="xsd:string" />
+      <xsd:element minOccurs="0" name="RequestId" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="VerifyWaridpesaCustomer">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="BillerCode" type="xsd:string" />
+      <xsd:element minOccurs="0" name="CustomerPhone" type="xsd:string" />
+      <xsd:element minOccurs="0" name="TransactionSignature" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="ProcessWithdrawal" type="ns0:ProcessWithdrawal" />
+  <xsd:element name="PayOutResponse" type="ns0:PayOutResponse" />
+  <xsd:element name="VerifyWaridpesaCustomerResponse" type="ns0:VerifyWaridpesaCustomerResponse" />
+  <xsd:element name="NoSuchAlgorithmException" type="ns0:NoSuchAlgorithmException" />
+  <xsd:element name="ProcessWithdrawalResponse" type="ns0:ProcessWithdrawalResponse" />
+  <xsd:element name="PayOut" type="ns0:PayOut" />
+  <xsd:element name="VerifyWaridpesaCustomer" type="ns0:VerifyWaridpesaCustomer" />
+</xsd:schema>

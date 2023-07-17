@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:tns="http://WebServices.BillerCore/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="ThirdpartyWebServices" targetNamespace="http://WebServices.BillerCore/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="E:\PePay\MoMo\AirtelMoney\ThirdpartyWebServices.xsd" namespace="http://WebServices.BillerCore/" />
+    </xsd:schema>
+  </types>
+  <message name="PayOut">
+    <part name="parameters" element="tns:PayOut" />
+  </message>
+  <message name="PayOutResponse">
+    <part name="parameters" element="tns:PayOutResponse" />
+  </message>
+  <message name="NoSuchAlgorithmException">
+    <part name="fault" element="tns:NoSuchAlgorithmException" />
+  </message>
+  <message name="VerifyWaridpesaCustomer">
+    <part name="parameters" element="tns:VerifyWaridpesaCustomer" />
+  </message>
+  <message name="VerifyWaridpesaCustomerResponse">
+    <part name="parameters" element="tns:VerifyWaridpesaCustomerResponse" />
+  </message>
+  <message name="ProcessWithdrawal">
+    <part name="parameters" element="tns:ProcessWithdrawal" />
+  </message>
+  <message name="ProcessWithdrawalResponse">
+    <part name="parameters" element="tns:ProcessWithdrawalResponse" />
+  </message>
+  <portType name="ThirdpartyWebServices">
+    <operation name="PayOut">
+      <input wsam:Action="http://WebServices.BillerCore/ThirdpartyWebServices/PayOutRequest" message="tns:PayOut" />
+      <output wsam:Action="http://WebServices.BillerCore/ThirdpartyWebServices/PayOutResponse" message="tns:PayOutResponse" />
+      <fault wsam:Action="http://WebServices.BillerCore/ThirdpartyWebServices/PayOut/Fault/NoSuchAlgorithmException" name="NoSuchAlgorithmException" message="tns:NoSuchAlgorithmException" />
+    </operation>
+    <operation name="VerifyWaridpesaCustomer">
+      <input wsam:Action="http://WebServices.BillerCore/ThirdpartyWebServices/VerifyWaridpesaCustomerRequest" message="tns:VerifyWaridpesaCustomer" />
+      <output wsam:Action="http://WebServices.BillerCore/ThirdpartyWebServices/VerifyWaridpesaCustomerResponse" message="tns:VerifyWaridpesaCustomerResponse" />
+      <fault wsam:Action="http://WebServices.BillerCore/ThirdpartyWebServices/VerifyWaridpesaCustomer/Fault/NoSuchAlgorithmException" name="NoSuchAlgorithmException" message="tns:NoSuchAlgorithmException" />
+    </operation>
+    <operation name="ProcessWithdrawal">
+      <input wsam:Action="http://WebServices.BillerCore/ThirdpartyWebServices/ProcessWithdrawalRequest" message="tns:ProcessWithdrawal" />
+      <output wsam:Action="http://WebServices.BillerCore/ThirdpartyWebServices/ProcessWithdrawalResponse" message="tns:ProcessWithdrawalResponse" />
+      <fault wsam:Action="http://WebServices.BillerCore/ThirdpartyWebServices/ProcessWithdrawal/Fault/NoSuchAlgorithmException" name="NoSuchAlgorithmException" message="tns:NoSuchAlgorithmException" />
+    </operation>
+  </portType>
+  <binding name="ThirdpartyWebServicesPortBinding" type="tns:ThirdpartyWebServices">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="PayOut">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="NoSuchAlgorithmException">
+        <soap:fault use="literal" name="NoSuchAlgorithmException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="VerifyWaridpesaCustomer">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="NoSuchAlgorithmException">
+        <soap:fault use="literal" name="NoSuchAlgorithmException" namespace="" />
+      </fault>
+    </operation>
+    <operation name="ProcessWithdrawal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="NoSuchAlgorithmException">
+        <soap:fault use="literal" name="NoSuchAlgorithmException" namespace="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="ThirdpartyWebServices">
+    <port name="ThirdpartyWebServicesPort" binding="tns:ThirdpartyWebServicesPortBinding">
+      <soap:address location="https://collections.ug.airtelmoney.com/ThirdpartyPayoutLiveService/" />
+    </port>
+  </service>
+</definitions>

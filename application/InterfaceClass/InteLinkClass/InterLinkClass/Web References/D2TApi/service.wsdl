@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://PegPayTelecomsApi/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://PegPayTelecomsApi/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://PegPayTelecomsApi/">
+      <s:element name="PostVendorToMtnWallet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trans" type="tns:Transaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Transaction">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StatusCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranNarration" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PegPayId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactingOva" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Charges" type="tns:Charges" />
+          <s:element minOccurs="0" maxOccurs="1" name="DigitalSignature" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FromTelecom" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ToTelecom" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaymentCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VendorCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaymentDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Telecom" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerRef" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranAmount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranCharge" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VendorTranId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ToAccount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FromAccount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TranType" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Charges">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="PegasusCommisionAccount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TelecomCommissionAccount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CashoutAccount" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PegasusCommission" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="TelecomCharge" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CashOutCharge" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PostVendorToMtnWalletResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PostVendorToMtnWalletResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Response">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StatusCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TelecomId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PegPayId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TransactingOva" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PostDirectToAirtelMobiquity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trans" type="tns:Transaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostDirectToAirtelMobiquityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PostDirectToAirtelMobiquityResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PullDirectFromAirtelMobiquity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trans" type="tns:Transaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PullDirectFromAirtelMobiquityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PullDirectFromAirtelMobiquityResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostVendorToMtnECW">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trans" type="tns:Transaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostVendorToMtnECWResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PostVendorToMtnECWResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostVendorToAirtelWallet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trans" type="tns:Transaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostVendorToAirtelWalletResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PostVendorToAirtelWalletResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostVendorToUtlWallet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trans" type="tns:Transaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostVendorToUtlWalletResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PostVendorToUtlWalletResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMtnTransactionStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trans" type="tns:Transaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMtnTransactionStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMtnTransactionStatusResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMtnECWTransactionStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trans" type="tns:Transaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMtnECWTransactionStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMtnECWTransactionStatusResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAirtelMobiquityTransactionStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trans" type="tns:Transaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAirtelMobiquityTransactionStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAirtelMobiquityTransactionStatusResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetObopayTransactionStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trans" type="tns:Transaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetObopayTransactionStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetObopayTransactionStatusResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostDirectToAirtelObopay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="trans" type="tns:Transaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PostDirectToAirtelObopayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PostDirectToAirtelObopayResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyAirtelCustomerObopay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tran" type="tns:Transaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyAirtelCustomerObopayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifyAirtelCustomerObopayResult" type="tns:TelecomCustomer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TelecomCustomer">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="StatusDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Telecom" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IsEnabledForMobileMoney" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerTel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="VerifyAirtelCustomerMobiquity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tran" type="tns:Transaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyAirtelCustomerMobiquityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifyAirtelCustomerMobiquityResult" type="tns:TelecomCustomer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAccountBalanceFromObopay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tran" type="tns:Transaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAccountBalanceFromObopayResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAccountBalanceFromObopayResult" type="tns:TelecomCustomer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAccountBalanceFromMobiquity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tran" type="tns:Transaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAccountBalanceFromMobiquityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAccountBalanceFromMobiquityResult" type="tns:Response" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PostVendorToMtnWalletSoapIn">
+    <wsdl:part name="parameters" element="tns:PostVendorToMtnWallet" />
+  </wsdl:message>
+  <wsdl:message name="PostVendorToMtnWalletSoapOut">
+    <wsdl:part name="parameters" element="tns:PostVendorToMtnWalletResponse" />
+  </wsdl:message>
+  <wsdl:message name="PostDirectToAirtelMobiquitySoapIn">
+    <wsdl:part name="parameters" element="tns:PostDirectToAirtelMobiquity" />
+  </wsdl:message>
+  <wsdl:message name="PostDirectToAirtelMobiquitySoapOut">
+    <wsdl:part name="parameters" element="tns:PostDirectToAirtelMobiquityResponse" />
+  </wsdl:message>
+  <wsdl:message name="PullDirectFromAirtelMobiquitySoapIn">
+    <wsdl:part name="parameters" element="tns:PullDirectFromAirtelMobiquity" />
+  </wsdl:message>
+  <wsdl:message name="PullDirectFromAirtelMobiquitySoapOut">
+    <wsdl:part name="parameters" element="tns:PullDirectFromAirtelMobiquityResponse" />
+  </wsdl:message>
+  <wsdl:message name="PostVendorToMtnECWSoapIn">
+    <wsdl:part name="parameters" element="tns:PostVendorToMtnECW" />
+  </wsdl:message>
+  <wsdl:message name="PostVendorToMtnECWSoapOut">
+    <wsdl:part name="parameters" element="tns:PostVendorToMtnECWResponse" />
+  </wsdl:message>
+  <wsdl:message name="PostVendorToAirtelWalletSoapIn">
+    <wsdl:part name="parameters" element="tns:PostVendorToAirtelWallet" />
+  </wsdl:message>
+  <wsdl:message name="PostVendorToAirtelWalletSoapOut">
+    <wsdl:part name="parameters" element="tns:PostVendorToAirtelWalletResponse" />
+  </wsdl:message>
+  <wsdl:message name="PostVendorToUtlWalletSoapIn">
+    <wsdl:part name="parameters" element="tns:PostVendorToUtlWallet" />
+  </wsdl:message>
+  <wsdl:message name="PostVendorToUtlWalletSoapOut">
+    <wsdl:part name="parameters" element="tns:PostVendorToUtlWalletResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMtnTransactionStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMtnTransactionStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetMtnTransactionStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMtnTransactionStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMtnECWTransactionStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMtnECWTransactionStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetMtnECWTransactionStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMtnECWTransactionStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAirtelMobiquityTransactionStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAirtelMobiquityTransactionStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetAirtelMobiquityTransactionStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAirtelMobiquityTransactionStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetObopayTransactionStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetObopayTransactionStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetObopayTransactionStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetObopayTransactionStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="PostDirectToAirtelObopaySoapIn">
+    <wsdl:part name="parameters" element="tns:PostDirectToAirtelObopay" />
+  </wsdl:message>
+  <wsdl:message name="PostDirectToAirtelObopaySoapOut">
+    <wsdl:part name="parameters" element="tns:PostDirectToAirtelObopayResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyAirtelCustomerObopaySoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyAirtelCustomerObopay" />
+  </wsdl:message>
+  <wsdl:message name="VerifyAirtelCustomerObopaySoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyAirtelCustomerObopayResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyAirtelCustomerMobiquitySoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyAirtelCustomerMobiquity" />
+  </wsdl:message>
+  <wsdl:message name="VerifyAirtelCustomerMobiquitySoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyAirtelCustomerMobiquityResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAccountBalanceFromObopaySoapIn">
+    <wsdl:part name="parameters" element="tns:GetAccountBalanceFromObopay" />
+  </wsdl:message>
+  <wsdl:message name="GetAccountBalanceFromObopaySoapOut">
+    <wsdl:part name="parameters" element="tns:GetAccountBalanceFromObopayResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAccountBalanceFromMobiquitySoapIn">
+    <wsdl:part name="parameters" element="tns:GetAccountBalanceFromMobiquity" />
+  </wsdl:message>
+  <wsdl:message name="GetAccountBalanceFromMobiquitySoapOut">
+    <wsdl:part name="parameters" element="tns:GetAccountBalanceFromMobiquityResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="PostVendorToMtnWallet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Post PUSH Direct to MTN Wallet</wsdl:documentation>
+      <wsdl:input message="tns:PostVendorToMtnWalletSoapIn" />
+      <wsdl:output message="tns:PostVendorToMtnWalletSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PostDirectToAirtelMobiquity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Post PUSH Direct to AIRTEL MOBIQUITY</wsdl:documentation>
+      <wsdl:input message="tns:PostDirectToAirtelMobiquitySoapIn" />
+      <wsdl:output message="tns:PostDirectToAirtelMobiquitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PullDirectFromAirtelMobiquity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Post Payin Direct to AIRTEL MOBIQUITY</wsdl:documentation>
+      <wsdl:input message="tns:PullDirectFromAirtelMobiquitySoapIn" />
+      <wsdl:output message="tns:PullDirectFromAirtelMobiquitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PostVendorToMtnECW">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Post PUSH Direct to MTN ECW</wsdl:documentation>
+      <wsdl:input message="tns:PostVendorToMtnECWSoapIn" />
+      <wsdl:output message="tns:PostVendorToMtnECWSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PostVendorToAirtelWallet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Post PUSH Direct to Airtel Wallet</wsdl:documentation>
+      <wsdl:input message="tns:PostVendorToAirtelWalletSoapIn" />
+      <wsdl:output message="tns:PostVendorToAirtelWalletSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PostVendorToUtlWallet">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Post PUSH Direct to utl Wallet</wsdl:documentation>
+      <wsdl:input message="tns:PostVendorToUtlWalletSoapIn" />
+      <wsdl:output message="tns:PostVendorToUtlWalletSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMtnTransactionStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets Status of a transaction Direct from MTN</wsdl:documentation>
+      <wsdl:input message="tns:GetMtnTransactionStatusSoapIn" />
+      <wsdl:output message="tns:GetMtnTransactionStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMtnECWTransactionStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets Status of a transaction Direct from MTN ECW</wsdl:documentation>
+      <wsdl:input message="tns:GetMtnECWTransactionStatusSoapIn" />
+      <wsdl:output message="tns:GetMtnECWTransactionStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAirtelMobiquityTransactionStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets Status of a transaction Direct from AIRTEL MOBIQUITY</wsdl:documentation>
+      <wsdl:input message="tns:GetAirtelMobiquityTransactionStatusSoapIn" />
+      <wsdl:output message="tns:GetAirtelMobiquityTransactionStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetObopayTransactionStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets Status of a transaction Direct from Obopay</wsdl:documentation>
+      <wsdl:input message="tns:GetObopayTransactionStatusSoapIn" />
+      <wsdl:output message="tns:GetObopayTransactionStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PostDirectToAirtelObopay">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">POST TRANSACTION FOR AIRTEL</wsdl:documentation>
+      <wsdl:input message="tns:PostDirectToAirtelObopaySoapIn" />
+      <wsdl:output message="tns:PostDirectToAirtelObopaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyAirtelCustomerObopay">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GET CUSTOMER DETAILS FROM OBOPAY</wsdl:documentation>
+      <wsdl:input message="tns:VerifyAirtelCustomerObopaySoapIn" />
+      <wsdl:output message="tns:VerifyAirtelCustomerObopaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyAirtelCustomerMobiquity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GET CUSTOMER DETAILS FROM OBOPAY</wsdl:documentation>
+      <wsdl:input message="tns:VerifyAirtelCustomerMobiquitySoapIn" />
+      <wsdl:output message="tns:VerifyAirtelCustomerMobiquitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountBalanceFromObopay">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GET ACCOUNT BALANCE FROM OBOPAY</wsdl:documentation>
+      <wsdl:input message="tns:GetAccountBalanceFromObopaySoapIn" />
+      <wsdl:output message="tns:GetAccountBalanceFromObopaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountBalanceFromMobiquity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">GET ACCOUNT BALANCE FROM AIRTEL MOBIQUITY</wsdl:documentation>
+      <wsdl:input message="tns:GetAccountBalanceFromMobiquitySoapIn" />
+      <wsdl:output message="tns:GetAccountBalanceFromMobiquitySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PostVendorToMtnWallet">
+      <soap:operation soapAction="http://PegPayTelecomsApi/PostVendorToMtnWallet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostDirectToAirtelMobiquity">
+      <soap:operation soapAction="http://PegPayTelecomsApi/PostDirectToAirtelMobiquity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PullDirectFromAirtelMobiquity">
+      <soap:operation soapAction="http://PegPayTelecomsApi/PullDirectFromAirtelMobiquity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostVendorToMtnECW">
+      <soap:operation soapAction="http://PegPayTelecomsApi/PostVendorToMtnECW" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostVendorToAirtelWallet">
+      <soap:operation soapAction="http://PegPayTelecomsApi/PostVendorToAirtelWallet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostVendorToUtlWallet">
+      <soap:operation soapAction="http://PegPayTelecomsApi/PostVendorToUtlWallet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMtnTransactionStatus">
+      <soap:operation soapAction="http://PegPayTelecomsApi/GetMtnTransactionStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMtnECWTransactionStatus">
+      <soap:operation soapAction="http://PegPayTelecomsApi/GetMtnECWTransactionStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAirtelMobiquityTransactionStatus">
+      <soap:operation soapAction="http://PegPayTelecomsApi/GetAirtelMobiquityTransactionStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObopayTransactionStatus">
+      <soap:operation soapAction="http://PegPayTelecomsApi/GetObopayTransactionStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostDirectToAirtelObopay">
+      <soap:operation soapAction="http://PegPayTelecomsApi/PostDirectToAirtelObopay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyAirtelCustomerObopay">
+      <soap:operation soapAction="http://PegPayTelecomsApi/VerifyAirtelCustomerObopay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyAirtelCustomerMobiquity">
+      <soap:operation soapAction="http://PegPayTelecomsApi/VerifyAirtelCustomerMobiquity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountBalanceFromObopay">
+      <soap:operation soapAction="http://PegPayTelecomsApi/GetAccountBalanceFromObopay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountBalanceFromMobiquity">
+      <soap:operation soapAction="http://PegPayTelecomsApi/GetAccountBalanceFromMobiquity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PostVendorToMtnWallet">
+      <soap12:operation soapAction="http://PegPayTelecomsApi/PostVendorToMtnWallet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostDirectToAirtelMobiquity">
+      <soap12:operation soapAction="http://PegPayTelecomsApi/PostDirectToAirtelMobiquity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PullDirectFromAirtelMobiquity">
+      <soap12:operation soapAction="http://PegPayTelecomsApi/PullDirectFromAirtelMobiquity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostVendorToMtnECW">
+      <soap12:operation soapAction="http://PegPayTelecomsApi/PostVendorToMtnECW" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostVendorToAirtelWallet">
+      <soap12:operation soapAction="http://PegPayTelecomsApi/PostVendorToAirtelWallet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostVendorToUtlWallet">
+      <soap12:operation soapAction="http://PegPayTelecomsApi/PostVendorToUtlWallet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMtnTransactionStatus">
+      <soap12:operation soapAction="http://PegPayTelecomsApi/GetMtnTransactionStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMtnECWTransactionStatus">
+      <soap12:operation soapAction="http://PegPayTelecomsApi/GetMtnECWTransactionStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAirtelMobiquityTransactionStatus">
+      <soap12:operation soapAction="http://PegPayTelecomsApi/GetAirtelMobiquityTransactionStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetObopayTransactionStatus">
+      <soap12:operation soapAction="http://PegPayTelecomsApi/GetObopayTransactionStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostDirectToAirtelObopay">
+      <soap12:operation soapAction="http://PegPayTelecomsApi/PostDirectToAirtelObopay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyAirtelCustomerObopay">
+      <soap12:operation soapAction="http://PegPayTelecomsApi/VerifyAirtelCustomerObopay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyAirtelCustomerMobiquity">
+      <soap12:operation soapAction="http://PegPayTelecomsApi/VerifyAirtelCustomerMobiquity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountBalanceFromObopay">
+      <soap12:operation soapAction="http://PegPayTelecomsApi/GetAccountBalanceFromObopay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAccountBalanceFromMobiquity">
+      <soap12:operation soapAction="http://PegPayTelecomsApi/GetAccountBalanceFromMobiquity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://localhost:5099/LiveDirectToTelecomsApi/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://localhost:5099/LiveDirectToTelecomsApi/service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,6 @@
+bin\Debug\ThirdPartiInterfaceApi.dll.config
+bin\Debug\ThirdPartiInterfaceApi.dll
+bin\Debug\ThirdPartiInterfaceApi.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ThirdPartiInterfaceApi.dll
+obj\Debug\ThirdPartiInterfaceApi.pdb

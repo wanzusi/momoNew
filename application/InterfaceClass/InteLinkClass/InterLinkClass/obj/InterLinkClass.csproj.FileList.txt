@@ -1,0 +1,6 @@
+bin\Debug\InterLinkClass.dll.config
+bin\Debug\InterLinkClass.dll
+bin\Debug\InterLinkClass.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\InterLinkClass.dll
+obj\Debug\InterLinkClass.pdb
