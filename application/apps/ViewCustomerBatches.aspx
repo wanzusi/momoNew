@@ -5,158 +5,80 @@
     Namespace="CrystalDecisions.Web" TagPrefix="CR" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <%@ register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="ajaxToolkit" %>
-    &nbsp;<table style="width: 100%">
-        <tr>
-            <td style="width: 98%; height: 2px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                    <tr>
-                        <td class="InterfaceHeaderLabel">
-                            Payment Batches</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 5px">
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px;">
-                <hr />
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px">
-                <asp:Label ID="lblBatchCode" runat="server" Text="0" Visible="False"></asp:Label></td>
-        </tr>
-    </table>
+    <section class="section">
+              <div class="text-center">
+            <h5 class="card-title ">Payment Batches</h5>
+
+        </div>
+          </section>
+     <asp:Label ID="lblBatchCode" runat="server" Text="0" Visible="False"></asp:Label>
     <asp:MultiView ID="MultiView1" runat="server">
         <asp:View ID="View1" runat="server">
-            <table style="width: 100%">
-                <tr>
-                    <td style="width: 96%; height: 2px">
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 96%; height: 5px">
-                        <table align="center" cellpadding="0" cellspacing="0" style="width: 90%; border-right: #617da6 1px solid;
-                            border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;">
-                            <tr>
-                                <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                                    text-align: center">
-                                    Batch Type</td>
-                                <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 25%; height: 18px;
-                                    text-align: center">
-                                    Batch Status</td>
-                                <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 18%; height: 18px;
-                                    text-align: center">
-                                    bATCH No</td>
-                                <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 20%; height: 18px;
-                                    text-align: center">
-                                    FROM DAte</td>
-                                <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 25%; height: 18px;
-                                    text-align: center">
-                                    To date</td>
-                                <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 25%; height: 18px;
-                                    text-align: center">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ddcolortabsline2" colspan="6" style="vertical-align: middle; text-align: center;
-                                    height: 1px;">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center;
-                                    border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px;
-                                    border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px;
-                                    border-right-color: #617da6;">
-                                    <asp:DropDownList ID="cboType" runat="server" CssClass="SystemDropdownListOthers DataEntryFormTableTextboxWidth"
-                                        OnDataBound="cboType_DataBound" Width="90%">
-                                    </asp:DropDownList>&nbsp;</td>
-                                <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                    border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                    width: 25%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                    border-right-color: #617da6">
-                                    <asp:DropDownList ID="cboBatchStatus" runat="server" CssClass="SystemDropdownListOthers DataEntryFormTableTextboxWidth"
-                                        OnDataBound="cboBatchStatus_DataBound" Width="90%">
-                                    </asp:DropDownList></td>
-                                <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                    border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                    width: 18%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                    border-right-color: #617da6">
-                                    <asp:TextBox ID="txtBatchCode" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                                <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                    border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                    width: 20%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                    border-right-color: #617da6">
-                                    <asp:TextBox ID="txtfromDate" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                                <td style="vertical-align: middle; width: 25%; height: 23px; text-align: center;
-                                    border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px;
-                                    border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px;
-                                    border-right-color: #617da6;">
-                                    <asp:TextBox ID="txttoDate" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                                <td style="vertical-align: middle; width: 25%; height: 23px; text-align: center;
-                                    border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px;
-                                    border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px;
-                                    border-right-color: #617da6;">
-                                    &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td colspan="5" style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                    border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                    border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                    border-right-color: #617da6">
-                                </td>
-                                <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                    border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                    width: 25%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                    border-right-color: #617da6">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="6" style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                    border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                    border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                    border-right-color: #617da6">
-                                    <asp:Button ID="btnOK" runat="server" Font-Size="9pt" Height="23px" OnClick="btnOK_Click"
-                                        Text="Search" Width="85px" Style="font: menu" /></td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 96%; height: 1px;">
-                        <hr />
-                        <asp:Label ID="tranStatusLbl" runat="server" Visible="False"></asp:Label></td>
-                </tr>
-                <tr>
-                    <td style="width: 96%; height: 1px">
+            <div class="row mb-4 justify-content-center">
+<div class="col-lg-12" style="display: flex; justify-content:space-evenly">
+          <div class="col-md-2">
+            <label for="inputEmail5" class="form-label">Batch Type</label>
+<asp:DropDownList ID="cboType" runat="server" CssClass="form-select"
+                                        OnDataBound="cboType_DataBound">
+                                    </asp:DropDownList>
+          </div>
+    
+     <div class="col-md-3">
+            <label for="inputEmail5" class="form-label">Batch Status</label>
+     <asp:DropDownList ID="cboBatchStatus" runat="server" CssClass="form-select"
+                                        OnDataBound="cboBatchStatus_DataBound" >
+                                    </asp:DropDownList>
+          </div>
+          <div class="col-md-2">
+            <label for="UserCategory" class="form-label">Batch No</label>
+               
+                 <asp:TextBox ID="txtBatchCode" runat="server" CssClass="form-control"></asp:TextBox>
+          </div>
+     <div class="col-md-2">
+            <label for="UserCategory" class="form-label">From Date</label>
+               
+                   <asp:TextBox ID="txtfromDate" runat="server" CssClass="form-control"></asp:TextBox>
+          </div>
+     <div class="col-md-2">
+            <label for="UserCategory" class="form-label">To Date</label>
+               
+                  <asp:TextBox ID="txttoDate" runat="server" CssClass="form-control"></asp:TextBox>
+          </div>
+    <div class="col-md-2">
+            <label for="UserCategory" class="form-label"></label>
+               
+<asp:Button ID="btnOK"  runat="server" Style="margin-top:20px;" CssClass="btn btn-success btn-lg" Text="Search" OnClick="btnOK_Click" /> 
+          </div>
+    </div>
+                                       </div>
+
+                        <asp:Label ID="tranStatusLbl" runat="server" Visible="False"></asp:Label>
+               
+               
                         <asp:MultiView ID="MultiView2" runat="server">
                             <asp:View ID="View3" runat="server">
-                                <table align="center" style="border-right: #617da6 1px solid; border-top: #617da6 1px solid;
-                                    border-left: #617da6 1px solid; width: 50%; border-bottom: #617da6 1px solid">
-                                    <tr>
-                                        <td style="border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
-                                            width: 100px; border-bottom: #617da6 1px solid">
-                                            <asp:RadioButton ID="rdPdf" runat="server" Font-Bold="True" GroupName="FileFormat"
-                                                Text="PDF" /></td>
-                                        <td style="border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
-                                            width: 100px; border-bottom: #617da6 1px solid">
-                                            <asp:RadioButton ID="rdExcel" runat="server" Font-Bold="True" GroupName="FileFormat"
-                                                Text="EXCEL" /></td>
-                                        <td style="border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
-                                            width: 100px; border-bottom: #617da6 1px solid">
-                                            <asp:Button ID="btnConvert" runat="server" Font-Size="9pt" Height="23px" OnClick="btnConvert_Click"
-                                                Style="font: menu" Text="Convert" Width="85px" /></td>
-                                    </tr>
-                                </table>
+                                           <section class="section">
+
+           <div class="row mb-4" style="justify-content:center">
+    <div class="col-lg-6" style="display:flex;">
+        <div class="col-lg-2  text-center" style=" margin-top:auto; margin-bottom:auto">
+            <asp:RadioButton ID="rdPdf" runat="server"   Font-Bold="True" GroupName="FileFormat" Text="PDF" />
+        </div>
+        <div class="col-lg-2 text-center" style="margin-left:2vw; margin-top:auto; margin-bottom:auto">
+             <asp:RadioButton ID="rdExcel" runat="server"  Font-Bold="True" GroupName="FileFormat"  Text="EXCEL" />
+        </div>
+        <div class="col-lg-2 text-center" style="margin-left:2vw">
+             <asp:Button ID="btnConvert" runat="server"    CssClass="btn btn-primary w-100" OnClick="btnConvert_Click" Font-Bold="True"   Text="COVERT" />
+        </div>
+       
+    </div>
+</div>
+               </section>
                             </asp:View>
-                        </asp:MultiView></td>
-                </tr>
-                <tr>
-                    <td style="width: 96%; height: 2px">
-                        &nbsp;<asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+                        </asp:MultiView>
+                
+               
+                        <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CssClass="table"
                             CellPadding="4" ForeColor="#333333" GridLines="Horizontal" OnItemCommand="DataGrid1_ItemCommand"
                             OnPageIndexChanged="DataGrid1_PageIndexChanged" Width="100%" Style="text-align: justify;
                             font: menu; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
@@ -225,58 +147,42 @@
                             </Columns>
                             <HeaderStyle BackColor="#FEFECE" Font-Bold="True" ForeColor="Black" Font-Italic="False"
                                 Font-Overline="False" Font-Strikeout="False" Font-Underline="False" />
-                        </asp:DataGrid></td>
-                </tr>
-                <tr>
-                    <td style="width: 96%; height: 2px">
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 96%; height: 2px">
-                    </td>
-                </tr>
-            </table>
+                        </asp:DataGrid>
+               
         </asp:View>
         <asp:View ID="View2" runat="server">
             <table style="width: 100%">
-                <tr>
-                    <td class="InterfaceHeaderLabel2" style="width: 98%; height: 2px">
-                        Batch Details
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 98%; height: 5px">
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 98%; height: 1px;">
-                        <hr />
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 98%; height: 1px">
+         <div class="text-center">
+                <h6 class="card-title"> Batch Details</h6>
+            </div>
+                       
+                
+                
                         <asp:MultiView ID="MultiView5" runat="server">
                             <asp:View ID="View7" runat="server">
-                                <table align="center" style="border-right: #617da6 1px solid; border-top: #617da6 1px solid;
-                                    border-left: #617da6 1px solid; width: 50%; border-bottom: #617da6 1px solid">
-                                    <tr>
-                                        <td style="border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
-                                            width: 100px; border-bottom: #617da6 1px solid">
-                                            <asp:RadioButton ID="rdPdf2" runat="server" Font-Bold="True" GroupName="FileFormat"
-                                                Text="PDF" /></td>
-                                        <td style="border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
-                                            width: 100px; border-bottom: #617da6 1px solid">
-                                            <asp:RadioButton ID="rdExcel2" runat="server" Font-Bold="True" GroupName="FileFormat"
-                                                Text="EXCEL" /></td>
-                                        <td style="border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
-                                            width: 100px; border-bottom: #617da6 1px solid">
-                                            <asp:Button ID="btnConvertDetails" runat="server" Font-Size="9pt" Height="23px" Style="font: menu"
-                                                Text="Convert" Width="85px" OnClick="btnConvertDetails_Click" /></td>
-                                    </tr>
-                                </table>
+                                
+
+                                            <section class="section">
+
+           <div class="row mb-4" style="justify-content:center">
+    <div class="col-lg-6" style="display:flex;">
+        <div class="col-lg-2  text-center" style=" margin-top:auto; margin-bottom:auto">
+            <asp:RadioButton ID="rdPdf2" runat="server"   Font-Bold="True" GroupName="FileFormat" Text="PDF" />
+        </div>
+        <div class="col-lg-2 text-center" style="margin-left:2vw; margin-top:auto; margin-bottom:auto">
+             <asp:RadioButton ID="rdExcel2" runat="server"  Font-Bold="True" GroupName="FileFormat"  Text="EXCEL" />
+        </div>
+        <div class="col-lg-2 text-center" style="margin-left:2vw">
+             <asp:Button ID="btnConvertDetails" runat="server"    CssClass="btn btn-primary w-100" OnClick="btnConvert_Click" Font-Bold="True"   Text="COVERT" />
+        </div>
+       
+    </div>
+</div>
+               </section>
+
                             </asp:View>
-                        </asp:MultiView></td>
-                </tr>
+                        </asp:MultiView>
+                
                 <tr>
                     <td style="width: 98%; height: 1px">
                     </td>
@@ -288,7 +194,8 @@
                 </tr>
                 <tr>
                     <td style="width: 98%; height: 2px">
-                        &nbsp;<asp:DataGrid ID="DataGrid2" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+                        &nbsp;
+                        <asp:DataGrid ID="DataGrid2" runat="server" AllowPaging="True" AutoGenerateColumns="False" CssClass="table"
                             CellPadding="4" ForeColor="#333333" GridLines="Horizontal" OnItemCommand="DataGrid1_ItemCommand"
                             OnPageIndexChanged="DataGrid2_PageIndexChanged" Width="100%" Style="text-align: justify;
                             font: menu; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
@@ -361,7 +268,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="width: 98%; height: 2px">
+                   <div class="container">
                         <asp:Label ID="lblTotal" runat="server" Font-Bold="True" Text="."></asp:Label>
                         &nbsp; &nbsp;
                         <asp:Label ID="lblPegasusTotal" runat="server" Font-Bold="True" Text="."></asp:Label>
@@ -370,25 +277,20 @@
                         &nbsp;&nbsp;
                         <asp:Label ID="lblCashoutFee" runat="server" Font-Bold="True" Text="."></asp:Label>
                         &nbsp;&nbsp;
-                        <asp:Label ID="lblAllTotal" runat="server" Font-Bold="True" Text="."></asp:Label></td>
+                        <asp:Label ID="lblAllTotal" runat="server" Font-Bold="True" Text="."></asp:Label>
+                       </div>
                 </tr>
             </table>
         </asp:View>
-    </asp:MultiView>&nbsp;
+    </asp:MultiView>
     <asp:MultiView ID="MultiView3" runat="server">
         <asp:View ID="View4" runat="server">
-            <table style="width: 100%">
-                <tr>
-                    <td class="InterfaceHeaderLabel2" style="width: 98%; height: 1px;">
-                        Rejected Batches</td>
-                </tr>
-                <tr>
-                    <td style="width: 98%; height: 1px">
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 98%; height: 1px">
-                        <asp:DataGrid ID="DataGrid3" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+            <div class="text-center">
+                <h6 class="card-title">Rejected Batches</h6>
+            </div>
+           
+                
+                        <asp:DataGrid ID="DataGrid3" runat="server" AllowPaging="True" AutoGenerateColumns="False" CssClass="table"
                             CellPadding="4" ForeColor="#333333" GridLines="Horizontal" OnItemCommand="DataGrid3_ItemCommand"
                             OnPageIndexChanged="DataGrid1_PageIndexChanged" Width="100%" Style="text-align: justify;
                             font: menu; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
@@ -435,24 +337,17 @@
                             </Columns>
                             <HeaderStyle BackColor="#FEFECE" Font-Bold="True" ForeColor="Black" Font-Italic="False"
                                 Font-Overline="False" Font-Strikeout="False" Font-Underline="False" />
-                        </asp:DataGrid></td>
-                </tr>
-            </table>
+                        </asp:DataGrid>
+              
         </asp:View>
         <asp:View ID="View5" runat="server">
-            <table style="width: 100%">
-                <tr>
-                    <td class="InterfaceHeaderLabel2" style="width: 98%; height: 1px">
-                        Rejected Batch Details</td>
-                </tr>
-                <tr>
-                    <td style="width: 98%; height: 1px;">
-                        <hr />
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 98%; height: 1px">
-                        <asp:DataGrid ID="DataGrid4" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+            <div class="text-center">
+                <h6 class="card-title">Rejected Batch Details</h6>
+            </div>
+                        
+              
+                
+                        <asp:DataGrid ID="DataGrid4" runat="server" AllowPaging="True" AutoGenerateColumns="False" class="table"
                             CellPadding="4" ForeColor="#333333" GridLines="Horizontal" OnItemCommand="DataGrid1_ItemCommand"
                             OnPageIndexChanged="DataGrid1_PageIndexChanged" Width="100%" Style="text-align: justify;
                             font: menu; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
@@ -492,33 +387,21 @@
                             </Columns>
                             <HeaderStyle BackColor="#FEFECE" Font-Bold="True" ForeColor="Black" Font-Italic="False"
                                 Font-Overline="False" Font-Strikeout="False" Font-Underline="False" />
-                        </asp:DataGrid></td>
-                </tr>
-                <tr>
-                    <td style="width: 98%; height: 1px">
-                        <asp:Label ID="lblShowTotal" runat="server" Font-Bold="True" Text="."></asp:Label></td>
-                </tr>
-            </table>
+                        </asp:DataGrid>
+                
+              
+                        <asp:Label ID="lblShowTotal" runat="server" Font-Bold="True" Text="."></asp:Label>
+              
         </asp:View>
     </asp:MultiView>
     <asp:MultiView ID="MultiView4" runat="server">
         <asp:View ID="View6" runat="server">
-            <table style="width: 100%">
-                <tr>
-                    <td style="width: 98%; height: 1px;">
-                        <hr />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="InterfaceHeaderLabel2" style="width: 98%; height: 1px">
-                        Batch Audit trail</td>
-                </tr>
-                <tr>
-                    <td style="width: 98%; height: 1px">
-                    </td>
-                </tr>
-            </table>
-            <asp:DataGrid ID="DataGrid5" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+            <div class="text-center">
+                <h6 class="card-title">Batch Audit trail</h6>
+            </div>
+                      
+             
+            <asp:DataGrid ID="DataGrid5" runat="server" AllowPaging="True" AutoGenerateColumns="False" CssClass="table"
                 CellPadding="4" ForeColor="#333333" GridLines="Horizontal" OnItemCommand="DataGrid1_ItemCommand"
                 OnPageIndexChanged="DataGrid1_PageIndexChanged" Width="100%" Style="text-align: justify;
                 font: menu; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;

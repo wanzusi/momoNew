@@ -1,49 +1,37 @@
 <%@ Page Language="C#" MasterPageFile="~/Main.master" AutoEventWireup="true" CodeFile="ViewVendors2.aspx.cs" Inherits="ViewVendors" Title="VENDORS" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table style="width: 100%">
-        <tr>
-            <td style="width: 98%; height: 2px">
+  
+  <section class="section">
                 <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
                     <asp:View ID="View1" runat="server">
-                        <table cellpadding="0" cellspacing="0" class="style12" style="width: 90%">
-                                <tr>
-            <td style="width: 98%; height: 5px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 70%; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;">
-                    <tr>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            Search String(Names)</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            Active</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="ddcolortabsline2" colspan="3" style="vertical-align: middle; text-align: center; height: 1px;">
-                            </td>
-                    </tr>
-                    <tr>
-                        <td style="vertical-align: middle; width: 20%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:TextBox ID="txtSearch" runat="server" style="font: menu" Width="90%"></asp:TextBox></td>
-                        <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            <asp:CheckBox ID="chkActive" runat="server" Font-Bold="True" Text="Tick" /></td>
-                        <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            <asp:Button ID="btnOK" runat="server" Font-Size="9pt" Height="23px" OnClick="btnOK_Click"
-                                Text="Search" Width="85px" style="font: menu" />&nbsp;</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px;">
-            <hr />
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 2px">
-                &nbsp;<asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+
+<div class="row">
+<div class="col-lg-12" style="display: flex;">
+
+    <div class="card" style="margin: 10px;">
+      <div class="card-body">
+        <h5 class="card-title">User Details</h5>
+  
+        <!-- Multi Columns Form -->
+        <div class="row g-3">
+          
+          <div class="col-md-6">
+            <label for="inputEmail5" class="form-label">Search String(Names)</label>
+            
+              <asp:TextBox ID="txtSearch" runat="server"  class="form-control"></asp:TextBox>
+          </div>
+          <div class="col-md-2">
+            <label for="inputPassword5" class="form-label">Active</label>
+            <asp:CheckBox ID="chkActive" runat="server" Font-Bold="True" Text="Tick" />
+          </div>
+          <div class="col-md-4">
+            <label for="inputAddress5" class="form-label"></label>
+            <asp:Button ID="btnOK" runat="server" class="btn btn-primary" OnClick="btnOK_Click"
+                                Text="Search" />
+
+          </div>
+
+            <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
                     CellPadding="4" ForeColor="#333333" GridLines="Horizontal" OnItemCommand="DataGrid1_ItemCommand"
                     OnPageIndexChanged="DataGrid1_PageIndexChanged" Width="100%" style="text-align: justify; font: menu; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;" Font-Bold="False" Font-Italic="False" Font-Names="Courier New" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" HorizontalAlign="Justify">
                     <FooterStyle BackColor="InactiveCaption" Font-Bold="False" ForeColor="White" />
@@ -61,7 +49,7 @@
                             <ItemStyle Font-Bold="True" Font-Italic="False" Font-Overline="False" Font-Strikeout="False"
                                 Font-Underline="False" />
                         </asp:BoundColumn>
-                        <asp:ButtonColumn CommandName="btnEdit" DataTextField="VendorCode" HeaderText="Edit"
+                        <asp:ButtonColumn CommandName="btnEdit"  DataTextField="VendorCode" HeaderText="Edit"
                             Text="VendorCode" Visible="false">
                             <HeaderStyle Width="15%" />
                             <ItemStyle Font-Bold="True" Font-Italic="False" Font-Overline="False" Font-Strikeout="False"
@@ -92,15 +80,17 @@
                         </asp:BoundColumn>
                     </Columns>
                     <HeaderStyle BackColor="#FEFECE" Font-Bold="True" ForeColor="Black" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" />
-                </asp:DataGrid></td>
-        </tr>
-                        </table>
-                        </asp:View>
-                </asp:MultiView></td>
-        </tr>
+                </asp:DataGrid>
 
-    </table>
-    <br />
-    <br />
+            </div>
+          </div>
+</div>
+    </div>
+    </div>
+                
+
+                        </asp:View>
+                </asp:MultiView>
+       </section>
 </asp:Content>
 

@@ -3,36 +3,26 @@
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <table style="width: 100%">
-        <tr>
-            <td style="width: 98%; height: 2px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                    <tr>
-                        <td class="InterfaceHeaderLabel">
-                            SWITCH AIRTEL ACCOUNTS</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 2px">
+
+     <section class="section">
+        <div class="text-center">
+            <h5 class="card-title">SWITCH AIRTEL ACCOUNTS</h5>
+        </div>
+    </section>
+
+    
+
                 <asp:MultiView ID="MultiView1" runat="server">
                     <asp:View ID="View1" runat="server">
-                        <table style="width: 100%">
-                            <tr>
-                                
-                                <td style="width: 66%; text-align: center; height: 25px;">
+                        
+                         <div class="text-center">
                                     <asp:Button ID="btnActivate" runat="server" Font-Size="9pt" Height="23px" OnClick="btnActivate_Click"
                                         Text="ACTIVATE" Width="150px" Style="font: menu" />
-                                 </td>
-                            </tr>
-                        </table>
-                        <hr />
+                     </div>
                         <asp:Label ID="lblTotal" runat="server" Text="." Font-Bold="True" ForeColor="#0000C0"></asp:Label></asp:View>
-                </asp:MultiView></td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 2px">
+                </asp:MultiView>
+       
+     
                 <asp:MultiView ID="MultiView2" runat="server">
                     <asp:View ID="View2" runat="server">
                         <asp:DataGrid ID="DataGrid1" runat="server" AutoGenerateColumns="False" CellPadding="4"
@@ -74,6 +64,11 @@
                                 Font-Overline="False" Font-Strikeout="False" Font-Underline="False" />
                         </asp:DataGrid></asp:View>
                     <asp:View ID="View3" runat="server">
+
+
+
+
+
                         <table align="center" style="width: 90%">
                             <tr>
                                 <td style="width: 100%; height: 2px; text-align: center">
@@ -183,8 +178,7 @@
                             </tr>
                         </table>
                     </asp:View>
-                </asp:MultiView></td>
-        </tr>
-    </table>
+                </asp:MultiView>
+
     <br />
 </asp:Content>

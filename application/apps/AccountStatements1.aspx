@@ -7,161 +7,97 @@
  Namespace="AjaxControlToolkit" 
  TagPrefix="ajaxToolkit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table style="width: 100%">
-        <tr>        <td style="width: 38%; height: 2px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                    <tr>
-                        <td class="InterfaceHeaderLabel">
-                            ACCOUNT STATEMENTS
-                            </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 38%; height: 1px">
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 38%; height: 1px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 80%; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;">
-                    <tr>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            AGENT</td>
-                        
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 25%; height: 18px;
-                            text-align: center">
-                            FROM DATE</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 30%; height: 18px;
-                            text-align: center">
-                            TO DATE</td>
-                    </tr>
-                    <tr>
-                        <td class="ddcolortabsline2" colspan="3" style="vertical-align: middle; text-align: center; height: 1px;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:DropDownList ID="cboVendor" runat="server" CssClass="InterfaceDropdownList"
-                                Width="95%" style="font: menu" OnDataBound="cboVendor_DataBound">
-                            </asp:DropDownList></td>
-                        
-                        
-                            
-                        <td style="vertical-align: middle; width: 25%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:TextBox ID="txtfromDate" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 30%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:TextBox ID="txttoDate" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3" style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            border-top-color: #617da6; height: 1px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            </td>
-                    </tr>
-                    
-                </table>
-            <asp:Button ID="btnOK" runat="server" Font-Size="9pt" Height="23px" OnClick="btnOK_Click"
-                                Text="Search" Width="85px" style="font: menu" /></td>
-        </tr>
-        <tr>
-            <td style="width: 38%; height: 5px">
-                <asp:MultiView ID="MultiView1" runat="server">
-                    <asp:View ID="View1" runat="server"><table style="width: 100%">
-                        <tr>
-                            <td style="width: 40%; height: 36px;">
-            <hr />
-                                <table style="width: 80%">
-                                    <tr>
-                                        <td align="center" style="width: 98%; height: 5px">
-                                            <asp:Button ID="btnDownload" runat="server" Font-Size="9pt" Height="23px" OnClick="btnDownload_Click"
-                                                Style="font: menu" Text="Download Statement" Width="150px" /></td>
-                                    </tr>
-                                    <tr>
-                                        <td align="center" style="width: 98%; height: 5px">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td align="center" style="width: 98%; height: 5px">
-                                            <table align="center" border="0" cellpadding="0" cellspacing="0" class="InterfaceInforTable "
-                                                style="width: 90%">
-                                                <tr style="color: #000000">
-                                                    <td class="InterfaceHeaderLabel" colspan="2" style="vertical-align: top; height: 19px;
-                                                        text-align: center">
-                                                        ACCOUNT STATMENT FOR
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 98%; height: 5px">
-                                            <table cellpadding="0" cellspacing="0" style="width: 90%">
-                                                <tr>
-                                                    <td style="vertical-align: middle; width: 50%; text-align: left">
-                                                        <table align="center" cellpadding="0" cellspacing="0" style="width: 90%">
-                                                            <tr>
-                                                                <td class="InterFaceTableLeftRowUp" style="width: 60px; height: 20px">
-                                                                    Name:</td>
-                                                                <td class="InterFaceTableMiddleRowUp" style="width: 2%; height: 20px">
-                                                                    &nbsp;</td>
-                                                                <td class="InterFaceTableRightRowUp" style="height: 20px">
-                                                                    <asp:Label ID="lblName" runat="server"></asp:Label></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="InterFaceTableLeftRow" style="width: 60px">
-                                                                    Contact:</td>
-                                                                <td class="InterFaceTableMiddleRow" style="width: 2%">
-                                                                </td>
-                                                                <td class="InterFaceTableRightRow">
-                                                                    <asp:Label ID="LblContact" runat="server"></asp:Label></td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                    <td style="vertical-align: middle; width: 50%; text-align: right">
-                                                        <table align="center" cellpadding="0" cellspacing="0" style="width: 90%">
-                                                            <tr>
-                                                                <td class="InterFaceTableLeftRowUp">
-                                                                    Account No</td>
-                                                                <td class="InterFaceTableMiddleRowUp">
-                                                                    &nbsp;</td>
-                                                                <td class="InterFaceTableRightRowUp">
-                                                                    <asp:Label ID="lblAccountNo" runat="server"></asp:Label></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="InterFaceTableLeftRow">
-                                                                    Opening Balance</td>
-                                                                <td class="InterFaceTableMiddleRow">
-                                                                </td>
-                                                                <td class="InterFaceTableRightRow">
-                                                                    <asp:Label ID="lblOpenBal" runat="server"></asp:Label></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="InterFaceTableLeftRow">
-                                                                    Closing Balance</td>
-                                                                <td class="InterFaceTableMiddleRow">
-                                                                </td>
-                                                                <td class="InterFaceTableRightRow">
-                                                                    <asp:Label ID="lblCloseBal" runat="server"></asp:Label></td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            &nbsp;</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 98%; height: 5px">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 98%; height: 5px">
-                                            <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+
+     <section class="section">
+        <div class="text-center">
+            <h5 class="card-title"> ACCOUNT STATEMENTS</h5>
+        </div>
+         </section>
+        <div class="row mb-2">
+<div class="col-lg-8" style="display: flex; justify-content:space-evenly">
+          <div class="col-md-2">
+            <label for="inputEmail5" class="form-label">Agent</label>
+            
+             <asp:DropDownList ID="cboVendor" runat="server" CssClass="form-select" OnDataBound="cboVendor_DataBound">
+                            </asp:DropDownList>
+          </div>
+ 
+          <div class="col-md-2">
+            <label for="UserCategory" class="form-label">From Date</label>
+            <asp:TextBox ID="txtfromDate" runat="server" class="form-control"></asp:TextBox>
+          </div>
+          <div class="col-md-2">
+            <label for="UserCategory" class="form-label">To Date</label>
+              <asp:TextBox ID="txttoDate" runat="server" class="form-control"></asp:TextBox>
+          </div>
+
+          <div class="col-md-2">
+            <label for="inputAddress5" class="form-label"></label>
+            <asp:Button ID="btnOK" runat="server" class="btn btn-primary w-100" style="margin-top:18px;" OnClick="btnOK_Click"
+                                Text="Search" />
+
+          </div>
+
+
+
+            </div>
+         
+
+    </div>
+
+     <asp:MultiView ID="MultiView1" runat="server">
+                    <asp:View ID="View1" runat="server">
+                        <div class="text-center">
+                            <asp:Button ID="btnDownload" runat="server"  OnClick="btnDownload_Click" CssClass="btn  btn-success w-25"  Text="Download Statement" />
+                        </div>
+                              <section class="section">
+   <div class="row justify-content-center">
+<div class="col-lg-6" >
+    <div class="card" style="margin: 10px;">
+      <div class="card-body">
+        <h5 class="card-title">Account Statement For</h5>
+ 
+        <div class="row g-3">
+          
+          <div class="col-md-4">
+            <label for="inputEmail5" class="form-label">Name</label>
+            <asp:Label ID="lblName" runat="server" CssClass="form-label"></asp:Label>
+          </div>
+          <div class="col-md-4">
+            <label for="inputPassword5" class="form-label">Contact</label>
+            <asp:Label ID="LblContact" CssClass="form-label" runat="server"></asp:Label>
+          </div>
+          <div class="col-md-4">
+            <label for="inputAddress5" class="form-label">Account No</label>
+            <asp:Label ID="lblAccountNo" CssClass="form-label" runat="server"></asp:Label>
+          </div>
+        
+   
+          <div class="col-md-4">
+            <label for="email" class="form-label">Opening Balance</label>
+         <asp:Label ID="lblOpenBal" CssClass="form-label" runat="server"></asp:Label>
+          </div>
+
+          <div class="col-md-4">
+            <label for="email" class="form-label">Closing Balance</label>
+           <asp:Label ID="lblCloseBal" CssClass="form-label" runat="server"></asp:Label>
+          </div>
+
+        
+
+
+        </div>
+  
+     
+    </div>
+  </div>
+  </div>
+</div>
+
+ </section>
+                     <section class="section">
+
+                          <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
                                                 CellPadding="4" Font-Bold="False" Font-Italic="False" Font-Names="Courier New"
                                                 Font-Overline="False" Font-Strikeout="False" Font-Underline="False" ForeColor="#333333"
                                                 GridLines="Horizontal" HorizontalAlign="Justify" OnItemCommand="DataGrid1_ItemCommand"
@@ -216,80 +152,38 @@
                                                 </Columns>
                                                 <HeaderStyle BackColor="#FEFECE" Font-Bold="True" Font-Italic="False" Font-Overline="False"
                                                     Font-Strikeout="False" Font-Underline="False" ForeColor="Black" />
-                                            </asp:DataGrid></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 98%; height: 5px">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width: 98%">
-                                            <CR:CrystalReportViewer ID="Crystalreportviewer2" runat="server" AutoDataBind="true"
+                                            </asp:DataGrid>
+
+                               <CR:CrystalReportViewer ID="Crystalreportviewer2" runat="server" AutoDataBind="true"
                                                 BackColor="dimgray" Visible="False" />
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-            <td style="width: 40%; height: 2px">
-                </td>
-                        </tr>
-                        <tr>
-            <td style="width: 40%; height: 2px">
-                <asp:Label ID="lblTotal" runat="server" Font-Bold="True" ForeColor="#0000C0" Text="."></asp:Label></td>
-                        </tr>
-                    </table>
+                         <br />
+                         
+                     </section>
+                        <asp:Label ID="lblTotal" runat="server" Font-Bold="True" ForeColor="#0000C0" Text="."></asp:Label>
                     </asp:View>
-                    <asp:View ID="View2" runat="server"><table style="width: 100%">
-                        <tr>
-                            <td align="center" style="width: 98%; height: 5px">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="center" style="width: 98%; height: 5px">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" class="InterfaceInforTable "
-                                                style="width: 90%">
-                                    <tr style="color: #000000">
-                                        <td class="InterfaceHeaderLabel" colspan="2" style="vertical-align: top; height: 19px;
-                                                        text-align: center">
-                                            BATCH DETAILS</td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 98%; height: 5px">
-                                <table align="center" style="border-right: #617da6 1px solid; border-top: #617da6 1px solid;
-                                    border-left: #617da6 1px solid; width: 50%; border-bottom: #617da6 1px solid">
-                                    <tr>
-                                        <td style="border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
-                                            width: 100px; border-bottom: #617da6 1px solid">
-                                            <asp:RadioButton ID="rdPdf" runat="server" Font-Bold="True" GroupName="FileFormat"
-                                                Text="PDF" /></td>
-                                        <td style="border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
-                                            width: 100px; border-bottom: #617da6 1px solid">
-                                            <asp:RadioButton ID="rdExcel" runat="server" Font-Bold="True" GroupName="FileFormat"
-                                                Text="EXCEL" /></td>
-                                        <td style="border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
-                                            width: 100px; border-bottom: #617da6 1px solid">
-                                            <asp:Button ID="btnConvert" runat="server" Font-Size="9pt" Height="23px" OnClick="btnConvert_Click"
-                                                Style="font: menu" Text="Convert" Width="85px" /></td>
-                                    </tr>
-                                </table>
-                                &nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td style="width: 98%; height: 5px"><asp:Button ID="btnReturn" runat="server" Font-Size="9pt" Height="23px" OnClick="btnReturn_Click"
-                                                Style="font: menu" Text="RETURN" Width="85px" /></td>
-                        </tr>
-                        <tr>
-                            <td style="width: 98%; height: 5px">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 98%; height: 5px">
-                                <asp:DataGrid ID="DataGrid2" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+          <asp:View ID="View2" runat="server">
+              <section class="section">
+                  <div class="text-center">
+                      <h6 class="card-title">BATCH DETAILS</h6>
+                  </div>
+      <div class="row" style="justify-content:center">
+    <div class="col-lg-8" style="display:flex;">
+        <div class="col-lg-2  text-center" style=" margin-top:auto; margin-bottom:auto">
+            <asp:RadioButton ID="rdPdf" runat="server"   Font-Bold="True" GroupName="FileFormat" Text="PDF" />
+        </div>
+        <div class="col-lg-2 text-center" style="margin-left:2vw; margin-top:auto; margin-bottom:auto">
+             <asp:RadioButton ID="rdExcel" runat="server"  Font-Bold="True" GroupName="FileFormat"  Text="EXCEL" />
+        </div>
+        <div class="col-lg-2 text-center" style="margin-left:2vw">
+             <asp:Button ID="btnConvert" runat="server"    CssClass="btn btn-primary w-100" OnClick="btnConvert_Click" Font-Bold="True"   Text="COVERT" />
+        </div>
+        </div>
+               </div>
+                  <div class="m-2 text-center"> 
+                      <asp:Button ID="btnReturn" runat="server" OnClick="btnReturn_Click" Text="RETURN" CssClass="btn btn-primary" />
+                  </div>
+                  <div class="mt-2">
+                       <asp:DataGrid ID="DataGrid2" runat="server" AllowPaging="True" AutoGenerateColumns="False"
                                     CellPadding="4" Font-Bold="False" Font-Italic="False" Font-Names="Courier New"
                                     Font-Overline="False" Font-Strikeout="False" Font-Underline="False" ForeColor="#333333"
                                     GridLines="Horizontal" HorizontalAlign="Justify" OnItemCommand="DataGrid1_ItemCommand"
@@ -359,31 +253,23 @@
                                     </Columns>
                                     <HeaderStyle BackColor="#FEFECE" Font-Bold="True" Font-Italic="False" Font-Overline="False"
                                         Font-Strikeout="False" Font-Underline="False" ForeColor="Black" />
-                                </asp:DataGrid></td>
-                        </tr>
-                        <tr>
-                            <td style="width: 98%; height: 5px">
-                                <asp:Label ID="lblBatchCode" runat="server" Text="0" Visible="False"></asp:Label>
+                                </asp:DataGrid>
+                  </div>
+                  <div class="container">
+                         <asp:Label ID="lblBatchCode" runat="server" Text="0" Visible="False"></asp:Label>
                                 <asp:Label ID="lblType" runat="server" Visible="False"></asp:Label>
-                                <asp:Label ID="lblRunningBal" runat="server" Text="0" Visible="False"></asp:Label></td>
-                        </tr>
-                        <tr>
-                            <td style="width: 98%">
-                                <CR:CrystalReportViewer ID="CrystalReportViewer3" runat="server" AutoDataBind="true"
+                                <asp:Label ID="lblRunningBal" runat="server" Text="0" Visible="False"></asp:Label>
+
+                      <CR:CrystalReportViewer ID="CrystalReportViewer3" runat="server" AutoDataBind="true"
                                                 BackColor="dimgray" Visible="False" />
-                            </td>
-                        </tr>
-                    </table>
-                    </asp:View>
-                </asp:MultiView></td>
-        </tr>
-        <tr>
-            <td style="width: 38%; height: 36px;">
-                </td>
-                
-        </tr>
-    </table>
-    <br />
+                  </div>
+
+              </section>
+              </asp:View>
+
+
+         </asp:MultiView>
+
     <ajaxToolkit:ToolkitScriptManager id="ScriptManager1" runat="Server" EnableScriptGlobalization="true"
         EnableScriptLocalization="true">
     </ajaxToolkit:ToolkitScriptManager>

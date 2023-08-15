@@ -12,17 +12,54 @@
         EnableScriptLocalization="true" ID="ScriptManager1" />
     <asp:MultiView ID="MultiView1" runat="server">
         <asp:View ID="View1" runat="server">
+            <section>>
+                  <div class="text-center">
+            <h5 class="card-title">TRANSFER FUNDS</h5>
+        </div>
+            </section>
+            <section class="section">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"> Funds Transfer Account Details</h5>
+                                <div class="col-12">
+                                    <label class="form-label">Pegasus Account</label>
+                                    <asp:TextBox ID="txtPegpayAccount" runat="server" CssClass="form-control" Enabled="False"></asp:TextBox>
+                                    
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Pegasus Account Balance</label>
+                                    <asp:TextBox ID="txtPegPayBalance" runat="server" CssClass="form-control" Enabled="False"></asp:TextBox>
+                                    
+                                </div>
+                                        <div class="col-12">
+                                    <label class="form-label">Select Account</label>
+                                      <asp:DropDownList ID="cboCustomerAccount" runat="server" class="form-select" OnDataBound="cboCustomerAccount_OnDataBound">
+                                                        </asp:DropDownList>
+                                    
+                                </div>
+                                 <div class="col-12">
+                                    <label class="form-label">Amount To Transfer</label>
+                                    <asp:TextBox ID="txtAmount" runat="server" CssClass="form-control" ></asp:TextBox>
+                                    
+                                </div>
+                                <div class="col-12">
+                                    <asp:Button ID="btnSave" runat="server" CssClass="btn btn-primary w-75" Font-Bold="True" OnClick="btnSave_Click" Text="Process Tranfer"/>
+                                </div>
+                         
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
             <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
                 <tr>
                     <td style="padding-bottom: 10px; vertical-align: top; height: 50px; text-align: center">
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="InterfaceInforTable "
-                            style="width: 90%">
-                            <tr style="color: #000000">
-                                <td class="InterfaceHeaderLabel" colspan="2" style="vertical-align: top; height: 19px;
-                                    text-align: center">
-                                    TRANSFER FUNDS</td>
-                            </tr>
-                        </table>
+                   
                     </td>
                 </tr>
                 <tr>
@@ -44,7 +81,7 @@
                                                 <tr>
                                                     <td class="InterfaceHeaderLabel2" colspan="4" style="vertical-align: middle; height: 18px;
                                                         text-align: center">
-                                                        Fun TransFEr Account Details</td>
+                                                       </td>
                                                 </tr>
                                                 <tr>
                                                     <td class="ddcolortabsline2" colspan="4" style="vertical-align: middle; height: 1px;
@@ -68,9 +105,9 @@
                                                         <table align="center" style="width: 80%">
                                                             <tr>
                                                                 <td class="InterFaceTableLeftRowUp" style="width: 50%; text-align: center">
-                                        <asp:TextBox ID="txtPegpayAccount" runat="server" CssClass="DataEntryFormTableTextbox DataEntryFormTableTextboxWidth" Enabled="False"></asp:TextBox></td>
+                                        </td>
                                                                 <td class="InterFaceTableLeftRowUp" style="width: 50%; text-align: center">
-                                        <asp:TextBox ID="txtPegPayBalance" runat="server" CssClass="DataEntryFormTableTextbox DataEntryFormTableTextboxWidth" Enabled="False"></asp:TextBox></td>
+                                     </td>
                                                             </tr>
                                                         </table>
                                                     </td>
@@ -82,8 +119,7 @@
                                                 <tr>
                                                     <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
                                                         Select Account : &nbsp;&nbsp;
-                                                        <asp:DropDownList ID="cboCustomerAccount" runat="server" Width="35%" OnDataBound="cboCustomerAccount_OnDataBound">
-                                                        </asp:DropDownList></td>
+                                                      </td>
                                                 </tr>
                                                 <tr>
                                                     <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
@@ -92,7 +128,7 @@
                                                 <tr>
                                                     <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
                                                         Amount To Transfer: &nbsp;&nbsp;
-                                                        <asp:TextBox ID="txtAmount" runat="server"  CssClass="DataEntryFormTableTextbox DataEntryFormTableTextboxWidth" Width="40%" Font-Bold="True" ForeColor="Red" ></asp:TextBox></td>
+                                                      </td>
                                                 </tr>
                                                 <tr>
                                                     <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
@@ -104,11 +140,14 @@
                                     <tr style="color: #000000">
                                         <td class="InterFaceTableLeftRowUp InterfaceTableColor" colspan="4" style="padding-bottom: 25px;
                                             vertical-align: top; padding-top: 25px; height: 17px; text-align: center">
-                                            <asp:Button ID="btnSave" runat="server" CssClass="DataEntryFormTableButtons" Font-Bold="True" OnClick="btnSave_Click" Text="Process Tranfer" Width="140px" /></td>
+                                            </td>
                                     </tr>
                                 </table>
                             </asp:View>
-                            &nbsp;&nbsp;&nbsp;<asp:View ID="View3" runat="server"><table align="center" border="0" cellpadding="0" cellspacing="0" class="InterfaceInforTable2 "
+                            &nbsp;&nbsp;&nbsp;
+                            
+                            
+                            <asp:View ID="View3" runat="server"><table align="center" border="0" cellpadding="0" cellspacing="0" class="InterfaceInforTable2 "
                                     style="width: 90%">
                                 <tr style="color: #000000">
                                     <td class="InterfaceHeaderLabel2" colspan="4" style="vertical-align: top; height: 2px; text-align: center">

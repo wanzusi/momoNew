@@ -7,57 +7,36 @@
  Assembly="AjaxControlToolkit" 
  Namespace="AjaxControlToolkit" 
  TagPrefix="ajaxToolkit" %>
-    <table style="width: 100%">
-        <tr>
-            <td style="width: 98%; height: 2px">
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 5px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 80%; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;">
-                    <tr>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 25%; height: 18px;
-                            text-align: center">
-                            FROM DAte</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 25%; height: 18px;
-                            text-align: center">
-                            To date</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 25%; height: 18px;
-                            text-align: center">
-                            CONFIRMED</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 25%; height: 18px;
-                            text-align: center">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="ddcolortabsline2" colspan="4" style="vertical-align: middle; text-align: center; height: 1px;">
-                            </td>
-                    </tr>
-                    <tr>
-                        <td style="vertical-align: middle; width: 25%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:TextBox ID="txtfromDate" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 25%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:TextBox ID="txttoDate" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                        <td style="vertical-align: middle; width: 25%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            <asp:CheckBox ID="chkActive" runat="server" Font-Bold="True" Text="Tick" /></td>
-                        <td style="vertical-align: middle; width: 25%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            <asp:Button ID="btnOK" runat="server" Font-Size="9pt" Height="23px" OnClick="btnOK_Click"
-                                Text="Search" Width="85px" style="font: menu" />&nbsp;</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px;">
-            <hr />
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 2px">
-                &nbsp;<asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+    <section class="section">
+            <div class="col-8" style="margin-right:auto; margin-left:auto; justify-content:space-evenly">
+            <div class="row">
+  
+                <div class="col-2">
+                    <p style="text-align:center">From Date</p>
+                  <asp:TextBox ID="txtfromDate" runat="server" class="form-control" Style="font: menu"></asp:TextBox>
+
+                </div>
+                <div class="col-2">
+                    <p style="text-align:center" >To Date</p>
+                     <asp:TextBox ID="txttoDate" runat="server" class="form-control" Style="font: menu"></asp:TextBox>
+
+                </div>
+                <div class="col-2">
+                    <p style="text-align:center">Confirmed</p>
+                   <asp:CheckBox ID="chkActive" CssClass="form-check" runat="server" Font-Bold="True" Text="Tick" />
+
+                </div>
+
+               <div class="col-2">
+                   <label></label>
+                <asp:Button ID="btnOK" runat="server"   Text="Search" class="btn btn-primary" onClick="btnOK_Click" Style="width:12vw" />
+                 </div>
+
+            </div>
+
+        </div>
+        
+          <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
                     CellPadding="4" ForeColor="#333333" GridLines="Horizontal" OnItemCommand="DataGrid1_ItemCommand"
                     OnPageIndexChanged="DataGrid1_PageIndexChanged" Width="100%" style="text-align: justify; font: menu; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;" Font-Bold="False" Font-Italic="False" Font-Names="Courier New" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" HorizontalAlign="Justify">
                     <FooterStyle BackColor="InactiveCaption" Font-Bold="False" ForeColor="White" />
@@ -110,9 +89,10 @@
                         </asp:BoundColumn>
                     </Columns>
                     <HeaderStyle BackColor="#FEFECE" Font-Bold="True" ForeColor="Black" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" />
-                </asp:DataGrid></td>
-        </tr>
-    </table>
+                </asp:DataGrid>
+
+
+    </section>
     <ajaxToolkit:ToolkitScriptManager id="ScriptManager1" runat="Server" EnableScriptGlobalization="true"
         EnableScriptLocalization="true">
     </ajaxToolkit:ToolkitScriptManager>

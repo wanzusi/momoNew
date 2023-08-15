@@ -12,31 +12,12 @@
             <td style="width: 100%; text-align: center;">
     <asp:MultiView ID="MultiView1" runat="server">
         <asp:View ID="View1" runat="server">
-    <table style="width: 100%">
-        <tr>
-            <td style="width: 98%; height: 1px;">
-            <hr />
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 2px; text-align: center;">
-                <div style="text-align: center">
-    <table cellpadding="0" cellspacing="0" class="style12" style="width: 90%">
-        <tr>
-            <td style="vertical-align: middle; height: 41px; text-align: center">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                    <tr>
-                        <td class="InterfaceHeaderLabel">
-                            SYSTEM PARAMETERS</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-                    <table style="width: 95%" align="center">
-                        <tr>
-                            <td style="width: 100%">
-                                <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+            <section class="section">
+                <div class="text-center">
+                    <h5 class="card-title">SYSTEM PARAMETERS</h5>
+                </div>
+            </section>
+             <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
                     CellPadding="4" ForeColor="#333333" GridLines="Horizontal" OnItemCommand="DataGrid1_ItemCommand"
                     OnPageIndexChanged="DataGrid1_PageIndexChanged" Width="100%" style="text-align: justify; font: menu; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;" Font-Bold="False" Font-Italic="False" Font-Names="Courier New" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" HorizontalAlign="Justify">
                     <FooterStyle BackColor="InactiveCaption" Font-Bold="False" ForeColor="White" />
@@ -80,13 +61,8 @@
                         </asp:BoundColumn>
                     </Columns>
                     <HeaderStyle BackColor="#FEFECE" Font-Bold="True" ForeColor="Black" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" />
-                </asp:DataGrid></td>
-                        </tr>
-                    </table>
-                </div>
-                &nbsp;</td>
-        </tr>
-    </table>
+                </asp:DataGrid>
+
         </asp:View>
         <asp:View ID="View2" runat="server">
             <table align="center" cellpadding="0" cellspacing="0" class="style12" style="border-right: #617da6 1px solid;

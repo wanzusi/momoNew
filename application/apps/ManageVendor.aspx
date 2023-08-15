@@ -8,15 +8,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
    <asp:MultiView ID="MultiView1" runat="server">
         <asp:View ID="View1" runat="server">
-            <div id="page-wrapper">
-
-                <div class="container-fluid">
-                    <table style="width: 100%">
-                            <tr>
-                                <td style="width: 98%; height: 2px">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                                         <tr>
-                                           <td style="vertical-align: middle; width: 98%; height: 2px; text-align: center;">
+         
+              <div class="text-center"> 
                                               <% 
                                                     string IsError = Session["IsError"] as string;
                                                     if (IsError == null)
@@ -37,162 +30,128 @@
                                                 <strong>
                                                 <asp:Label ID="lblmsg" runat="server"></asp:Label></strong>
                                                 <%Response.Write("</div>"); %>
-                                                <asp:Label ID="lblCount" runat="server" Font-Bold="True" ForeColor="#0000C0" Text="."></asp:Label></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                      </table>
-                   
-                       <table style="width: 100%">
-                            <tr>
-                                <td style="width: 98%; height: 2px">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                                        <tr>
-                                            <td class="InterfaceHeaderLabel">
-                                                CREATE NEW VENDOR</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
+                                                <asp:Label ID="lblCount" runat="server" Font-Bold="True" ForeColor="#0000C0" Text="."></asp:Label>
+                  </div>
+               
+         <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+              <div class="card mb-3">
 
-                        <!-- /.row -->
-                      <table style="width: 100%">
-                          <tr>
-                              <td style="vertical-align: middle; width: 10%; height: 23px; text-align: center;
-                            border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px;
-                            border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px;
-                            border-right-color: #617da6;">
-                                    <label>Vendor Name</label>
-                                    <asp:TextBox ID="ddVendor" runat="server" Style="font: menu" Width="90%" placeholder="Enter text" />
-                                </td>
-                                 <td style="vertical-align: middle; width: 10%; height: 23px; text-align: center;
-                            border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px;
-                            border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px;
-                            border-right-color: #617da6;">
-                                    <label>Vendor Code</label>
-                                    <asp:TextBox ID="vendorCode" runat="server" Style="font: menu" Width="90%" placeholder="Enter text" />
-                                </td>
-                                 <td style="vertical-align: middle; width: 10%; height: 23px; text-align: center;
-                            border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px;
-                            border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px;
-                            border-right-color: #617da6;">
-                                    <label>Bank</label>
-                                    <asp:DropDownList ID="ddTelecom" runat="server" Style="font: menu" Width="90%">
+                <div class="card-body">
+                  <div class="text-center"> 
+                      <h5 class="card-title">CREATE VENDOR</h5>
+                  </div>
+                  <div class="row g-3 needs-validation" novalidate runat="server" id="form4">
+
+                    <div class="col-12">
+                      <label for="otp" class="form-label">Vendor Name</label>
+                 <asp:TextBox ID="ddVendor" runat="server" class="form-control"  placeholder="Enter text" />
+               
+                    <div class="col-12">
+                   <label for="otp" class="form-label">Vendor Code</label>
+                           <asp:TextBox ID="vendorCode" runat="server"  class="form-control" placeholder="Enter text" />
+                      </div>
+                        
+                    </div>
+
+             <div class="col-12">
+                   <label for="otp" class="form-label">Bank</label>
+                    <asp:DropDownList ID="ddTelecom" runat="server" class="form-select">
                                         <asp:ListItem>True</asp:ListItem>
                                         <asp:ListItem>False</asp:ListItem>
                                     </asp:DropDownList>
-                                </td>
-                                 <td style="vertical-align: middle; width: 10%; height: 23px; text-align: center;
-                            border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px;
-                            border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px;
-                            border-right-color: #617da6;">
-                                    <label>Transaction Type</label>
-                                    <asp:DropDownList ID="ddTranType" runat="server" Style="font: menu" Width="90%">
+
+             </div>
+                    <div class="col-12">
+                   <label for="otp" class="form-label">Transaction Type</label>
+                      <asp:DropDownList ID="ddTranType" runat="server" class="form-select">
                                         <asp:ListItem>True</asp:ListItem>
                                         <asp:ListItem>False</asp:ListItem>
                                     </asp:DropDownList>
-                                </td>
-                                 <td style="vertical-align: middle; width: 10%; height: 23px; text-align: center;
-                            border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px;
-                            border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px;
-                            border-right-color: #617da6;">
-                                    <label>OVA</label>
-                                    <asp:DropDownList ID="ddOvaChoice" runat="server" Style="font: menu" Width="90%" OnSelectedIndexChanged="ddTranCtegory_SelectedIndexChanged" AutoPostBack="true">
+                      </div>
+
+             </div>
+                      <div class="col-12">
+                   <label for="otp" class="form-label">OVA</label>
+                      <asp:DropDownList ID="ddOvaChoice" runat="server" class="form-select" OnSelectedIndexChanged="ddTranCtegory_SelectedIndexChanged" AutoPostBack="true">
                                         <asp:ListItem>True</asp:ListItem>
                                         <asp:ListItem>False</asp:ListItem>
                                     </asp:DropDownList>
-                                </td>
-                               
-                                 <td style="vertical-align: middle; width: 10%; height: 23px; text-align: center;
-                            border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px;
-                            border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px;
-                            border-right-color: #617da6;">
-                                    <label id="SpIdlabel" runat="server">OVAName/SpId</label>
-                                    <asp:TextBox ID="txtSpId" runat="server" Style="font: menu" Width="90%" placeholder="Enter text" Visible="false"/>
-                               </td>
-                          </tr>   
-                         <%-- <br/>
-                          <br/>     --%>                    
-                           <tr>
-                                 <td style="vertical-align: middle; width: 10%; height: 23px; text-align: center;
-                            border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px;
-                            border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px;
-                            border-right-color: #617da6;">
-                                    <label id="SenderIdlabel" runat="server">SenderId</label>
-                                    <asp:TextBox ID="txtSenderId" runat="server" Style="font: menu" Width="90%" placeholder="Enter text" Visible="false"/>
-                                </td>
-                                 <td style="vertical-align: middle; width: 10%; height: 23px; text-align: center;
-                            border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px;
-                            border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px;
-                            border-right-color: #617da6;">
-                                    <label id="passwordlabel" runat="server">Password/Pin</label>
-                                    <asp:TextBox ID="txtPin" runat="server" Style="font: menu" Width="90%" placeholder="Enter text" Visible="false" />
-                                </td>
-                                  <td style="vertical-align: middle; width: 10%; height: 23px; text-align: center;
-                            border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px;
-                            border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px;
-                            border-right-color: #617da6;">
-                                    <label id="pullenabledlable" runat="server">EnabledForPulls</label>
-                                    <asp:DropDownList ID="enabledPulls" runat="server" Style="font: menu" Width="90%" Visible="false">
+                      </div>
+
+             </div>
+                    <div class="col-12">
+                   <label for="otp" id="SpIdlabel" runat="server" class="form-label">OVAName/SpId</label>
+                      <asp:TextBox ID="txtSpId" runat="server"  class="form-control" placeholder="Enter text" />
+                      </div>
+
+             </div>
+                  <div class="col-12">
+                   <label for="otp"  id="SenderIdlabel" runat="server" class="form-label">SenderId</label>
+                      <asp:TextBox ID="txtSenderId" runat="server"  class="form-control" placeholder="Enter text"  Visible="false" />
+                      </div>
+
+             </div>
+
+                        <div class="col-12">
+                   <label for="otp"  runat="server"   id="passwordlabel" class="form-label">Password/PIN</label>
+                      <asp:TextBox ID="txtPin" runat="server"  CssClass="form-control"  Visible="false" ></asp:TextBox>
+                        
+                    </div>
+              
+                        <div class="col-12">
+                   <label for="otp" class="form-label" runat="server" id="pullenabledlable">Enabled For Pulls</label>
+                      <asp:DropDownList ID="enabledPulls" runat="server" class="form-select" Visible="false">
                                         <asp:ListItem Value="TRUE">True</asp:ListItem>
                                         <asp:ListItem Value="FALSE">False</asp:ListItem>
                                     </asp:DropDownList>
-                                </td>
-                                  <td style="vertical-align: middle; width: 10%; height: 23px; text-align: center;
-                            border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px;
-                            border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px;
-                            border-right-color: #617da6;">
-                                    <label id="pushenabledlable" runat="server">Enabled For Pushes</label>
-                                    <asp:DropDownList ID="enabledPushes" runat="server" Style="font: menu" Width="90%" Visible="false">
+                        
+                    </div>
+              
+                        <div class="col-12">
+                   <label for="otp" class="form-label" runat="server" id="pushenabledlable">Enabled For Pushes</label>
+                      <asp:DropDownList ID="enabledPushes" runat="server" CssClass="form-select" Visible="false">
                                         <asp:ListItem Value="TRUE">True</asp:ListItem>
                                         <asp:ListItem Value = "FALSE">False</asp:ListItem>
                                     </asp:DropDownList>
-                                </td>
-                                 <td style="vertical-align: middle; width: 10%; height: 23px; text-align: center;
-                            border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px;
-                            border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px;
-                            border-right-color: #617da6;">
-                                  
-                                    <div class="button-wrapper">
-                                        <asp:Button ID="btnSubmit" Width="130px" Height="40px" runat="server" Text="SAVE" OnClick="btnSubmit_Click" />                                  
-                                </div>
-                                </td>
-                           </tr>  
-                       </table>
-                       <table>
-                           <tr>
-                                <td>
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <asp:RadioButton ID="rdPdf" runat="server" Font-Bold="True" GroupName="FileFormat"
-                                                    Text="PDF" Visible="false"/></td>
-                                            <td>
-                                                <asp:RadioButton ID="rdExcel" runat="server" Font-Bold="True" GroupName="FileFormat"
-                                                    Text="EXCEL" Visible="false"/></td>
-                                            <td>
-                                                <asp:Button ID="btnConvert" runat="server" Font-Size="9pt" Height="23px" OnClick="btnConvert_Click"
-                                                    Style="font: menu" Text="Convert" Width="85px" Visible = "false"/></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                           </tr>
-                       </table>
-                        <hr />
-                         <table style="width: 100%">
-                            <tr>
-                                <td style="width: 98%; height: 2px">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                                        <tr>
-                                            <td style="vertical-align: middle; width: 98%; height: 2px; text-align: center;">
-                                            <asp:Label ID="lblTotal" runat="server" Font-Bold="True" ForeColor="#0000C0" Text="."></asp:Label></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
+                        
+                    </div>
+              
+                        <div class="col-12">
+                   <label for="otp" class="form-label">Password/PIN</label>
+                      <asp:TextBox ID="TextBox3" runat="server"  CssClass="form-control"  Visible="false" ></asp:TextBox>
+                        
+                    </div>
+
+                      <div class="col-12">
+                             <<asp:Button ID="btnSubmit" class="btn btn-primary w-100" runat="server" Text="SAVE" OnClick="btnSubmit_Click" />  
+                      </div>
+                   
+                  </div>
+
+                </div>
+
+             </section>
+        <div>
+                    <div class="row" style="justify-content:center">
+    <div class="col-lg-8" style="display:flex;">
+        <div class="col-lg-2  text-center" style=" margin-top:auto; margin-bottom:auto">
+            <asp:RadioButton ID="rdPdf" runat="server"   Font-Bold="True" GroupName="FileFormat" Visible="false" Text="PDF" />
+        </div>
+        <div class="col-lg-2 text-center" style="margin-left:2vw; margin-top:auto; margin-bottom:auto">
+             <asp:RadioButton ID="rdExcel" runat="server"  Font-Bold="True" GroupName="FileFormat" Visible="false"  Text="EXCEL" />
+        </div>
+        <div class="col-lg-2 text-center" style="margin-left:2vw">
+             <asp:Button ID="btnConvert" runat="server"    CssClass="btn btn-primary w-100" OnClick="btnConvert_Click" Font-Bold="True"  Visible="false"  Text="COVERT" />
+        </div>
+       
+    </div>
+</div>
+               <asp:Label ID="lblTotal" runat="server" Font-Bold="True" ForeColor="#0000C0" Text="."></asp:Label>
+            </div>
+
                         <asp:MultiView runat="server" ID="Multiview2">
                             <asp:View runat="server" ID="resultView">                                
                                 <div class="row">
@@ -226,12 +185,7 @@
                         <%--/Scripts
                         <%--</form>--%>
                         <%--</div>--%>
-                        <!-- /.row -->
-
-                    </div>
-                    <!-- /.container-fluid -->
-            </div>
-            <!-- /#page-wrapper -->
+         
         </asp:View>
         <asp:View ID="View2" runat="server">
         </asp:View>

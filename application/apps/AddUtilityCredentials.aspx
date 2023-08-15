@@ -16,134 +16,83 @@ UICulture="auto" %>
 
     <ajaxToolkit:ToolkitScriptManager runat="Server" EnableScriptGlobalization="true"
         EnableScriptLocalization="true" ID="ScriptManager1" />
-            <table cellpadding="0" cellspacing="0" class="style12">
-        <tr>
-            <td style="width: 100%">
-                                                                </td>
-        </tr>
-    </table>
-    <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
+       <div class="container">
+   
+ <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
         <asp:View ID="View1" runat="server">
-
+      <section class="section">
     
-    
-    <table cellpadding="0" cellspacing="0" class="style12" style="width: 90%">
-        <tr>
-            <td style="text-align: center; vertical-align: middle; height: 41px;">
-                            <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                                <tr>
-                                    <td class="InterfaceHeaderLabel">
-                                        Add utility credentials</td>
-                                </tr>
-                            </table>
-            </td>
-        </tr>
-        </table>
-                <table style="width: 90%" align="center">
-                    <tr>
-                        <td style="width: 100%; text-align: center; height: 2px;"><table cellpadding="0" cellspacing="0" class="style12" align="center" width="92%">
-                            <tr>
-                                <td style="vertical-align: top; height: 5px; text-align: left;" colspan="4">
-                                    <table style="width: 100%">
-                                        <tr>
-                                            <td class="InterFaceTableLeftRowUp" style="width:25%">
-                                                Select Vendor:</td>
-                                            <td style="width:25%">
-                                                <asp:DropDownList ID="ddlVendor" runat="server" CssClass="InterfaceDropdownList" Width="100%" OnSelectedIndexChanged="ddlVendor_SelectedIndexChanged" OnDataBound="ddlVendor_DataBound">
-                                                </asp:DropDownList></td>
-                                            <td class="InterFaceTableLeftRowUp" style="width:25%">
-                                                Select Utility:</td>
-                                            <td style="width:25%">
-                                                <asp:DropDownList ID="ddlUtility" runat="server" CssClass="InterfaceDropdownList" Width="100%" OnSelectedIndexChanged="ddlUtility_SelectedIndexChanged" OnDataBound="ddlUtility_DataBound">
-                                                </asp:DropDownList></td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="4" style="text-align: center">
-                                                <asp:Button ID="btnGetCredentials" runat="server" OnClick="btnGetCredentials_Click"
-                                                    Text="GetCredentials" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="InterFaceTableLeftRowUp" style="width:25%">
-                                                Utility Username:</td>
-                                            <td style="width: 100px">
-                                                <asp:TextBox ID="txtUsername" runat="server" Style="font: menu" Width="98%"></asp:TextBox></td>
-                                            <td class="InterFaceTableLeftRowUp" style="width:25%">
-                                                Utility Password:</td>
-                                            <td style="width: 100px">
-                                                <asp:TextBox ID="txtPassword" runat="server" Style="font: menu" Width="98%"></asp:TextBox></td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="4">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="InterFaceTableLeftRowUp" style="width:25%">
-                                                BankCode:</td>
-                                            <td style="width: 100px">
-                                                <asp:TextBox ID="txtBankCode" runat="server" Style="font: menu" Width="98%"></asp:TextBox></td>
-                                            <td class="InterFaceTableLeftRowUp" style="width:25%">
-                                                </td>
-                                            <td style="width: 100px">
-                                                </td>
-                                        </tr>
-                                    </table>
+   <div class="row">
+<div class="col-lg-8">
 
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" style="vertical-align: top; width: 100%; height: 2px; text-align: center">
-                                    <asp:CheckBox ID="chkPrepayment" runat="server" Text="Tick if Utility Has Certificate:" Font-Bold="True" AutoPostBack="True" OnCheckedChanged="chkPrepayment_CheckedChanged" /></td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" style="vertical-align: top; height: 2px; text-align: center">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" style="vertical-align: top; height: 2px; text-align: center"><asp:MultiView ID="MultiView3" runat="server">
-                                    <asp:View ID="View3" runat="server">
-                                        <table cellpadding="0" cellspacing="0" class="style12" align="center" width="99%">
-                                            <tr>
-                                                <td colspan="3" style="vertical-align: top; height: 5px; text-align: center">
-                                                    <table align="center" cellpadding="0" cellspacing="0" style="width: 98%">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td class="InterfaceHeaderLabel2" style="height: 18px">
-                                                                    CERTIFICATE details</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="3" style="vertical-align: top; height: 5px; text-align: center">
-                                                </td>
-                                            </tr>
-                                            
-                                        </table>
-                                    <table style="width: 80%" align="center">
-                                        <tr>
-                                            <td class="InterFaceTableLeftRowUp" style="width: 35%">
-                                                Browse Utility Certificate</td>
-                                            <td class="InterFaceTableLeftRowUp" style="width: 65%">
-                                                <asp:FileUpload ID="FileUpload1" runat="server" /></td>
-                                        </tr>
-                                    </table>
-                                    </asp:View>
-                                </asp:MultiView></td>
-                            </tr>
-                        </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 100%; text-align: center; height: 30px;" class="InterFaceTableLeftRowUp">
-                                                                <asp:Button ID="btnOK" runat="server" Font-Size="9pt" Height="23px"
-                                                                    Text="SAVE" Width="150px" Font-Bold="True" OnClick="btnOK_Click" style="font: menu" /></td>
-                    </tr>
-                </table>
-        </asp:View>
-        &nbsp;
-    </asp:MultiView>
-                <asp:Label ID="lblCode" runat="server" Text="0" Visible="False"></asp:Label><br />
+    <div class="card" style="margin: 10px;">
+      <div class="card-body">
+        <h5 class="card-title">Add Utility Credentials</h5>
+  
+        <!-- Multi Columns Form -->
+        <div class="row g-3">
+          
+          <div class="col-md-6">
+            <label for="inputEmail5" class="form-label">Select Vendor</label>
+            <asp:DropDownList ID="ddlVendor"  CssClass="form-select" runat="server" OnSelectedIndexChanged="ddlVendor_SelectedIndexChanged" OnDataBound="ddlVendor_DataBound"> </asp:DropDownList>
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword5" class="form-label">Select Utility</label>
+            <asp:DropDownList ID="ddlUtility" runat="server" CssClass="form-select" OnSelectedIndexChanged="ddlUtility_SelectedIndexChanged" OnDataBound="ddlUtility_DataBound">
+                                                </asp:DropDownList>
+          </div>
+          <div class="col-md-6">
+            <label for="txtUsername" class="form-label">Utility Username</label>
+            <asp:TextBox ID="txtUsername" runat="server"  class="form-control" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputAddress2" class="form-label">Utility Password</label>
+            <asp:TextBox ID="txtPassword" runat="server" class="form-control"/>
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Bank Code</label>
+            <asp:TextBox ID="txtBankCode" runat="server" class="form-control"/>
+          </div>
+          <div class="col-md-6">
+          <div class="form-check">
+            <label for="inputCity" class="form-label">Tick if Utility Has Certificate</label>
+           
+               <asp:CheckBox ID="chkPrepayment"  class="form-check-input" type="checkbox" runat="server"  AutoPostBack="True" OnCheckedChanged="chkPrepayment_CheckedChanged" />
+         
+          </div>
+        </div>
+
+        <asp:MultiView ID="MultiView3" runat="server">
+               <asp:View ID="View3" runat="server">
+                   <h5>Certificate Details</h5>
+               <div class="col-md-6"> 
+           <label for="upload" class="form-label">Browse PegPay Certificates</label>
+               <asp:FileUpload ID="FileUpload1" runat="server" />
+    </div>
+               </asp:View>
+            </asp:MultiView>
+            
+            <div class="col-md-6">
+                <asp:Button ID="btnOK" runat="server" CssClass="btn btn-primary" Text="SAVE"  Font-Bold="True" OnClick="btnOK_Click" style="font: menu" />
+            </div>
+
+  
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+</div>
+ </section>
+</asp:View>
+
+ </asp:MultiView>
+
+  <asp:Label ID="lblCode" CssClass="form-label" runat="server" Text="0" Visible="False"></asp:Label><br/>
+
+
+</div>
 
 </asp:Content>
 

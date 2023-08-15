@@ -8,13 +8,8 @@
         <asp:View ID="View1" runat="server">
             <div id="page-wrapper">
 
-                <div class="container-fluid">
-                    <table style="width: 100%">
-                            <tr>
-                                <td style="width: 98%; height: 2px">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                                         <tr>
-                                           <td style="vertical-align: middle; width: 98%; height: 2px; text-align: center;">
+                <div class="text-center">
+               
                                               <% 
                                                     string IsError = Session["IsError"] as string;
                                                     if (IsError == null)
@@ -35,25 +30,16 @@
                                                 <strong>
                                                 <asp:Label ID="lblmsg" runat="server"></asp:Label></strong>
                                                 <%Response.Write("</div>"); %>
-                                                <asp:Label ID="lblCount" runat="server" Font-Bold="True" ForeColor="#0000C0" Text="."></asp:Label></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                      </table>
-                   
-                       <table style="width: 100%">
-                            <tr>
-                                <td style="width: 98%; height: 2px">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                                        <tr>
-                                            <td class="InterfaceHeaderLabel">
-                                                INTERNETWORK TRANSACTIONS</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
+                                                <asp:Label ID="lblCount" runat="server" Font-Bold="True" ForeColor="#0000C0" Text="."></asp:Label>
+                        
+                    </div>
+
+                   <section class="section">
+                <div class="text-center">
+                    <h5 class="card-title">INTERNETWORK TRANSACTIONS</h5>
+                </div>
+            </section>
+
 
                         <!-- /.row -->
                       <table style="width: 100%">

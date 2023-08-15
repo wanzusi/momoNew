@@ -8,18 +8,15 @@
  <%@ Import
   Namespace="System.Threading" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+     <section class="section">
+        <div class="text-center">
+            <h5 class="card-title">REGISTER / UPDATE CUSTOMER DETAILS</h5>
+        </div>
+    </section>
+
+
        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
-                            <tr>
-                                <td style="padding-bottom: 10px; vertical-align: top; text-align: center; width: 100%;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="InterfaceInforTable "
-                                        style="width: 90%">
-                                        <tr style="color: #000000">
-                                            <td class="InterfaceHeaderLabel" colspan="2" style="vertical-align: top; text-align: center">
-                                                REGISTER / UPDATE CUSTOMER DETAILS</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
+                         
                             <tr>
                                 <td class="InterFaceTableRightRow" style="padding-bottom: 10px; vertical-align: top;
                                     text-align: center; width: 100%;">

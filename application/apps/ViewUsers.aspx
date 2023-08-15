@@ -4,73 +4,59 @@
  Namespace="AjaxControlToolkit" 
  TagPrefix="ajaxToolkit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table style="width: 100%">
-        <tr>
-            <td style="width: 99%; height: 2px">
-                <ajaxToolkit:ToolkitScriptManager id="ScriptManager1" runat="Server" EnableScriptGlobalization="true"
+<section class="section">
+  <ajaxToolkit:ToolkitScriptManager id="ScriptManager1" runat="Server" EnableScriptGlobalization="true"
                     EnableScriptLocalization="true">
-                </ajaxToolkit:ToolkitScriptManager></td>
-        </tr>
-        <tr>
-            <td style="width: 99%; height: 5px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 95%; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;">
-                    <tr>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            Search String(Names)</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            User category</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            company</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            Role</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="ddcolortabsline2" colspan="5" style="vertical-align: middle; text-align: center; height: 1px;">
-                            </td>
-                    </tr>
-                    <tr>
-                        <td style="vertical-align: middle; width: 20%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:TextBox ID="txtSearch" runat="server" style="font: menu" Width="90%"></asp:TextBox></td>
-                        <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            <asp:DropDownList ID="cboAreas" runat="server" AutoPostBack="True" CssClass="InterfaceDropdownList"
+                </ajaxToolkit:ToolkitScriptManager>
+<div class="row mb-3">
+<div class="col-lg-12" style="display: flex; justify-content:space-evenly">
+
+    
+          
+          <div class="col-md-2">
+            <label for="inputEmail5" class="form-label">Search String(Names)</label>
+            
+              <asp:TextBox ID="txtSearch" runat="server"  class="form-control"></asp:TextBox>
+          </div>
+          <div class="col-md-2">
+            <label for="UserCategory" class="form-label">User Category</label>
+             <asp:DropDownList ID="cboAreas" runat="server" AutoPostBack="True" class="form-select"
                                 OnDataBound="cboAreas_DataBound" OnSelectedIndexChanged="cboAreas_SelectedIndexChanged"
-                                Width="95%" style="font: menu">
-                            </asp:DropDownList></td>
-                        <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:DropDownList ID="cboBranches" runat="server" CssClass="InterfaceDropdownList"
-                                OnDataBound="cboCostCenter_DataBound" Width="85%" style="font: menu">
-                            </asp:DropDownList></td>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:DropDownList ID="cboAccessLevel" runat="server" OnDataBound="cboAccessLevel_DataBound"
-                                Style="font: menu" Width="90%">
-                            </asp:DropDownList></td>
-                        <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            <asp:Button ID="btnOK" runat="server" Font-Size="9pt" Height="23px" OnClick="btnOK_Click"
-                                Text="Search" Width="85px" style="font: menu" />&nbsp;</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 99%; height: 1px;">
-            <hr />
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 99%; height: 2px">
-                &nbsp;<asp:MultiView ID="MultiView1" runat="server">
+                               style="font: menu">
+                            </asp:DropDownList>
+          </div>
+            <div class="col-md-2">
+            <label for="UserCategory" class="form-label">Company</label>
+             <asp:DropDownList ID="cboBranches" runat="server" AutoPostBack="True" class="form-select"
+                                OnDataBound="cboCostCenter_DataBound" 
+                               style="font: menu">
+                            </asp:DropDownList>
+          </div>
+            <div class="col-md-2">
+                 <label for="UserCategory" class="form-label">Role</label>
+                  <asp:DropDownList ID="cboAccessLevel" runat="server" OnDataBound="cboAccessLevel_DataBound" CssClass="form-select"
+                                Style="font: menu">
+                            </asp:DropDownList>
+            </div>
+          
+          <div class="col-md-2">
+            <label for="inputAddress5" class="form-label"></label>
+            <asp:Button ID="btnOK" runat="server" class="btn btn-primary w-100" style="margin-top:18px;" OnClick="btnOK_Click"
+                                Text="Search" />
+
+          </div>
+
+
+
+            </div>
+         
+
+    </div>
+
+<div class="container">
+        <asp:MultiView ID="MultiView1" runat="server">
                     <asp:View ID="View1" runat="server">
-                        <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+                        <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CssClass="table mt-4"
                     CellPadding="4" ForeColor="#333333" GridLines="Horizontal" OnItemCommand="DataGrid1_ItemCommand"
                     OnPageIndexChanged="DataGrid1_PageIndexChanged" Width="100%" style="text-align: justify; font: menu; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;" Font-Bold="False" Font-Italic="False" Font-Names="Courier New" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" HorizontalAlign="Justify" >
                     <FooterStyle BackColor="InactiveCaption" Font-Bold="False" ForeColor="White" />
@@ -134,65 +120,46 @@
                     </Columns>
                     <HeaderStyle BackColor="#FEFECE" Font-Bold="True" ForeColor="Black" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" />
                 </asp:DataGrid></asp:View>
+
+
+
+
                     <asp:View ID="View2" runat="server">
-                        <table align="center" cellpadding="0" cellspacing="0" class="style12" style="border-right: #617da6 1px solid;
-                            border-top: #617da6 1px solid; border-left: #617da6 1px solid; width: 80%; border-bottom: #617da6 1px solid">
-                            <tr>
-                                <td colspan="2" style="vertical-align: top; width: 100%; text-align: center">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="width: 100%">
-                                        <tr>
-                                            <td class="InterfaceHeaderLabel">
-                                                <asp:Label ID="lblHeader" runat="server" Text="."></asp:Label></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" style="vertical-align: top; width: 100%; height: 5px; text-align: center">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" style="vertical-align: top; text-align: center">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="width: 70%">
-                                        <tr>
-                                            <td colspan="3" style="height: 1px">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="InterFaceTableLeftRowUp">
-                                                Credit To Add</td>
-                                            <td class="InterFaceTableMiddleRowUp">
-                                                &nbsp;</td>
-                                            <td class="InterFaceTableRightRow">
-                                                <asp:TextBox ID="txtCredit" runat="server" CssClass="InterfaceTextboxLongReadOnly" Width="60%"></asp:TextBox></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="InterfaceItemSeparator" colspan="3" style="height: 1px">
-                                                &nbsp;</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" style="vertical-align: top; height: 23px; text-align: center">
-                                    <asp:Button ID="BtnSave" runat="server" Font-Bold="True" Font-Size="9pt" Height="23px"
-                                        OnClick="BtnSave_Click" Style="font: menu" Text="ADD CREDIT" Width="106px" />&nbsp;
-                                    <asp:Button ID="btnReturn" runat="server" Font-Bold="True" Font-Size="9pt" Height="23px"
-                                        OnClick="btnReturn_Click" Style="font: menu" Text="RETURN" Width="106px" /></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" style="vertical-align: top; text-align: center">
-                                </td>
-                            </tr>
-                        </table>
-                        <asp:Label ID="lblUserName" runat="server" Text="0" Visible="False"></asp:Label></asp:View>
-                </asp:MultiView></td>
-        </tr>
-    </table>
-    <ajaxToolkit:FilteredTextBoxExtender id="FilteredTextBoxExtender1" runat="server"
+                  <div class="container">
+                        <asp:Label ID="lblHeader" runat="server" CssClass="form-label" Text="."></asp:Label>
+                      <div class="col-md-6">
+                          <label for="inputAddress5" class="form-label">Credit To Add</label>
+                          <asp:TextBox ID="txtCredit" runat="server" class="form-control"></asp:TextBox>
+
+                      </div>
+                      <div class="col-md-6">
+                          <div class="row">
+                              <div class="col-md-3">
+                                  <asp:Button ID="BtnSave" runat="server" Font-Bold="True" CssClass="btn"
+                                        OnClick="BtnSave_Click" Style="font: menu" Text="ADD CREDIT" />
+                              </div>
+
+                              <div class="col-md-3">
+                                  <asp:Button ID="btnReturn" runat="server" Font-Bold="True" CssClass="btn"
+                                        OnClick="btnReturn_Click" Style="font: menu" Text="RETURN" />
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+                                       
+                     
+                 <asp:Label ID="lblUserName" runat="server" Text="0" Visible="False" CssClass="form-label"></asp:Label>
+
+                    </asp:View>
+                </asp:MultiView>
+    </div>
+
+       <ajaxToolkit:FilteredTextBoxExtender id="FilteredTextBoxExtender1" runat="server"
         TargetControlID="txtCredit" ValidChars="0123456789">
     </ajaxToolkit:FilteredTextBoxExtender>
-    <br />
-    <br />
+                 </section>
+
+
 </asp:Content>
 

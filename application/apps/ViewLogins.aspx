@@ -4,72 +4,47 @@
  Namespace="AjaxControlToolkit" 
  TagPrefix="ajaxToolkit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table style="width: 100%">
-        <tr>
-            <td style="width: 98%; height: 2px">
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 5px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 95%; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;">
-                    <tr>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            Search String(Names)</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            Role</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            FROM DATE</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            To Date</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="ddcolortabsline2" colspan="5" style="vertical-align: middle; text-align: center; height: 1px;">
-                            </td>
-                    </tr>
-                    <tr>
-                        <td style="vertical-align: middle; width: 20%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:TextBox ID="txtSearch" runat="server" style="font: menu" Width="90%"></asp:TextBox></td>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:DropDownList ID="cboAccessLevel" runat="server" OnDataBound="cboAccessLevel_DataBound"
-                                Style="font: menu" Width="90%">
-                            </asp:DropDownList></td>
-                        <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            <asp:TextBox ID="txtfromDate" runat="server" Style="font: menu" Width="90%"></asp:TextBox>&nbsp;</td>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:TextBox ID="txttoDate" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                        <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            <asp:Button ID="btnOK" runat="server" Font-Size="9pt" Height="23px" OnClick="btnOK_Click"
-                                Text="Search" Width="85px" style="font: menu" />&nbsp;</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px;">
-            <hr />
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 2px; text-align: center;">
-                <div style="text-align: center">
-                    <table style="width: 95%" align="center">
-                        <tr>
-                            <td style="width: 100%">
-                                <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
-                    CellPadding="4" ForeColor="#333333" GridLines="Horizontal" OnItemCommand="DataGrid1_ItemCommand"
+ <section class="section">
+                <div class="col-12 mb-4" style="margin-right:auto; margin-left:auto; justify-content:space-evenly">
+            <div class="row">
+                <div class="col-2">
+            
+                     <label for="inputEmail5" class="form-label">Search String(Names)</label>
+                 <asp:TextBox ID="txtSearch" runat="server" CssClass="form-control" style="font: menu"></asp:TextBox>
+
+                </div>
+                 <div class="col-2">
+                
+                      <label for="inputEmail5" class="form-label">Role</label>
+                   <asp:DropDownList ID="cboAccessLevel" runat="server" CssClass="form-select" OnDataBound="cboAccessLevel_DataBound"
+                                Style="font: menu" >
+                            </asp:DropDownList>
+
+                </div>
+                <div class="col-2">
+                  
+                     <label for="inputEmail5" class="form-label">From Date</label>
+                  <asp:TextBox ID="txtfromDate" runat="server" class="form-control" Style="font: menu"></asp:TextBox>
+
+                </div>
+                <div class="col-2">
+                    <p style="text-align:center" >T</p>
+                      <label for="inputEmail5" class="form-label">To Date</label>
+                     <asp:TextBox ID="txttoDate" runat="server" class="form-control" Style="font: menu"></asp:TextBox>
+
+                </div>
+               
+
+               <div class="col-2">
+                   <label></label>
+                <asp:Button ID="btnOK" runat="server"   Text="Search" class="btn btn-primary w-75" onClick="btnOK_Click"  style="margin-top:20px;" />
+                 </div>
+
+            </div>
+
+        </div>
+         <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+                    CellPadding="4" ForeColor="#333333" GridLines="Horizontal" OnItemCommand="DataGrid1_ItemCommand" class="table mt-4"
                     OnPageIndexChanged="DataGrid1_PageIndexChanged" Width="100%" style="text-align: justify; font: menu; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;" Font-Bold="False" Font-Italic="False" Font-Names="Courier New" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" HorizontalAlign="Justify">
                     <FooterStyle BackColor="InactiveCaption" Font-Bold="False" ForeColor="White" />
                     <EditItemStyle BackColor="#999999" />
@@ -98,21 +73,16 @@
                         </asp:BoundColumn>
                     </Columns>
                     <HeaderStyle BackColor="#FEFECE" Font-Bold="True" ForeColor="Black" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" />
-                </asp:DataGrid></td>
-                        </tr>
-                    </table>
-                </div>
-                &nbsp;</td>
-        </tr>
-    </table>
+                </asp:DataGrid>
+    </section>
     <ajaxToolkit:ToolkitScriptManager id="ScriptManager1" runat="Server" EnableScriptGlobalization="true"
         EnableScriptLocalization="true">
     </ajaxToolkit:ToolkitScriptManager>
     <br />
     <ajaxToolkit:CalendarExtender id="CalendarExtender1" runat="server" CssClass="MyCalendar"
-        Format="dd MMMM yyyy" PopupPosition="TopLeft" TargetControlID="txttoDate">
+        Format="dd MMMM yyyy" PopupPosition="BottomRight" TargetControlID="txttoDate">
     </ajaxToolkit:CalendarExtender><ajaxToolkit:CalendarExtender id="CalendarExtender2" runat="server" CssClass="MyCalendar"
-        Format="dd MMMM yyyy" PopupPosition="TopLeft" TargetControlID="txtfromDate">
+        Format="dd MMMM yyyy" PopupPosition="BottomRight" TargetControlID="txtfromDate">
     </ajaxToolkit:CalendarExtender>
     <br />
 </asp:Content>

@@ -314,4 +314,9 @@ public partial class PayGoodsAndServices : System.Web.UI.Page
             ShowMessage(ex.Message,true);
         }
     }
+
+    protected void cboCustomerAccount_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
 }

@@ -1,90 +1,41 @@
 <%@ Page Language="C#" MasterPageFile="~/ReportMaster.master" AutoEventWireup="true" CodeFile="ViewFundTransfers.aspx.cs" Inherits="ViewFundTransfers" Title="Untitled Page" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table style="width: 100%">
-        <tr>
-            <td style="width: 98%; height: 2px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                    <tr>
-                        <td class="InterfaceHeaderLabel">
-                            Account Transfers</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px">
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 5px">
-                <table align="center" cellpadding="0" cellspacing="0" style="border-right: #617da6 1px solid;
-                    border-top: #617da6 1px solid; border-left: #617da6 1px solid; width: 90%; border-bottom: #617da6 1px solid">
-                    <tr>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            From Account</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            FROM DATE</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            TO DATE</td>
-                    </tr>
-                    <tr>
-                        <td class="ddcolortabsline2" colspan="3" style="vertical-align: middle; height: 1px;
-                            text-align: center">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:DropDownList ID="cboCustomerAccount" runat="server" Width="90%">
-                            </asp:DropDownList></td>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            &nbsp;<asp:TextBox ID="txtfromDate" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:TextBox ID="txttoDate" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3" style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            border-top-color: #617da6; height: 1px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3" style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            border-top-color: #617da6; height: 1px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3" style="border-right: #617da6 1px solid; border-top: #617da6 1px solid;
-                            vertical-align: middle; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;
-                            height: 1px; text-align: center">
-                            <asp:Button ID="btnOK" runat="server" Font-Size="9pt" Height="23px" OnClick="btnOK_Click"
-                                Style="font: menu" Text="Search" Width="85px" /></td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px">
-                <hr />
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 2px">
-                <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+   <section class="section">
+         <div>
+            <h5 class="card-title">Account Transfers</h5>
+        </div>
+
+                   <div class="col-8" style="margin-right:auto; margin-left:auto; justify-content:space-evenly">
+            <div class="row">
+                <div class="col-2">
+                    <label for="inputEmail5" class="form-label">From Account</label>
+                <asp:DropDownList ID="cboCustomerAccount" runat="server" class="form-select">
+                            </asp:DropDownList>
+                    </div>
+           
+                <div class="col-2">
+                   
+                     <label for="inputEmail5" class="form-label">From Date</label>
+                  <asp:TextBox ID="txtfromDate" runat="server" class="form-control" Style="font: menu"></asp:TextBox>
+
+                </div>
+                <div class="col-2">
+                  
+                     <label for="inputEmail5" class="form-label">To Date</label>
+                     <asp:TextBox ID="txttoDate" runat="server" class="form-control" Style="font: menu"></asp:TextBox>
+
+                </div>
+               
+
+               <div class="col-2">
+                   <label for="inputEmail5" class="form-label" >.</label>
+                <asp:Button ID="btnOK" runat="server"   Text="Search" class="btn btn-primary w-100" onClick="btnOK_Click" />
+                 </div>
+
+            </div>
+
+        </div>
+        <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
                     CellPadding="4" Font-Bold="False" Font-Italic="False" Font-Names="Courier New"
                     Font-Overline="False" Font-Strikeout="False" Font-Underline="False" ForeColor="#333333"
                     GridLines="Horizontal" HorizontalAlign="Justify" Style="border-right: #617da6 1px solid;
@@ -122,12 +73,9 @@
                     </Columns>
                     <HeaderStyle BackColor="#FEFECE" Font-Bold="True" Font-Italic="False" Font-Overline="False"
                         Font-Strikeout="False" Font-Underline="False" ForeColor="Black" />
-                </asp:DataGrid></td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 2px">
-                <asp:Label ID="lblTotal" runat="server" Font-Bold="True" ForeColor="#0000C0" Text="."></asp:Label></td>
-        </tr>
-    </table>
+                </asp:DataGrid>
+
+         <asp:Label ID="lblTotal" runat="server" Font-Bold="True" ForeColor="#0000C0" Text="."></asp:Label>
+    </section>
 </asp:Content>
 

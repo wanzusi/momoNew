@@ -4,71 +4,52 @@
  Namespace="AjaxControlToolkit" 
  TagPrefix="ajaxToolkit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table style="width: 100%">
-        <tr>
-            <td style="width: 98%; height: 2px">
-                <ajaxToolkit:ToolkitScriptManager id="ScriptManager1" runat="Server" EnableScriptGlobalization="true"
+     <ajaxToolkit:ToolkitScriptManager id="ScriptManager1" runat="Server" EnableScriptGlobalization="true"
                     EnableScriptLocalization="true">
-                </ajaxToolkit:ToolkitScriptManager></td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 5px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 95%; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;">
-                    <tr>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            Search String(Names)</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            User category</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            company</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            Role</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="ddcolortabsline2" colspan="5" style="vertical-align: middle; text-align: center; height: 1px;">
-                            </td>
-                    </tr>
-                    <tr>
-                        <td style="vertical-align: middle; width: 20%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:TextBox ID="txtSearch" runat="server" style="font: menu" Width="90%"></asp:TextBox></td>
-                        <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            <asp:DropDownList ID="cboAreas" runat="server" AutoPostBack="True" CssClass="InterfaceDropdownList"
+                </ajaxToolkit:ToolkitScriptManager>
+
+     <div class="row mb-2 justify-content-center">
+<div class="col-lg-12" style="display: flex; justify-content:space-evenly">
+          <div class="col-md-2">
+            <label for="inputEmail5" class="form-label">Search String(Names)</label>
+            
+              <asp:TextBox ID="txtSearch" runat="server"  class="form-control"></asp:TextBox>
+          </div>
+          <div class="col-md-2">
+            <label for="UserCategory" class="form-label">User category</label>
+            <asp:DropDownList ID="cboAreas" runat="server" AutoPostBack="True" CssClass="form-select"
                                 OnDataBound="cboAreas_DataBound" OnSelectedIndexChanged="cboAreas_SelectedIndexChanged"
-                                Width="95%" style="font: menu">
-                            </asp:DropDownList></td>
-                        <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:DropDownList ID="cboBranches" runat="server" CssClass="InterfaceDropdownList"
-                                OnDataBound="cboCostCenter_DataBound" Width="85%" style="font: menu">
-                            </asp:DropDownList></td>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:DropDownList ID="cboAccessLevel" runat="server" OnDataBound="cboAccessLevel_DataBound"
-                                Style="font: menu" Width="90%">
-                            </asp:DropDownList></td>
-                        <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            <asp:Button ID="btnOK" runat="server" Font-Size="9pt" Height="23px" OnClick="btnOK_Click"
-                                Text="Search" Width="85px" style="font: menu" />&nbsp;</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px;">
-            <hr />
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 2px">
-                &nbsp;<asp:MultiView ID="MultiView1" runat="server">
+                                >
+                            </asp:DropDownList>
+          </div>
+      <div class="col-md-2">
+            <label for="UserCategory" class="form-label">Company</label>
+          <asp:DropDownList ID="cboBranches" runat="server" CssClass="form-select"
+                                OnDataBound="cboCostCenter_DataBound" >
+                            </asp:DropDownList>
+          </div>
+      <div class="col-md-2">
+            <label for="UserCategory" class="form-label">Role</label>
+            <asp:DropDownList ID="cboAccessLevel" runat="server" OnDataBound="cboAccessLevel_DataBound" CssClass="form-select">
+                            </asp:DropDownList>
+          </div>
+         
+          <div class="col-md-3">
+            <label for="inputAddress5" class="form-label"></label>
+            <asp:Button ID="btnOK" runat="server" class="btn btn-primary w-75" style="margin-top:22px;" OnClick="btnOK_Click"
+                                Text="Search" />
+
+          </div>
+
+
+
+            </div>
+         
+
+    </div>
+
+
+               <asp:MultiView ID="MultiView1" runat="server">
                     <asp:View ID="View1" runat="server">
                         <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
                     CellPadding="4" ForeColor="#333333" GridLines="Horizontal" OnItemCommand="DataGrid1_ItemCommand"
@@ -186,9 +167,8 @@
                             </tr>
                         </table>
                         <asp:Label ID="lblUserName" runat="server" Text="0" Visible="False"></asp:Label></asp:View>
-                </asp:MultiView></td>
-        </tr>
-    </table>
+                </asp:MultiView>
+       
     <ajaxToolkit:FilteredTextBoxExtender id="FilteredTextBoxExtender1" runat="server"
         TargetControlID="txtCredit" ValidChars="0123456789">
     </ajaxToolkit:FilteredTextBoxExtender>

@@ -17,10 +17,3 @@ E:\Pepay\MoMo\Test MomoPortal\application\InterfaceClass\InteLinkClass\InterLink
 E:\Pepay\MoMo\Test MomoPortal\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.csproj.CoreCompileInputs.cache
 E:\Pepay\MoMo\Test MomoPortal\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
 E:\Pepay\MoMo\Test MomoPortal\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb
-E:\Wanzu\momo\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll.config
-E:\Wanzu\momo\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.dll
-E:\Wanzu\momo\application\InterfaceClass\InteLinkClass\InterLinkClass\bin\Debug\InterLinkClass.pdb
-E:\Wanzu\momo\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.csproj.AssemblyReference.cache
-E:\Wanzu\momo\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.csproj.CoreCompileInputs.cache
-E:\Wanzu\momo\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.dll
-E:\Wanzu\momo\application\InterfaceClass\InteLinkClass\InterLinkClass\obj\Debug\InterLinkClass.pdb

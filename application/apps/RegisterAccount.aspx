@@ -1,256 +1,140 @@
 <%@ Page Language="C#" MasterPageFile="~/NewAccounts.master" AutoEventWireup="true" CodeFile="RegisterAccount.aspx.cs" Inherits="RegisterAccount" Title="REGISTER ACCOUNT" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
-        <tr>
-            <td style="padding-bottom: 10px; vertical-align: top; text-align: center; height: 50px;">
-                <table align="center" border="0" cellpadding="0" cellspacing="0" class="InterfaceInforTable "
-                    style="width: 90%">
-                    <tr style="color: #000000">
-                        <td class="InterfaceHeaderLabel" colspan="2" style="vertical-align: top; text-align: center; height: 19px;">
-                            EDIT/ADD&nbsp; ACCOUNT</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding-bottom: 10px; vertical-align: top; text-align: center">
-                &nbsp;<asp:MultiView ID="MultiView1" runat="server">
+
+    <section class="section">
+        <div class="text-center">
+            <h5 class="card-title">EDIT/ADD ACCOUNT</h5>
+        </div>
+    </section>
+
+    <section class="section">
+        <asp:MultiView ID="MultiView1" runat="server">
                             <asp:View ID="View1" runat="server">
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="InterfaceInforTable2 "
-                    style="width: 70%">
-                            <tr style="color: #000000">
-                                <td class="InterfaceHeaderLabel2" colspan="4" style="vertical-align: top;
-                                    text-align: center; height: 19px;">
-                                    Search For Company</td>
-                            </tr>
-                            <tr style="color: #000000">
-                                <td class="InterFaceTableLeftRowUp InterfaceTableColor" colspan="6" style="vertical-align: top;
-                                    height: 26px; text-align: center">
-                                </td>
-                            </tr>
-                            <tr style="color: #000000">
-                                <td class="InterFaceTableLeftRowUp InterfaceTableColor" colspan="6" style="vertical-align: top;
-                                    height: 26px; text-align: center">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="border-right: #617da6 1px solid;
-                                        border-top: #617da6 1px solid; border-left: #617da6 1px solid; width: 80%; border-bottom: #617da6 1px solid">
-                                        <tr>
-                                            <td class="InterfaceHeaderLabel2" colspan="2" style="vertical-align: middle; height: 18px;
-                                                text-align: center">
-                                                Company Name</td>
-                                            <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 25%; height: 18px;
-                                                text-align: center">
-                                                Company Code</td>
-                                            <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 25%; height: 18px;
-                                                text-align: center">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ddcolortabsline2" colspan="4" style="vertical-align: middle; height: 1px;
-                                                text-align: center">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2" style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                                border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                                border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                                border-right-color: #617da6">
-                                                &nbsp;<asp:TextBox ID="txtsearchName" runat="server"  CssClass="DataEntryFormTableTextbox DataEntryFormTableTextboxWidth"
-                                        Width="90%"></asp:TextBox></td>
-                                            <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                                border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                                width: 25%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                                border-right-color: #617da6">
-                                    <asp:TextBox ID="txtSearchCode" runat="server" CssClass="DataEntryFormTableTextbox DataEntryFormTableTextboxWidth"
-                                        Width="90%"></asp:TextBox></td>
-                                            <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                                border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                                width: 25%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                                border-right-color: #617da6">
-                                    <asp:Button ID="btnSearch" runat="server" CssClass="DataEntryFormTableButtons" Font-Bold="True" Text="Search" Width="140px" OnClick="btnSearch_Click" />&nbsp;</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr style="color: #000000">
-                                <td class="InterFaceTableLeftRowUp InterfaceTableColor" colspan="4" style="vertical-align: top;
-                                    text-align: left; height: 19px;">
-                                </td>
-                            </tr>
-                            <tr style="color: #000000">
-                                <td class="InterFaceTableLeftRowUp InterfaceTableColor" colspan="4" style="vertical-align: top;
-                                    text-align: center; height: 22px;">
-                                    &nbsp;<table align="center" cellpadding="0" cellspacing="0" style="border-right: #617da6 1px solid;
-                                        border-top: #617da6 1px solid; border-left: #617da6 1px solid; width: 60%; border-bottom: #617da6 1px solid">
-                                        <tr>
-                                            <td class="InterfaceHeaderLabel2" colspan="4" style="vertical-align: middle; height: 18px;
-                                                text-align: center">
-                                    Select Company</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ddcolortabsline2" colspan="4" style="vertical-align: middle; height: 1px;
-                                                text-align: center">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="4" style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                                border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                                border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                                border-right-color: #617da6">
-                            <asp:DropDownList ID="cboCompanyCode" runat="server" CssClass="SystemDropdownListOthers DataEntryFormTableTextboxWidth"
+                                <div class="text-center">Search For Company</div>
+                                
+    <div class="row mb-2 justify-content-center">
+<div class="col-lg-8" style="display: flex; justify-content:space-evenly">
+          <div class="col-md-2">
+            <label for="inputEmail5" class="form-label">Company Name</label>
+            
+              <asp:TextBox ID="txtsearchName" runat="server"  class="form-control"></asp:TextBox>
+          </div>
+          <div class="col-md-2">
+            <label for="UserCategory" class="form-label">Company Code</label>
+           <asp:TextBox ID="txtSearchCode" runat="server" CssClass="form-control" ></asp:TextBox>
+          </div>
+          <div class="col-md-2">
+            <label for="inputAddress5" class="form-label"></label>
+            <asp:Button ID="btnSearch" runat="server" class="btn btn-primary w-100" style="margin-top:18px;" OnClick="btnSearch_Click"
+                                Text="Search" />
+
+          </div>
+
+
+
+            </div>
+         
+        <div class="text-center">
+            <label class="form-label">Select Company</label>
+            <asp:DropDownList ID="cboCompanyCode" runat="server" CssClass="form-select"
                                 OnDataBound="cboCompanyCode_DataBound" Width="55%" AutoPostBack="True" OnSelectedIndexChanged="cboCompanyCode_SelectedIndexChanged">
                             </asp:DropDownList>
-                                                &nbsp;</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr style="color: #000000">
-                                <td class="InterFaceTableLeftRowUp InterfaceTableColor" colspan="4" style="padding-bottom: 25px;
-                            vertical-align: top; padding-top: 25px; text-align: center">
-                                    </td>
-                            </tr>
-                        </table>
+        </div>
+
+    </div>
+
                             </asp:View>
-                            &nbsp;
-                        </asp:MultiView>
+            </asp:MultiView>
+
+        
                                     <asp:MultiView ID="MultiView2" runat="server">
                                         <asp:View ID="View2" runat="server">
-                                            <table align="center" border="0" cellpadding="0" cellspacing="0" class="InterfaceInforTable2 "
-                    style="width: 70%">
-                                                <tr>
-                                                    <td class="InterFaceTableRightRow" colspan="4" style="vertical-align: top; height: 15px;
-                                    background-color: white; text-align: left">
-                                                        </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="InterfaceHeaderLabel2 InterfaceTableColor" colspan="4" style="vertical-align: top;
-                                                        height: 18px; text-align: center">
-                                                        Account Details</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="InterFaceTableLeftRowUp InterfaceTableColor" colspan="4" style="vertical-align: top;
-                                                        height: 24px; text-align: center">
-                                                        <table align="center" cellpadding="0" cellspacing="0" class="style12" width="92%">
-                                                            <tr>
-                                                                <td colspan="3" style="vertical-align: top; height: 4px; text-align: left">
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td style="vertical-align: top; width: 50%; height: 5px; text-align: left">
-                                                                    <table align="center" cellpadding="0" cellspacing="0" style="width: 98%">
-                                                                        <tr>
-                                                                            <td class="InterFaceTableLeftRowUp">
-                                                                                &nbsp;Company Name</td>
-                                                                            <td class="InterFaceTableMiddleRowUp" style="width: 2%">
-                                                                            </td>
-                                                                            <td class="InterFaceTableRightRow">
-                                                                                <asp:TextBox ID="txtName" runat="server" CssClass="DataEntryFormTableTextbox DataEntryFormTableTextboxWidth"
-                                                                                    Enabled="False"></asp:TextBox></td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="InterFaceTableLeftRowUp">
-                                                                                Company &nbsp;Code</td>
-                                                                            <td class="InterFaceTableMiddleRowUp" style="width: 2%">
-                                                                            </td>
-                                                                            <td class="InterFaceTableRightRow">
-                                                                                <asp:TextBox ID="txtCompanyCode" runat="server" CssClass="DataEntryFormTableTextbox DataEntryFormTableTextboxWidth"
-                                                                                    Enabled="False"></asp:TextBox></td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="InterFaceTableLeftRowUp">
-                                                                                Account Name</td>
-                                                                            <td class="InterFaceTableMiddleRowUp" style="width: 2%">
-                                                                            </td>
-                                                                            <td class="InterFaceTableRightRow">
-                                                                                <asp:TextBox ID="txtAccountName" runat="server" CssClass="DataEntryFormTableTextbox DataEntryFormTableTextboxWidth"></asp:TextBox></td>
-                                                                        </tr>
-                                                                    </table>
-                                                                </td>
-                                                                <td style="vertical-align: top; width: 2%; height: 10px; text-align: center">
-                                                                </td>
-                                                                <td style="vertical-align: top; width: 48%; height: 5px; text-align: left">
-                                                                    <table align="center" cellpadding="0" cellspacing="0" style="width: 98%">
-                                                                        <tr>
-                                                                            <td class="InterFaceTableLeftRowUp" style="height: 20px">
-                                                                                Account Number</td>
-                                                                            <td class="InterFaceTableMiddleRowUp" style="height: 20px">
-                                                                            </td>
-                                                                            <td class="InterFaceTableRightRow" style="height: 20px; width: 66%;">
-                                                                                <asp:TextBox ID="txtAccountNumber" runat="server" CssClass="DataEntryFormTableTextbox DataEntryFormTableTextboxWidth"></asp:TextBox></td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="InterFaceTableLeftRowUp" style="height: 20px">
-                                                                                Account
-                                                                                Type
-                                                                            </td>
-                                                                            <td class="InterFaceTableMiddleRowUp" style="height: 20px">
-                                                                            </td>
-                                                                            <td class="InterFaceTableRightRow" style="height: 20px; width: 66%;">
-                                                                                <asp:DropDownList ID="cboAccountType" runat="server" CssClass="DataEntryFormTableTextbox DataEntryFormTableTextboxWidth"
-                                                                                    OnDataBound="cboAccountType_DataBound" Width="90%" AutoPostBack="True" OnSelectedIndexChanged="cboAccountType_SelectedIndexChanged">
+                                               <div class="row justify-content-center">
+                                                <div class="col-lg-5 col-md-6">
+    <div class="card" style="margin: 10px;">
+      <div class="card-body">
+        <h5 class="card-title">Account Details</h5>
+ 
+        <div class="row g-3">
+          
+          <div class="col-12">
+            <label for="inputEmail5" class="form-label">Company Name</label>
+          <asp:TextBox ID="txtName" runat="server" CssClass="form-control" Enabled="False"></asp:TextBox>
+          </div>
+
+            <div class="col-12">
+            <label for="inputEmail5" class="form-label">Company Code</label>
+          <asp:TextBox ID="txtCompanyCode" runat="server" CssClass="form-control" Enabled="False"></asp:TextBox>
+          </div>
+            
+            <div class="col-12">
+                <label class="form-label">Account Name</label>
+                <asp:TextBox ID="txtAccountName" runat="server" CssClass="form-control"></asp:TextBox>
+            </div>
+            <div class="col-12">
+            <label for="inputEmail5" class="form-label">Account Number</label>
+          <asp:TextBox ID="txtAccountNumber" runat="server" CssClass="form-control" ></asp:TextBox>
+          </div>
+
+            <div class="col-12">
+            <label for="inputEmail5" class="form-label">Account Type</label>
+       <asp:DropDownList ID="cboAccountType" runat="server" CssClass="form-select "
+                                                                                    OnDataBound="cboAccountType_DataBound"  AutoPostBack="True" OnSelectedIndexChanged="cboAccountType_SelectedIndexChanged">
                                                                                 <asp:ListItem>--Select Account Type--</asp:ListItem>
                                                                                 <asp:ListItem Value="ESCROW">ESCROW Account</asp:ListItem>
                                                                                 <asp:ListItem Value="COMMISSION">Commission Account</asp:ListItem>
                                                                                 <asp:ListItem Value="AIRTIMESUSP">AirTime Suspense</asp:ListItem>
-                                                                            </asp:DropDownList></td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="InterFaceTableLeftRowUp" style="height: 20px">
-                                                                                Network</td>
-                                                                            <td class="InterFaceTableMiddleRowUp" style="height: 20px">
-                                                                            </td>
-                                                                            <td class="InterFaceTableRightRow" style="height: 20px; width: 66%;">
-                                                                                <asp:DropDownList ID="cboNetwork" runat="server" CssClass="DataEntryFormTableTextbox DataEntryFormTableTextboxWidth"
-                                                                                    OnDataBound="cboNetwork_DataBound" Width="90%">
-                                                                                </asp:DropDownList></td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td class="InterFaceTableLeftRowUp" style="height: 20px">
-                                                                                Active</td>
-                                                                            <td class="InterFaceTableMiddleRowUp" style="height: 20px">
-                                                                            </td>
-                                                                            <td class="InterFaceTableRightRow" style="height: 20px; width: 66%;">
-                                                                                <asp:CheckBox ID="chkActive" runat="server" /></td>
-                                                                        </tr>
-                                                                    </table>
-                                                                    &nbsp;</td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="InterFaceTableLeftRowUp InterfaceTableColor" colspan="4" style="vertical-align: top;
-                                    text-align: left; height: 20px;" rowspan="2">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                </tr>
-                                                <tr>
-                                                    <td class="InterFaceTableLeftRowUp InterfaceTableColor" colspan="4" style="vertical-align: top;
-                                                        height: 19px; text-align: center">
-                                                        <asp:Button ID="btnSave" runat="server" CssClass="DataEntryFormTableButtons" Font-Bold="True" OnClick="btnSave_Click" Text="SAVE ACCOUNT" Width="140px" />
-                                                        <asp:Button ID="btnCancel" runat="server" Font-Bold="True" Text="RETURN" Width="140px" OnClick="btnCancel_Click" /></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="InterFaceTableLeftRowUp InterfaceTableColor" colspan="4" style="vertical-align: top;
-                                    text-align: left; height: 19px;">
-                                                    </td>
-                                                </tr>
-                                            </table>
+                                                                            </asp:DropDownList>
+          </div>
+
+        
+
+             <div class="col-12">
+            <label for="inputEmail5" class="form-label">Network</label>
+   <asp:DropDownList ID="cboNetwork" runat="server" CssClass="form-select" OnDataBound="cboNetwork_DataBound" >
+                                                                                </asp:DropDownList>
+          </div>
+
+
+              <div class="col-md-6">
+          <div class="form-check" style="margin-top:20px">
+            <label for="inputCity" class="form-label">Is Active</label>
+               <asp:CheckBox ID="chkActive" runat="server" CssClass="form-check-input" />
+          
+         
+          </div>
+        </div>
+       
+
+            <div class="col-12  text-center">
+                <div class="col-md-6 text-center" >
+                    <asp:Button ID="btnSave" runat="server" CssClass="btn btn-primary w-75"   OnClick="btnSave_Click" Text="CREDIT ACCOUNT" />
+                </div>
+                <div class="col-md-6">
+                    <asp:Button ID="btnCancel" runat="server" Text="RETURN" class="btn btn-primary w-75" OnClick="btnCancel_Click" />
+                </div>
+            </div>
+            
+                                                        
+
+            </div>
+          </div>
+        </div>
+          </div>
+                                                </div>
                                         </asp:View>
-                                    </asp:MultiView></td>
-        </tr>
-        <tr>
-            <td style="vertical-align: top; padding-top: 30px; text-align: center; height: 1px;">
-            </td>
-        </tr>
-        <tr>
-            <td style="padding-bottom: 10px; vertical-align: top; width: 870px; text-align: center">
-                &nbsp;<asp:Label ID="lblCompanyCode" runat="server" Text="0" Visible="False"></asp:Label>
-                &nbsp;&nbsp;
-                <asp:Label ID="lblCode" runat="server" Text="0" Visible="False"></asp:Label></td>
-        </tr>
-    </table>
+                                        </asp:MultiView>
+            <asp:Label ID="lblCompanyCode" runat="server" Text="0" Visible="False"></asp:Label>
+          
+                <asp:Label ID="lblCode" runat="server" Text="0" Visible="False"></asp:Label>
+
+    </section>
+
+
+
+     
+            
+
 </asp:Content>
 
 

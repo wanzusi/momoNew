@@ -5,11 +5,32 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <title>Untitled Page</title>
-    
-    <link href="scripts/WQC_stylesheet.css" rel="stylesheet" type="text/css" />
-    
-    <link href="scripts/globalscape.css" rel="stylesheet" type="text/css" />
+   <title>Untitled Page</title>
+       
+  <meta content="PEGASUS , TECHNOLOGIES" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="images/peglogo.png" rel="icon">
+  <link href="images/peglogo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!--  CSS Files -->
+  <link href="assets/CSS/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/ICONS/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/simple/style.css" rel="stylesheet">
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/CSS/style.css" rel="stylesheet">
+        <link href="assets/CSS/stripe.css" rel="stylesheet"/>
     
     <script type="text/javascript" src="ddtabmenufiles/ddtabmenu.js">
 

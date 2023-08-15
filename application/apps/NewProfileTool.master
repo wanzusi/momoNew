@@ -242,7 +242,7 @@
                 <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row Flex-justifyContent--flexStart" style="line-height: 0; flex: 1 1 auto;">
                 
  <span class="Text-color--inherit Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional 
- Text-typeface--base Text-wrap--noWrap Text-display--block" style="margin-top: -1px;"><span>Login Logs<</span></span></div></div></a></div>
+ Text-typeface--base Text-wrap--noWrap Text-display--block" style="margin-top: -1px;"><span>Login Logs</span></span></div></div></a></div>
 <div class="PressableCore-overlay PressableCore-overlay--extendBy1 Box-root Box-background--white" style="border-radius: 40px;">
 </div>
 
@@ -343,7 +343,7 @@
                                <asp:Button ID="btnBeneficiaries" runat="server" CssClass="nav-link collapsed" Text="Beneficiares"  OnClick="btnBeneficiaries_Click" Visible="True" />
                              
                           </li>
-                          <%} %>
+                       <%} %>
                            
                       </ul>
                                       
@@ -353,14 +353,14 @@
 
 
        <main id="main" class="main">
-           <asp:Label ID="lblmsg" runat="server" Font-Bold="False" Font-Names="Arial Narrow"  ForeColor="Red" Text="." Style="font: menu"></asp:Label>
+           <asp:Label ID="lblmsg" runat="server" Font-Bold="False" Font-Names="Arial Narrow" CssClass="form-label"  ForeColor="Red" Text="." Style="font: menu"></asp:Label>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">      </asp:ContentPlaceHolder>
     
 
       </main>
                <footer id="footer" class="footer">
     <div class="copyright">
-      &copy; Copyright <strong><span>Pegasus Technologies</span></strong><%= DateTime.Now.Year %>
+      &copy; Copyright <strong class="Margin-right--2"><span>Pegasus Technologies</span></strong><%= DateTime.Now.Year %>
     </div>
     
   </footer>

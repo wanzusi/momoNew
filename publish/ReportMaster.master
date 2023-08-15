@@ -1,0 +1,434 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="ReportMaster, App_Web_a2abiik4" %>
+<%@ Import Namespace="System.Data" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+        
+  <meta content="PEGASUS , TECHNOLOGIES" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="images/peglogo.png" rel="icon">
+  <link href="images/peglogo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!--  CSS Files -->
+  <link href="assets/CSS/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/ICONS/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/simple/style.css" rel="stylesheet">
+    
+       <link href="assets/CSS/style.css" rel="stylesheet">
+        <link href="assets/CSS/stripe.css" rel="stylesheet"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+          <div class="db-ChromeHeader">
+                   <header class="db-ChromeHeader-toolbar">
+        <div class="db-ChromeHeader-toolbarContent">
+          
+  <div class="Box-root Flex-flex Flex-alignItems--center" style="flex-basis: 0px; flex-grow: 1;">
+    <div class="db-ChromeHeader-accountSwitcher"
+     data-testid="account-switcher">
+     <div aria-label="Account switcher" class="sn-n56gfm">
+        <div class="PressableCore PressableCore--cursor--pointer PressableCore--height--medium PressableCore--radius--all PressableCore--width
+         PressableCore--width--auto PressableButton Box-root Flex-flex box-sha" >
+           <div class="PressableCore-base Box-root">
+            <button type="button" class="PressableContext Padding-all--0 PressableContext--cursor--pointer PressableContext--display--block PressableContext--fontLineHeight--20 PressableContext--fontSize--14 PressableContext--fontWeight--medium PressableContext--height PressableContext--height--medium PressableContext--radius--all PressableContext--width PressableContext--width--auto" 
+            tabindex="1" data-testid="account-switcher-button" style="color: rgb(64, 68, 82);">
+                <div class="Box-root Flex-flex Flex-alignItems--center Flex-direction--row">
+      
+   <div  class="TruncatedText" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+       <span class="db-AccountSwitcher-accountName Text-color--default Text-fontSize--12
+     Text-fontWeight--medium Text-lineHeight--16 Text-numericSpacing--proportional Text-typeface--base Text-wrap--noWrap
+      Text-display--inline" style="font-weight: bold;">
+    <img src="images/logo.png" style="width: 10rem; height: 2rem;" alt="logo">
+    </span></div>
+      <div aria-hidden="true" class="SVGInline SVGInline--cleaned SVG Icon Icon--chevronDown db-AccountSwitcher-chevron Icon-color Icon-color--gray600 Box-root Flex-flex" 
+      style="margin-left: 8px;"></svg></div></div></button></div>
+      <div class="PressableCore-overlay PressableCore-overlay--extendBy1 Box-root Box-background--white">
+
+      </div>
+    </div>
+    </div>
+</div>
+    </div>
+
+
+  <div class="Box-root" style="flex-basis: 0px; flex-grow: 1;">
+    <div class="Box-root" style="pointer-events: none;">
+    <div class="Box-root Flex-flex Flex-alignItems--center Flex-direction--row Flex-justifyContent--flexEnd Flex-wrap--nowrap" 
+      style="margin-left: -16px; margin-top: -16px;">
+      
+      <div class="Box-root Box-hideIfEmpty Margin-top--16 Margin-left--16" style="pointer-events: auto;">
+        <div class="Box-root">
+        <div class="Box-root Flex-flex">
+          <div class="Box-root Flex-flex">
+          <div class="PressableCore PressableCore--radius--all PressableCore--width PressableCore--width--auto Box-root Flex-inlineFlex box-sha" 
+          ><div class="PressableCore-base Box-root">
+             <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row" 
+             style="position: relative;">
+             <div aria-hidden="true" class="TextAligner Box-root"
+              style="line-height: 16px; font-size: 12px; flex: 0 0 auto;"></div>
+              <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row Flex-justifyContent--flexStart" 
+              style="line-height: 0; flex: 1 1 auto;">
+              <div aria-controls="menu3" aria-haspopup="menu" id="menu3-button" aria-hidden="true"
+               class="SVGInline SVGInline--cleaned SVG Icon Icon--help Icon-color Icon-color--gray600 Box-root Flex-flex" 
+               style="margin-top: -5.89px; transform: translateY(3.8px);">
+              </div>
+                <span class="ButtonLink-label Text-color--gray600 Text-fontSize--12 Text-fontWeight--medium Text-lineHeight--16 
+                Text-numericSpacing--proportional Text-typeface--base Text-wrap--wrap Text-display--block" style="margin-left: 4px; margin-top: -1px;">
+                <span>UserID:<asp:Label runat="server" ID="lblUserId" Text="."></asp:Label></span></span></div></div>
+              </div>
+                <div class="PressableCore-overlay PressableCore-overlay--extendBy1 Box-root Box-background--white"></div>
+              </div>
+            </div>
+            </div>
+  <div class="Box-root" style="position: fixed; bottom: 20px; right: 60px;">
+  
+  </div>
+</div>
+
+</div>
+<div class="Box-root Box-hideIfEmpty Margin-top--16 Margin-left--16" style="pointer-events: auto;">
+  <div class="Box-root">
+  <div class="Box-root Flex-flex">
+    <div class="Box-root Flex-flex">
+    <div class="PressableCore PressableCore--radius--all PressableCore--width PressableCore--width--auto Box-root Flex-inlineFlex box-sha">
+      <div class="PressableCore-base Box-root">
+ 
+       <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row" 
+       style="position: relative;"><div aria-hidden="true" class="TextAligner Box-root"
+        style="line-height: 16px; font-size: 12px; flex: 0 0 auto;"></div>
+        <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row Flex-justifyContent--flexStart" 
+        style="line-height: 0; flex: 1 1 auto;">
+        <div aria-controls="menu3" aria-haspopup="menu" id="menu3-button" aria-hidden="true"
+         class="SVGInline SVGInline--cleaned SVG Icon Icon--help Icon-color Icon-color--gray600 Box-root Flex-flex" 
+         style="margin-top: -5.89px; transform: translateY(3.8px);">
+        </div>
+          <span class="ButtonLink-label Text-color--gray600 Text-fontSize--12 Text-fontWeight--medium Text-lineHeight--16 
+          Text-numericSpacing--proportional Text-typeface--base Text-wrap--wrap Text-display--block" style="margin-left: 4px; margin-top: -1px;">
+          <span>UserType:<asp:Label  runat="server" ID="lblRole" Text="."></asp:Label></span></span></div></div>
+        </div>
+          <div class="PressableCore-overlay PressableCore-overlay--extendBy1 Box-root Box-background--white"></div>
+        </div>
+      </div>
+      </div>
+<div class="Box-root" style="position: fixed; bottom: 20px; right: 60px;">
+
+</div>
+</div>
+
+</div>
+
+
+<div class="Box-root Box-hideIfEmpty Margin-top--16 Margin-left--16" style="pointer-events: auto;">
+  <div class="Box-root">
+  <div class="Box-root Flex-flex">
+    <div class="Box-root Flex-flex">
+    <div class="PressableCore PressableCore--radius--all PressableCore--width PressableCore--width--auto Box-root Flex-inlineFlex box-sha" >
+      <div class="PressableCore-base Box-root">
+       <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row" 
+       style="position: relative;"><div aria-hidden="true" class="TextAligner Box-root"
+        style="line-height: 16px; font-size: 12px; flex: 0 0 auto;"></div>
+        <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row Flex-justifyContent--flexStart" 
+        style="line-height: 0; flex: 1 1 auto;">
+        <div aria-controls="menu3" aria-haspopup="menu" id="menu3-button" aria-hidden="true"
+         class="SVGInline SVGInline--cleaned SVG Icon Icon--help Icon-color Icon-color--gray600 Box-root Flex-flex" 
+         style="margin-top: -5.89px; transform: translateY(3.8px);">
+        </div>
+          <span class="ButtonLink-label Text-color--gray600 Text-fontSize--12 Text-fontWeight--medium Text-lineHeight--16 
+          Text-numericSpacing--proportional Text-typeface--base Text-wrap--wrap Text-display--block" style="margin-left: 4px; margin-top: -1px;">
+          <span>Area:<asp:Label runat="server" ID="lblArea" Text="."></asp:Label></span></span>
+        </div>
+      </div>
+    
+        </div>
+          <div class="PressableCore-overlay PressableCore-overlay--extendBy1 Box-root Box-background--white"></div>
+        </div>
+      </div>
+      </div>
+<div class="Box-root" style="position: fixed; bottom: 20px; right: 60px;">
+
+</div>
+</div>
+
+</div>
+
+<div class="Box-root Box-hideIfEmpty Margin-top--16 Margin-left--16" style="pointer-events: auto;">
+  <div class="Box-root">
+  <div class="Box-root Flex-flex">
+    <div class="Box-root Flex-flex">
+    <div class="PressableCore PressableCore--radius--all PressableCore--width PressableCore--width--auto Box-root Flex-inlineFlex box-sha" >
+      <div class="PressableCore-base Box-root">
+       
+       <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row" 
+       style="position: relative;"><div aria-hidden="true" class="TextAligner Box-root"
+        style="line-height: 16px; font-size: 12px; flex: 0 0 auto;"></div>
+        <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row Flex-justifyContent--flexStart" 
+        style="line-height: 0; flex: 1 1 auto;">
+        <div aria-controls="menu3" aria-haspopup="menu" id="menu3-button" aria-hidden="true"
+         class="SVGInline SVGInline--cleaned SVG Icon Icon--help Icon-color Icon-color--gray600 Box-root Flex-flex" 
+         style="margin-top: -5.89px; transform: translateY(3.8px);">
+        </div>
+          <span class="ButtonLink-label  text-color-blue Text-fontSize--12 Text-fontWeight--medium Text-lineHeight--16 
+          Text-numericSpacing--proportional Text-typeface--base Text-wrap--wrap Text-display--block" style="margin-left: 4px; margin-top: -1px;">
+          <span><asp:LinkButton runat="server" ID="LinkButton1" OnClick="LinkButton1_Click" > </asp:LinkButton> </span></span></div></div>
+       
+        </div>
+          <div class="PressableCore-overlay PressableCore-overlay--extendBy1 Box-root Box-background--white"></div>
+        </div>
+      </div>
+      </div>
+<div class="Box-root" style="position: fixed; bottom: 20px; right: 60px;">
+
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<nav aria-label="Dashboard" class="db-ChromeHeader-tabs">
+    <div class="db-ChromeHeader-tabsContent">
+    <div class="Box-root Margin-right--4">
+        <div class="PressableCore PressableCore--width PressableCore--width--auto Box-root Flex-inlineFlex box-sha" >
+            <div class="PressableCore-base Box-root">
+                <a href="ViewAllCustomerBeneficiaries.aspx" tabindex="1" class="UnstyledLink">
+                <div class="db-ChromeHeader-tab db-ChromeHeader-tab--selected Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row"
+                 style="position: relative; border-radius: 40px; padding: 2px 10px;">
+                 <div aria-hidden="true" class="TextAligner Box-root"
+                  style="line-height: 20px; font-size: 14px; flex: 0 0 auto;"></div>
+                  <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row Flex-justifyContent--flexStart" style="line-height: 0; flex: 1 1 auto;">
+                    
+     <span class="Text-color--inherit Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional 
+     Text-typeface--base Text-wrap--noWrap Text-display--block" style="margin-top: -1px;"><span>Beneficiary File</span></span></div></div></a>
+    </div>
+    <div class="PressableCore-overlay PressableCore-overlay--extendBy1 Box-root Box-background--white" style="border-radius: 40px;">
+    </div>
+
+</div>
+</div>
+
+<div class="Box-root Margin-right--4">
+    <div class="PressableCore PressableCore--width PressableCore--width--auto Box-root Flex-inlineFlex box-sha"  >
+        <div class="PressableCore-base Box-root">
+            
+            <a href="ViewPayments.aspx" tabindex="1" class="UnstyledLink">
+            <div class="db-ChromeHeader-tab  Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row" style="position: relative; border-radius: 40px; padding: 2px 10px;">
+                <div aria-hidden="true" class="TextAligner Box-root" style="line-height: 20px; font-size: 14px; flex: 0 0 auto;">   </div>
+                <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row Flex-justifyContent--flexStart" style="line-height: 0; flex: 1 1 auto;">
+                
+ <span class="Text-color--inherit Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional 
+ Text-typeface--base Text-wrap--noWrap Text-display--block" style="margin-top: -1px;"><span>Payments By Beneficiary<</span></span></div></div></a></div>
+<div class="PressableCore-overlay PressableCore-overlay--extendBy1 Box-root Box-background--white" style="border-radius: 40px;">
+</div>
+
+</div>
+</div>
+
+        <div class="Box-root Margin-right--4">
+    <div class="PressableCore PressableCore--width PressableCore--width--auto Box-root Flex-inlineFlex box-sha"  >
+        <div class="PressableCore-base Box-root">
+            
+            <a href="ViewCustomerBatches.aspx" tabindex="1" class="UnstyledLink">
+            <div class="db-ChromeHeader-tab  Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row" style="position: relative; border-radius: 40px; padding: 2px 10px;">
+                <div aria-hidden="true" class="TextAligner Box-root" style="line-height: 20px; font-size: 14px; flex: 0 0 auto;">   </div>
+                <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row Flex-justifyContent--flexStart" style="line-height: 0; flex: 1 1 auto;">
+                
+ <span class="Text-color--inherit Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional 
+ Text-typeface--base Text-wrap--noWrap Text-display--block" style="margin-top: -1px;"><span>Payment Batches</span></span></div></div></a></div>
+<div class="PressableCore-overlay PressableCore-overlay--extendBy1 Box-root Box-background--white" style="border-radius: 40px;">
+</div>
+
+</div>
+</div>
+        <div class="Box-root Margin-right--4">
+    <div class="PressableCore PressableCore--width PressableCore--width--auto Box-root Flex-inlineFlex box-sha"  >
+        <div class="PressableCore-base Box-root">
+            
+            <a href="GenerateAccountStatement.aspx" tabindex="1" class="UnstyledLink">
+            <div class="db-ChromeHeader-tab  Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row" style="position: relative; border-radius: 40px; padding: 2px 10px;">
+                <div aria-hidden="true" class="TextAligner Box-root" style="line-height: 20px; font-size: 14px; flex: 0 0 auto;">   </div>
+                <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row Flex-justifyContent--flexStart" style="line-height: 0; flex: 1 1 auto;">
+                
+ <span class="Text-color--inherit Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional 
+ Text-typeface--base Text-wrap--noWrap Text-display--block" style="margin-top: -1px;"><span>Account Statement</span></span></div></div></a></div>
+<div class="PressableCore-overlay PressableCore-overlay--extendBy1 Box-root Box-background--white" style="border-radius: 40px;">
+</div>
+
+</div>
+</div>
+                <div class="Box-root Margin-right--4">
+    <div class="PressableCore PressableCore--width PressableCore--width--auto Box-root Flex-inlineFlex box-sha"  >
+        <div class="PressableCore-base Box-root">
+            
+            <a href="CustomerTransactions.aspx" tabindex="1" class="UnstyledLink">
+            <div class="db-ChromeHeader-tab  Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row" style="position: relative; border-radius: 40px; padding: 2px 10px;">
+                <div aria-hidden="true" class="TextAligner Box-root" style="line-height: 20px; font-size: 14px; flex: 0 0 auto;">   </div>
+                <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row Flex-justifyContent--flexStart" style="line-height: 0; flex: 1 1 auto;">
+                
+ <span class="Text-color--inherit Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional 
+ Text-typeface--base Text-wrap--noWrap Text-display--block" style="margin-top: -1px;"><span>All Transactions</span></span></div></div></a></div>
+<div class="PressableCore-overlay PressableCore-overlay--extendBy1 Box-root Box-background--white" style="border-radius: 40px;">
+</div>
+
+</div>
+</div>
+                <div class="Box-root Margin-right--4">
+    <div class="PressableCore PressableCore--width PressableCore--width--auto Box-root Flex-inlineFlex box-sha"  >
+        <div class="PressableCore-base Box-root">
+            
+            <a href="SystemReports.aspx" tabindex="1" class="UnstyledLink">
+            <div class="db-ChromeHeader-tab  Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row" style="position: relative; border-radius: 40px; padding: 2px 10px;">
+                <div aria-hidden="true" class="TextAligner Box-root" style="line-height: 20px; font-size: 14px; flex: 0 0 auto;">   </div>
+                <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row Flex-justifyContent--flexStart" style="line-height: 0; flex: 1 1 auto;">
+                
+ <span class="Text-color--inherit Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional 
+ Text-typeface--base Text-wrap--noWrap Text-display--block" style="margin-top: -1px;"><span>System Reports</span></span></div></div></a></div>
+<div class="PressableCore-overlay PressableCore-overlay--extendBy1 Box-root Box-background--white" style="border-radius: 40px;">
+</div>
+
+</div>
+</div>
+ 
+
+     
+    <div class="Box-root" style="flex-grow: 1;"></div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="db-TestDataBanner-container">
+     <div class="db-TestDataBanner db-TestDataBanner--flatLine">
+       
+    </div>
+    </div>
+
+     
+         <aside id="sidebar" class="sidebar">
+                      <ul class="sidebar-nav" id="sidebar-nav">
+                           <%if ((Session["RoleCode"].ToString() == "003" || Session["RoleCode"].ToString() == "005" || Session["RoleCode"].ToString() == "007") && Session["AreaID"].ToString().Equals("1")) {%>
+                          <li class="nav-item">
+                               <asp:Button ID="btnCalRecon" runat="server" CssClass="nav-link collapsed" Text="Reconcilation"  OnClick="btnCalRecon_Click"   Visible="True" />
+                             
+                          </li>
+                          <%} %>
+                            <%if ((Session["RoleCode"].ToString() == "001" || Session["RoleCode"].ToString() == "002" || Session["RoleCode"].ToString() == "003" || Session["RoleCode"].ToString() == "005" || Session["RoleCode"].ToString() == "007") && Session["AreaID"].ToString().Equals("1"))
+                                     {%>
+                          <li class="nav-item">
+                               <asp:Button ID="btnCallInter" runat="server" CssClass="nav-link collapsed" Text="InterNetwork"  OnClick="btnCallInter_Click" Visible="True" />
+                          </li>
+                          <%} %>
+
+                            <% if (Session["RoleCode"].ToString() == "009" || Session["RoleCode"].ToString() == "014" || Session["RoleCode"].ToString() == "013" || Session["RoleCode"].ToString() == "015" || Session["RoleCode"].ToString() == "016")
+                                      {%>
+                          <li class="nav-item">
+                               <asp:Button ID="btnCallPayments" runat="server" CssClass="nav-link collapsed" Text="Payments"  OnClick="btnCallPayments_Click"    Visible="True" />
+                             
+                          </li>
+                          <%} %>
+                           <%if (Session["RoleCode"].ToString() == "003" || Session["RoleCode"].ToString() == "005" || Session["RoleCode"].ToString() == "007" || Session["RoleCode"].ToString() == "015" || Session["RoleCode"].ToString() == "016")
+                                      {%>
+                          <li class="nav-item">
+                               <asp:Button ID="btnAccounts" runat="server" CssClass="nav-link collapsed" Text="Accounts"  OnClick="btnAccounts_Click" Visible="True" />
+                             
+                          </li>
+                          <%} %>
+
+                               <%if (Session["RoleCode"].ToString() == "013" || Session["RoleCode"].ToString() == "014" || Session["RoleCode"].ToString() == "015" || Session["RoleCode"].ToString() == "016")
+                                         {%>
+                          <li class="nav-item">
+                               <asp:Button ID="btncalReports" runat="server" CssClass="nav-link collapsed" Text="Reports"  OnClick="btnCalReports_Click" Visible="True" />
+                             
+                          </li>
+                            <%}
+                                                  else
+                                                  {%>
+                           <li class="nav-item">
+                               <asp:Button ID="btncalReports2" runat="server" CssClass="nav-link collapsed" Text="Reports"  OnClick="btncalReports2_Click" Visible="True" />
+                             
+                          </li>
+
+                          <%} %>
+                           <%if ((Session["RoleCode"].ToString() == "006" || Session["RoleCode"].ToString() == "003" || Session["RoleCode"].ToString() == "007") && Session["AreaID"].ToString().Equals("1"))
+                                      {%>
+                            <li class="nav-item">
+                               <asp:Button ID="btnCallBatching" runat="server" CssClass="nav-link collapsed" Text="Batching"  OnClick="btnCallBatching_Click1" Visible="True" />
+                             
+                          </li>
+                          <%} %>
+
+                             <%if (Session["RoleCode"].ToString() == "001")  {%>
+                         
+                          <li class="nav-item">
+                               <asp:Button ID="btnCallSystemTool" runat="server" CssClass="nav-link collapsed" Text="System Tools"  OnClick="btnCallSystemTool_Click" Visible="True" />
+                             
+                          </li>
+                          <%} %>
+
+                         <%if ((Session["RoleCode"].ToString() == "001" && Session["AreaID"].ToString().Equals("1")) || Session["RoleCode"].ToString() == "016")
+                                         {%>  
+                          <li class="nav-item">
+                               <asp:Button ID="btnCustomers" runat="server" CssClass="nav-link collapsed" Text="Customers"  OnClick="btnCustomers_Click"   Visible="True" />
+                             
+                          </li>
+                          <%} %>
+                        
+                         
+                   
+                        
+                          <%if (Session["RoleCode"].ToString() == "001" || Session["RoleCode"].ToString() == "003" || Session["RoleCode"].ToString() == "007" || Session["RoleCode"].ToString() == "013" || Session["RoleCode"].ToString() == "014" || Session["RoleCode"].ToString() == "015" || Session["RoleCode"].ToString() == "016" || Session["RoleCode"].ToString() == "017" || Session["RoleCode"].ToString() == "019")
+                                        {%>
+                            <li class="nav-item">
+                               <asp:Button ID="btnCallAccountDetails" runat="server" CssClass="nav-link collapsed" Text="Profile Tool"  OnClick="btnCallAccountDetails_Click" Visible="True" />
+                         
+                          </li>
+                          <%} %>
+                           <%if (Session["RoleCode"].ToString() == "013" || Session["RoleCode"].ToString() == "014" || Session["RoleCode"].ToString() == "015" || Session["RoleCode"].ToString() == "016")
+                                         {%>
+                           <li class="nav-item">
+                               <asp:Button ID="btnBeneficiaries" runat="server" CssClass="nav-link collapsed" Text="Beneficiares"  OnClick="btnBeneficiaries_Click" Visible="True" />
+                             
+                          </li>
+                          <%} %>
+                           
+                      </ul>
+                                      
+
+
+        </aside>
+
+
+       <main id="main" class="main">
+           <asp:Label ID="lblmsg" runat="server" Font-Bold="False" Font-Names="Arial Narrow"  ForeColor="Red" Text="." Style="font: menu"></asp:Label>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">      </asp:ContentPlaceHolder>
+    
+
+      </main>
+               <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Pegasus Technologies</span></strong><%= DateTime.Now.Year %>
+    </div>
+    
+  </footer>
+    </form>
+</body>
+</html>

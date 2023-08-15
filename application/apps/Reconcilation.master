@@ -527,7 +527,7 @@
     
 
       </main>
-               <footer id="footer" class="footer">
+       <footer id="footer" class="footer">
     <div class="copyright">
       &copy; Copyright <strong><span>Pegasus Technologies</span></strong><%= DateTime.Now.Year %>
     </div>

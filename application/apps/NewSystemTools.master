@@ -515,9 +515,9 @@
     
 
       </main>
-               <footer id="footer" class="footer">
+      <footer id="footer" class="footer">
     <div class="copyright">
-      &copy; Copyright <strong><span>Pegasus Technologies</span></strong><% =DateTime.Now.Year %>
+      &copy; Copyright <strong><span style="margin-right:10px;">Pegasus Technologies</span></strong><% =DateTime.Now.Year %>
     </div>
     
   </footer>

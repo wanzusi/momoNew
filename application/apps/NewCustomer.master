@@ -453,12 +453,20 @@
             
  
 
-        <div class="main">  
-            <asp:Label ID="lblmsg" runat="server" Font-Bold="False" Font-Names="Arial Narrow"  ForeColor="Red" Text="." Style="font: menu"></asp:Label>
-            <main>
-                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> </asp:ContentPlaceHolder>
-            </main>
-        </div>
+        <main   id="main" class="main">  
+            <asp:Label ID="lblmsg" runat="server" Font-Bold="False" Font-Names="Arial Narrow"  CssClass="form-label" ForeColor="Red" Text="." Style="font: menu"></asp:Label>
+     
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                 </asp:ContentPlaceHolder>
+            
+        </main>
+     <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Pegasus Technologies</span></strong><%= DateTime.Now.Year %>
+    </div>
+    
+  </footer>
   
 
 

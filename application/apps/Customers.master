@@ -412,22 +412,14 @@
         </aside>
 
 
-      
-
-
-
-
-<main class="main">
+<main id="main" class="main">
              <asp:Label ID="lblmsg" runat="server" Font-Bold="False" Font-Names="Arial Narrow" ForeColor="Red" Text="." style="font: menu"></asp:Label>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
+        
  </main>
 
-               <footer id="footer" class="footer">
+    <footer id="footer" class="footer">
     <div class="copyright">
       &copy; Copyright <strong><span>Pegasus Technologies</span></strong><%= DateTime.Now.Year %>
     </div>

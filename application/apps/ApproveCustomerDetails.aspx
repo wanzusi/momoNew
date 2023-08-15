@@ -8,69 +8,46 @@
  <%@ Import
   Namespace="System.Threading" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-       <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
-                            <tr>
-                                <td style="padding-bottom: 10px; vertical-align: top; text-align: center; width: 100%;">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="InterfaceInforTable "
-                                        style="width: 90%">
-                                        <tr style="color: #000000">
-                                            <td class="InterfaceHeaderLabel" colspan="2" style="vertical-align: top; text-align: center; height: 20px;">
-                                                APPROVE CUSTOMER DETAILS</td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding-bottom: 10px; vertical-align: top; height: 2px; text-align: center; width: 664px;">
+
+    <section class="section">
+        <div class="text-center">
+            <h5 class="card-title">APPROVE CUSTOMER DETAILS</h5>
+        </div>
+    </section>
+
                                     <asp:MultiView ID="MultiView2" runat="server">
                                         <asp:View ID="View3" runat="server">
-                                            <table id="TABLE1" align="center" cellpadding="0" cellspacing="0" style="border-right: #617da6 1px solid;
-                                                border-top: #617da6 1px solid; border-left: #617da6 1px solid; width: 95%; border-bottom: #617da6 1px solid">
-                                                <tr>
-                                                    <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                                                        text-align: center">
-                                                        Search (Names)</td>
-                                                    <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                                                        text-align: center">
-                                                        Customer Type</td>
-                                                    <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                                                        text-align: center">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="ddcolortabsline2" colspan="3" style="vertical-align: middle; height: 1px;
-                                                        text-align: center">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                                        border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                                        width: 20%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                                        border-right-color: #617da6">
-                                                        &nbsp;<asp:TextBox ID="txtSearch" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                                                    <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                                        border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                                        width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                                        border-right-color: #617da6">
-                                                        <asp:DropDownList ID="cboCustomerType" runat="server" OnDataBound="cboCustomerType_DataBound"
-                                                            Style="font: menu" Width="90%">
-                                                        </asp:DropDownList></td>
-                                                    <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                                        border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                                        width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                                        border-right-color: #617da6">
-                                                        <asp:Button ID="btnOK" runat="server" Font-Size="9pt" Height="23px" OnClick="btnOK_Click"
-                                                            Style="font: menu" Text="Search" Width="85px" />&nbsp;</td>
-                                                </tr>
-                                            </table>
-                                        </asp:View>
-                                        &nbsp;
-                                    </asp:MultiView>
-                                    </td>
-                            </tr>
-           <tr>
-               <td style="padding-bottom: 10px; vertical-align: top; width: 664px; height: 2px;
-                   text-align: center">
+                                             <div class="row mb-2 justify-content-center">
+<div class="col-lg-8" style="display: flex; justify-content:space-evenly">
+          <div class="col-md-3">
+            <label for="inputEmail5" class="form-label">Search String(Names)</label>
+            
+              <asp:TextBox ID="txtSearch" runat="server"  class="form-control"></asp:TextBox>
+          </div>
+          <div class="col-md-3">
+            <label for="UserCategory" class="form-label"> Customer Type</label>
+            <asp:DropDownList ID="cboCustomerType" runat="server" OnDataBound="cboCustomerType_DataBound" CssClass="form-select">
+                                                        </asp:DropDownList>
+          </div>
+          
+         
+          <div class="col-md-3">
+            <label for="inputAddress5" class="form-label"></label>
+            <asp:Button ID="btnOK" runat="server" class="btn btn-primary w-75" style="margin-top:18px;" OnClick="btnOK_Click"
+                                Text="Search" />
+
+          </div>
+
+
+
+            </div>
+         
+
+    </div>
+
+   </asp:View>
+  </asp:MultiView>
+
                                     <asp:MultiView ID="MultiView3" runat="server">
                                         <asp:View ID="View4" runat="server">
                                             <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
@@ -131,17 +108,11 @@
                                                 <HeaderStyle BackColor="#FEFECE" Font-Bold="True" Font-Italic="False" Font-Overline="False"
                                                     Font-Strikeout="False" Font-Underline="False" ForeColor="Black" />
                                             </asp:DataGrid></asp:View>
-                                    </asp:MultiView></td>
-           </tr>
-           <tr>
-               <td style="padding-bottom: 10px; vertical-align: top; width: 664px; height: 2px;
-                   text-align: center">
-               </td>
-           </tr>
-                            <tr>
-                                <td style="padding-bottom: 10px; vertical-align: top; text-align: center; width: 100%;">
+                                    </asp:MultiView>
+          
                                     <asp:MultiView ID="MultiView1" runat="server">
                                         <asp:View ID="View1" runat="server">
+
                                     <table align="center" border="0" cellpadding="0" cellspacing="0" class="InterfaceInforTable2 "
                     style="width: 90%">
                                         <tr style="color: #000000">

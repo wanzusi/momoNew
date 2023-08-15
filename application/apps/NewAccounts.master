@@ -251,7 +251,7 @@
     <div class="Box-root Margin-right--4">
         <div class="PressableCore PressableCore--width PressableCore--width--auto Box-root Flex-inlineFlex box-sha" >
             <div class="PressableCore-base Box-root">
-                <a href="Accounst.aspx" tabindex="1" class="UnstyledLink">
+                <a href="Accounts.aspx" tabindex="1" class="UnstyledLink">
                 <div class="db-ChromeHeader-tab db-ChromeHeader-tab--selected Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row"
                  style="position: relative; border-radius: 40px; padding: 2px 10px;">
                  <div aria-hidden="true" class="TextAligner Box-root"
@@ -345,7 +345,7 @@
             <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row Flex-justifyContent--flexStart" style="line-height: 0; flex: 1 1 auto;">
                 
  <span class="Text-color--inherit Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional 
- Text-typeface--base Text-wrap--noWrap Text-display--block" style="margin-top: -1px;"><span>ApproveAgents</span></span></div></div></a></div>
+ Text-typeface--base Text-wrap--noWrap Text-display--block" style="margin-top: -1px;"><span>Approve Agents</span></span></div></div></a></div>
 <div class="PressableCore-overlay PressableCore-overlay--extendBy1 Box-root Box-background--white" style="border-radius: 40px;">
 </div>
 
@@ -376,7 +376,8 @@
      {%>
     <div class="Box-root Margin-right--4">
   <div class="PressableCore PressableCore--width PressableCore--width--auto Box-root Flex-inlineFlex box-sha" >
-    <div class="PressableCore-base Box-root"><a href="/test/payments" tabindex="1" class="UnstyledLink">
+    <div class="PressableCore-base Box-root">
+        <a href="CreditAccount.aspx" tabindex="1" class="UnstyledLink">
         <div class="db-ChromeHeader-tab Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row" style="position: relative; border-radius: 40px; padding: 2px 10px;">
         <div aria-hidden="true" class="TextAligner Box-root" style="line-height: 20px; font-size: 14px; flex: 0 0 auto;"></div>
         <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row Flex-justifyContent--flexStart" style="line-height: 0; flex: 1 1 auto;">
@@ -390,7 +391,7 @@
                                             {%>
     <div class="Box-root Margin-right--4"><div class="PressableCore PressableCore--width PressableCore--width--auto Box-root Flex-inlineFlex box-sha" >
         <div class="PressableCore-base Box-root">
-            <a href="CreditAccount.aspx" tabindex="1" class="UnstyledLink">
+            <a href="DebitClientAccountBalance.aspx" tabindex="1" class="UnstyledLink">
     <div class="db-ChromeHeader-tab Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row" style="position: relative; border-radius: 40px; padding: 2px 10px;">
       <div aria-hidden="true" class="TextAligner Box-root" style="line-height: 20px; font-size: 14px; flex: 0 0 auto;">
      </div><div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row Flex-justifyContent--flexStart" style="line-height: 0; flex: 1 1 auto;">
@@ -409,7 +410,7 @@
         <div class="Box-root Margin-right--4">
             <div class="PressableCore PressableCore--width PressableCore--width--auto Box-root Flex-inlineFlex box-sha" >
             <div class="PressableCore-base Box-root">
-                <a href="DebitClientAccountBalance.aspx" tabindex="1" class="UnstyledLink">
+                <a href="OvaBalances.aspx" tabindex="1" class="UnstyledLink">
                 <div class="db-ChromeHeader-tab Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row" style="position: relative; border-radius: 40px; padding: 2px 10px;">
           <div aria-hidden="true" class="TextAligner Box-root" style="line-height: 20px; font-size: 14px; flex: 0 0 auto;">
          </div><div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row Flex-justifyContent--flexStart" style="line-height: 0; flex: 1 1 auto;">
@@ -426,7 +427,7 @@
     <div class="Box-root Margin-right--4">
         <div class="PressableCore PressableCore--width PressableCore--width--auto Box-root Flex-inlineFlex box-sha" >
             <div class="PressableCore-base Box-root">
-                <a href="OvaBalances.aspx" tabindex="1" class="UnstyledLink">
+                <a href="RegisterAccount.aspx" tabindex="1" class="UnstyledLink">
                 <div class="db-ChromeHeader-tab Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row" style="position: relative; border-radius: 40px; padding: 2px 10px;">
                     <div aria-hidden="true" class="TextAligner Box-root" style="line-height: 20px; font-size: 14px; flex: 0 0 auto;"></div>
                 <div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row Flex-justifyContent--flexStart" style="line-height: 0; flex: 1 1 auto;">
@@ -445,7 +446,7 @@
         {%>
     <div class="Box-root Margin-right--4">
         <div class="PressableCore PressableCore--width PressableCore--width--auto Box-root Flex-inlineFlex box-sha" ><div class="PressableCore-base Box-root">
-            <a href="RegisterAccount.aspx" tabindex="1" class="UnstyledLink">
+            <a href="ResendCreditReceipts.aspx" tabindex="1" class="UnstyledLink">
                 <div class="db-ChromeHeader-tab Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row" style="position: relative; border-radius: 40px; padding: 2px 10px;"><div aria-hidden="true" class="TextAligner Box-root" style="line-height: 20px; font-size: 14px; flex: 0 0 auto;"></div><div class="Box-root Flex-flex Flex-alignItems--baseline Flex-direction--row Flex-justifyContent--flexStart" style="line-height: 0; flex: 1 1 auto;">
                 <span class="Text-color--inherit Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional 
                 Text-typeface--base Text-wrap--noWrap Text-display--block" style="margin-top: -1px;"><span>Resend Receipts</span></span></div></div></a></div>
@@ -648,7 +649,12 @@
     
 
       </main>
-
+              <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Pegasus Technologies</span></strong><%= DateTime.Now.Year %>
+    </div>
+    
+  </footer>
 
     </form>
         <script type="text/javascript">

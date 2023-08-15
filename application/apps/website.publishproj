@@ -43,5 +43,11 @@ Copyright (C) Microsoft Corporation. All rights reserved.
       <Value>$(AssemblyVersion)</Value>
     </AssemblyAttributes>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\InterfaceClass\InteLinkClass\InterLinkClass\InterLinkClass.csproj">
+      <Project>{30F17137-914D-48D3-8839-B5992B2AAAEE}</Project>
+      <Name>InterLinkClass</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />
 </Project>

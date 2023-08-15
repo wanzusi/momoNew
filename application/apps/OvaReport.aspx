@@ -38,121 +38,78 @@
                                 </td>
                             </tr>
                       </table>
-    <table style="width: 100%">
-        <tr>
-            <td style="width: 98%; height: 2px">
-                <ajaxToolkit:ToolkitScriptManager id="ScriptManager1" runat="Server" EnableScriptGlobalization="true"
+  
+    
+    <Section class="section">
+        <ajaxToolkit:ToolkitScriptManager id="ScriptManager1" runat="Server" EnableScriptGlobalization="true"
                     EnableScriptLocalization="true">
-                </ajaxToolkit:ToolkitScriptManager><table align="center" border="0" cellpadding="0" cellspacing="0" class="InterfaceInforTable "
-                                        style="width: 90%">
-                    <tr style="color: #000000">
-                        <td class="InterfaceHeaderLabel" colspan="2" style="vertical-align: top; height: 19px;
-                                                text-align: center">
-                            &nbsp;VENDORS</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 5px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 95%; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;">
-                    <tr>
-                      <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 21%; height: 18px;
-                            text-align: center">
-                            Vendor</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 21%; height: 18px;
-                            text-align: center">
-                            Ova Choice</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 20%; height: 18px;
-                            text-align: center">
-                            Bank</td>
-                        <td class="InterfaceHeaderLabel2" colspan="1" style="vertical-align: middle; width: 179px;
-                            height: 18px; text-align: center">
-                            Transaction Type</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="ddcolortabsline2" colspan="6" style="vertical-align: middle; text-align: center; height: 1px;">
-                            </td>
-                    </tr>
-                    <tr>
-                       <%-- <td style="vertical-align: middle; width: 21%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;
-                            <asp:TextBox ID="txtVendor" runat="server" style="font: menu" Width="90%"></asp:TextBox></td>--%>
-                             <td style="vertical-align: middle; width: 21%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:DropDownList ID="ddVendor" runat="server" CssClass="InterfaceDropdownList"
-                                Width="100%" style="font: menu">
+                </ajaxToolkit:ToolkitScriptManager>
+        <div class="text-cente">
+            <h5 class="card-title ">Vendors</h5>
+        </div>
+         <div class="col-10" style="margin-right:auto; margin-left:auto; justify-content:space-evenly">
+           
+            <div class="row">
+                <div class="col-md-2">
+                    <p style="text-align:center">Vendor</p>
+                 <asp:DropDownList ID="ddVendor" runat="server" CssClass="form-select" style="font: menu">
                                 <asp:ListItem>True</asp:ListItem>
                                 <asp:ListItem>False</asp:ListItem>
-                            </asp:DropDownList></td>
-                            
-                        <td style="vertical-align: middle; width: 21%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:DropDownList ID="ddOvaChoice" runat="server" CssClass="InterfaceDropdownList"
-                                Width="100%" style="font: menu">
-                                <asp:ListItem>True</asp:ListItem>
-                                <asp:ListItem>False</asp:ListItem>
-                            </asp:DropDownList></td>
-                      
-                      <td style="vertical-align: middle; width: 21%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:DropDownList ID="ddTelecom" runat="server" CssClass="InterfaceDropdownList"
-                                Width="100%" style="font: menu">
-                                <asp:ListItem>True</asp:ListItem>
-                                <asp:ListItem>False</asp:ListItem>
-                            </asp:DropDownList></td>
+                            </asp:DropDownList>
 
-                             <td style="vertical-align: middle; width: 21%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:DropDownList ID="ddTranType" runat="server" CssClass="InterfaceDropdownList"
-                                Width="100%" style="font: menu">
+                </div>
+                 <div class="col-md-2">
+                    <p style="text-align:center">Ova Choice</p>
+                   <asp:DropDownList ID="ddOvaChoice" runat="server" CssClass="form-select" style="font: menu">
                                 <asp:ListItem>True</asp:ListItem>
                                 <asp:ListItem>False</asp:ListItem>
-                            </asp:DropDownList></td>
-                        <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            <asp:Button ID="btnOK" runat="server" Font-Size="9pt" Height="23px" OnClick="btnOK_Click"
-                                Text="Search" Width="85px" style="font: menu" />&nbsp;</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px;">
-            <hr />
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px">
-                <asp:MultiView ID="MultiView2" runat="server">
-                    <asp:View ID="View3" runat="server">
-                        <table>
-                           <tr>
-                                <td style="width: 20%; height: 2px">
-                                    <table align="center" style="border-right: #617da6 1px solid; border-top: #617da6 1px solid;
-                                        border-left: #617da6 1px solid; width: 50%; border-bottom: #617da6 1px solid">
-                                        <tr>
-                                            <td style="border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
-                                                width: 100px; border-bottom: #617da6 1px solid">
-                                                <asp:RadioButton ID="rdPdf" runat="server" Font-Bold="True" GroupName="FileFormat"
-                                                    Text="PDF" /></td>
-                                            <td style="border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
-                                                width: 100px; border-bottom: #617da6 1px solid">
-                                                <asp:RadioButton ID="rdExcel" runat="server" Font-Bold="True" GroupName="FileFormat"
-                                                    Text="EXCEL" /></td>
-                                            <td style="border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
-                                                width: 100px; border-bottom: #617da6 1px solid">
-                                                <asp:Button ID="btnConvert" runat="server" Font-Size="9pt" Height="23px" OnClick="btnConvert_Click"
-                                                    Style="font: menu" Text="Convert" Width="85px" /></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                           </tr>
-                       </table>
+                            </asp:DropDownList>
+
+                </div>
+                <div class="col-md-2">
+                    <p style="text-align:center">Bank</p>
+                 <asp:DropDownList ID="ddTelecom" runat="server" CssClass="form-select" style="font: menu">
+                                <asp:ListItem>True</asp:ListItem>
+                                <asp:ListItem>False</asp:ListItem>
+                            </asp:DropDownList>
+
+                </div>
+                <div class="col-md-2">
+                    <p style="text-align:center" >Transaction Type</p>
+                   <asp:DropDownList ID="ddTranType" runat="server" CssClass="form-select" style="font: menu">
+                                <asp:ListItem>True</asp:ListItem>
+                                <asp:ListItem>False</asp:ListItem>
+                            </asp:DropDownList>
+
+                </div>
+               
+               <div class="col-md-2">
+                   <label></label>
+                <asp:Button ID="btnOK" runat="server"   Text="Search" class="btn btn-primary w-100" onClick="btnOK_Click"  />
+                 </div>
+
+            </div>
+
+        </div>
+        <asp:MultiView ID="MultiView2" runat="server">
+                  <asp:View ID="View3" runat="server">
+                        <div class="row" style="justify-content:center">
+    <div class="col-lg-8" style="display:flex;">
+        <div class="col-lg-2  text-center" style=" margin-top:auto; margin-bottom:auto">
+            <asp:RadioButton ID="rdPdf" runat="server"   Font-Bold="True" GroupName="FileFormat" Text="PDF" />
+        </div>
+        <div class="col-lg-2 text-center" style="margin-left:2vw; margin-top:auto; margin-bottom:auto">
+             <asp:RadioButton ID="rdExcel" runat="server"  Font-Bold="True" GroupName="FileFormat"  Text="EXCEL" />
+        </div>
+        <div class="col-lg-2 text-center" style="margin-left:2vw">
+             <asp:Button ID="btnConvert" runat="server"    CssClass="btn btn-primary w-100" OnClick="btnConvert_Click" Font-Bold="True"   Text="COVERT" />
+        </div>
+      
+    </div>
+</div>
                     </asp:View>
-                </asp:MultiView></td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 2px">
-                &nbsp;<asp:MultiView ID="MultiView1" runat="server">
+            </asp:MultiView>
+        <asp:MultiView ID="MultiView1" runat="server">
                     <asp:View ID="View1" runat="server">
                         <div class="table-responsive">
                                         <asp:GridView runat="server" Width="100%" CssClass="table table-bordered table-hover" ID="dataGridResults" AllowPaging="true"
@@ -160,13 +117,7 @@
                                             <AlternatingRowStyle BackColor="#BFE4FF" />
                                             <HeaderStyle BackColor="#0375b7" Font-Bold="false" ForeColor="white" Font-Italic="False"
                                                 Font-Overline="False" Font-Strikeout="False" Font-Underline="False" Height="30px" />
-                                           <%-- <Columns>
-                                                <asp:TemplateField HeaderText="Details">
-                                                    <ItemTemplate>
-                                                        <asp:Button ID="btnedit" runat="server" Text="Edit" CommandName="editing" CommandArgument="<%# ((GridViewRow) Container).RowIndex %>" />
-                                                    </ItemTemplate>
-                                                </asp:TemplateField>
-                                            </Columns>--%>
+                                           
                                             <PagerStyle CssClass="cssPager" BackColor="#99CCCC" ForeColor="#003399" HorizontalAlign="Center" />
                                         </asp:GridView>
                         </div>
@@ -232,10 +183,9 @@
                                      
                                 </div>
                             </asp:View>
-                </asp:MultiView></td>
-        </tr>
-    </table>
-    <br />
+                </asp:MultiView>
+
+    </Section>
 </asp:Content>
 
 

@@ -1,29 +1,18 @@
 <%@ Page Language="C#" MasterPageFile="~/NewAccounts.master" AutoEventWireup="true" CodeFile="ViewCashOutCharges.aspx.cs" Inherits="ViewCashOutCharges" Title="CASHOUT CHARGES" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table style="width: 100%">
-        <tr>
-            <td style="width: 98%; height: 2px">
+
+   
+   
                 <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
                     <asp:View ID="View1" runat="server">
-                        <table cellpadding="0" cellspacing="0" class="style12" style="width: 90%">
-                                <tr>
-            <td style="width: 98%; height: 5px">
-                &nbsp;<table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                    <tr>
-                        <td class="InterfaceHeaderLabel">
-                            MNO CASHOUT CHARGES</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px;">
-            <hr />
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 2px">
-                &nbsp;<asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="False" AutoGenerateColumns="False"
+                 
+           <section class="section">
+        <div class="text-center">
+            <h5 class="card-title">MNO CASHOUT CHARGES</h5>
+        </div>
+           
+   
+                <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="False" AutoGenerateColumns="False" class="table"
                     CellPadding="4" ForeColor="#333333" GridLines="Horizontal" OnItemCommand="DataGrid1_ItemCommand" Width="100%" style="text-align: justify; font: menu; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;" Font-Bold="False" Font-Italic="False" Font-Names="Courier New" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" HorizontalAlign="Justify">
                     <FooterStyle BackColor="#003366" Font-Bold="False" ForeColor="White" />
                     <EditItemStyle BackColor="#999999" />
@@ -60,14 +49,11 @@
                         </asp:BoundColumn>
                     </Columns>
                     <HeaderStyle BackColor="#FEFECE" Font-Bold="True" ForeColor="Black" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" />
-                </asp:DataGrid></td>
-        </tr>
-                        </table>
+                </asp:DataGrid>
+      
                         </asp:View>
-                </asp:MultiView></td>
-        </tr>
-
-    </table>
+                </asp:MultiView>
+      
     <br />
     <br />
 </asp:Content>

@@ -435,6 +435,23 @@
     </div>
     
   </footer>
+
+             <script type="text/javascript">
+
+            function CallMoreTabs() {
+
+                const togglebutton = document.getElementById("toggleButton");
+                const drop = document.getElementById("moreElements");
+
+
+                let isContentVisible = false;
+
+                drop.classList.toggle("hidden");
+
+            }
+
+             </script>
+
     </form>
 </body>
 </html>

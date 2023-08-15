@@ -12,41 +12,33 @@
         EnableScriptLocalization="true" ID="ScriptManager1" />
     <asp:MultiView ID="MultiView2" runat="server">
         <asp:View ID="View3" runat="server">
-            <table style="width: 90%" align="center">
-                <tr>
-                    <td class="InterFaceTableLeftRowUp" style="width: 100%; text-align: center">
-                        <asp:Button ID="btnCallList" runat="server" BorderStyle="Inset" Font-Bold="True"
+
+            <div class="text-center">
+                  <asp:Button ID="btnCallList" runat="server" BorderStyle="Inset" Font-Bold="True" CssClass="btn btn-primary w-50"
                             Font-Names="Cambria" Font-Underline="False"
-                            Text="PAYMENT TYPE LIST" OnClick="btnCallList_Click" /><asp:Button ID="btnAddDistrict" runat="server"
+                            Text="PAYMENT TYPE LIST" OnClick="btnCallList_Click" />
+
+                <asp:Button ID="btnAddDistrict" runat="server" CssClass="btn btn-primary w-50"
                                 BorderStyle="Inset" Font-Bold="True" Font-Names="Cambria" Font-Strikeout="False"
                                 Font-Underline="False" OnClick="btnAddDistrict_Click" Text="ADD PAYMENT TYPE"
-                                Width="148px" /></td>
-                </tr>
-            </table>
-            <hr />
+                                />
+            </div>
+                      
+                        
+           
         </asp:View>
     </asp:MultiView>
     <asp:MultiView ID="MultiView3" runat="server">
         <asp:View ID="View4" runat="server">
-            <table style="width: 90%" align="center">
-                <tr>
-                    <td style="width: 98%; height: 5px">
-                        <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                            <tr>
-                                <td class="InterfaceHeaderLabel">
-                                    PAYMENT TYPE LIST</td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 98%; height: 1px">
-                        <hr />
-                    </td>
-                </tr>
-                <tr>
-                    <td style="width: 98%; height: 2px">
-                        &nbsp;<asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+                   <section class="section">
+              <div class="text-center">
+            <h5 class="card-title ">PAYMENT TYPE LIST</h5>
+
+        </div>
+          </section>
+
+        
+                    <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False" class="table"
                             CellPadding="4" Font-Bold="False" Font-Italic="False" Font-Names="Courier New"
                             Font-Overline="False" Font-Strikeout="False" Font-Underline="False" ForeColor="#333333"
                             GridLines="Horizontal" HorizontalAlign="Justify" OnItemCommand="DataGrid1_ItemCommand" Style="border-right: #617da6 1px solid;
@@ -83,11 +75,10 @@
                             </Columns>
                             <HeaderStyle BackColor="#FEFECE" Font-Bold="True" Font-Italic="False" Font-Overline="False"
                                 Font-Strikeout="False" Font-Underline="False" ForeColor="Black" />
-                        </asp:DataGrid></td>
-                </tr>
-            </table>
+                        </asp:DataGrid>
+              
         </asp:View>
-        &nbsp;
+   
         <asp:View ID="View1" runat="server">
             <table align="center" style="width: 90%">
                 <tr>

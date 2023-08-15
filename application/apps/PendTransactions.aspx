@@ -12,8 +12,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 
-
-
     <script type="text/javascript">
             function pend()
             {
@@ -24,212 +22,110 @@
             }
         </script>
 
+      <section class="section">
+              <div class="text-center">
+            <h5 class="card-title ">ALL FAILED OR SUCCESS TRANSACTIONS</h5>
 
+        </div>
+          </section>
 
-
-
-
-
-    <table style="width: 100%">
-        <tr>
-            <td style="width: 98%; height: 2px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                    <tr>
-                        <td class="InterfaceHeaderLabel">
-                            ALL FAILED OR SUCCESS TRANSACTIONS</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px">
-            </td>
-        </tr>
-        
         <asp:MultiView ID="MultiView3" runat="server">
                     <asp:View ID="View4" runat="server">
-            
-        
-        <tr>
-            <td style="width: 98%; height: 5px">
-            
-            
-            
-            
-            
-            
-            
+                  <div class="row mb-4 justify-content-center">
+<div class="col-lg-12" style="display: flex; justify-content:space-evenly">
+          <div class="col-md-2">
+            <label for="inputEmail5" class="form-label">Agent</label>
+<asp:DropDownList ID="cboVendor" runat="server" CssClass="form-select"
+                                OnDataBound="cboVendor_DataBound">
+                            </asp:DropDownList>
+          </div>
+    
+     <div class="col-md-2">
+            <label for="inputEmail5" class="form-label">Agent Ref</label>
+       <asp:TextBox ID="txtpartnerRef" runat="server" class="form-control" />
+          </div>
+          <div class="col-md-2">
+            <label for="UserCategory" class="form-label">Telecom Id</label>
+               
+                  <asp:TextBox ID="telecomId" runat="server" class="form-control" />
+          </div>
+     <div class="col-md-2">
+            <label for="UserCategory" class="form-label">Payment Type</label>
+               <asp:DropDownList ID="cboPaymentType" runat="server" CssClass="form-select"
+                                OnDataBound="cboPaymentType_DataBound">
+                            </asp:DropDownList>
+          </div>
+     <div class="col-md-2">
+            <label for="UserCategory" class="form-label">From Date</label>
+              <asp:TextBox ID="txtfromDate" runat="server" CssClass="form-control"></asp:TextBox>
+          </div>
+    </div>
+    
 
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 98%; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;">
-                    <tr>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            AGENT</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            AGENT-REF</td>
-                            <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            TELECOM ID</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            PAYMENT TYPE</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            FROM DATE</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            TO DATE</td>
-                    </tr>
-                    <tr>
-                        <td class="ddcolortabsline2" colspan="5" style="vertical-align: middle; text-align: center; height: 1px;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="vertical-align: middle; width: 20%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:DropDownList ID="cboVendor" runat="server" CssClass="InterfaceDropdownList"
-                                Width="95%" style="font: menu" OnDataBound="cboVendor_DataBound">
-                            </asp:DropDownList></td>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:TextBox ID="txtpartnerRef" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                         <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:TextBox ID="telecomId" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                        <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            <asp:DropDownList ID="cboPaymentType" runat="server" CssClass="InterfaceDropdownList"
-                                Width="95%" style="font: menu" OnDataBound="cboPaymentType_DataBound">
-                            </asp:DropDownList></td>
-                        <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:TextBox ID="txtfromDate" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:TextBox ID="txttoDate" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            border-top-color: #617da6; height: 1px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            </td>
-                    </tr>
-                </table>
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 98%; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;">
-                    <tr>
-                    <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            NETWORK</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            &nbsp;FROM ACCOUNT
-                        </td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            To ACCOUNT</td>
-                        <td class="InterfaceHeaderLabel2" colspan="2" style="vertical-align: middle; height: 18px;
-                            text-align: center; width: 34%;">
-                            CUST NAME</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            Transaction Type</td>
-                    </tr>
-                    <tr>
-                        <td class="ddcolortabsline2" colspan="5" style="vertical-align: middle; text-align: center; height: 1px;">
-                            </td>
-                    </tr>
-                    <tr>
-                     <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center;
-                            border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px;
-                            border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px;
-                            border-right-color: #617da6;">
-                            &nbsp;<asp:DropDownList ID="cboNetwork" runat="server" CssClass="InterfaceDropdownList"
-                                Width="85%" Style="font: menu" OnDataBound="cboNetwork_DataBound">
-                            </asp:DropDownList></td>
-                        <td style="vertical-align: middle; width: 20%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:TextBox ID="txtAccount" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:TextBox ID="txtSearch" runat="server" style="font: menu" Width="90%"></asp:TextBox></td>
-                        <td colspan="2" style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:TextBox ID="txtCustName" runat="server" Style="font: menu" Width="90%"></asp:TextBox>&nbsp;</td>
-                        <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            <asp:DropDownList ID="cboTranType" runat="server" CssClass="InterfaceDropdownList"
-                                OnDataBound="cboTranType_DataBound" Style="font: menu" Width="95%">
-                            </asp:DropDownList>&nbsp;</td>
-                    </tr>
-                </table>
-            <asp:Button ID="btnOK" runat="server" Font-Size="9pt" Height="23px" OnClick="btnOK_Click"
-                                Text="Search" Width="85px" style="font: menu" /></td>
-                                
-                       </tr>         
-                                
-                                
-                                
-                                
+<div class="col-lg-12" style="display: flex; justify-content:space-evenly">
+     <div class="col-md-2">
+            <label for="UserCategory" class="form-label">To Date</label>
+               <asp:TextBox ID="txttoDate" runat="server" class="form-control"></asp:TextBox>
+          </div>
+         <div class="col-md-2">
+            <label for="UserCategory" class="form-label">Network</label>
+              <asp:DropDownList ID="cboNetwork" runat="server" CssClass="form-select"
+                                 OnDataBound="cboNetwork_DataBound">
+                            </asp:DropDownList>
+          </div>
+
+
+                             <div class="col-md-2">
+            <label for="UserCategory" class="form-label">From Account</label>
+               <asp:TextBox ID="txtAccount" runat="server" class="form-control"></asp:TextBox>
+          </div>
+
+                             <div class="col-md-2">
+            <label for="UserCategory" class="form-label">To Account</label>
+               <asp:TextBox ID="txtSearch" runat="server" class="form-control"></asp:TextBox>
+          </div>
+                       <div class="col-md-2">
+            <label for="UserCategory" class="form-label">Cust Name</label>
+               <asp:TextBox ID="txtCustName" runat="server" class="form-control"></asp:TextBox>
+          </div>
+                
+    </div>
+
+<div class="col-lg-12" style="display: flex; justify-content:space-evenly">
+    <div class="col-md-2">
+            <label for="UserCategory" class="form-label">Transaction Type</label>
+            <asp:DropDownList ID="cboTranType" runat="server" CssClass="form-select"
+                                OnDataBound="cboTranType_DataBound" >
+                            </asp:DropDownList>
+          </div>
+    <div class="col-md-2">
+            <label for="UserCategory" class="form-label"></label>
+               
+<asp:Button ID="btnOK"  runat="server" Style="margin-top:20px;" CssClass="btn btn-success btn-lg" Text="Search" OnClick="btnOK_Click" /> 
+          </div>
+        </div>   
+        </div>
+        
+ 
                                    </asp:View>
                 </asp:MultiView>
 
-                                
-                                
-                                
-                                
-                                
-                                
-        
-        <tr>
-            <td style="width: 98%; height: 5px">
+
                 <asp:MultiView ID="MultiView1" runat="server">
                     <asp:View ID="View1" runat="server">
                         <br />
                         <br />
-                        <table align="center" style="border-right: #617da6 1px solid; border-top: #617da6 1px solid;
-                            border-left: #617da6 0px solid; width: 50%; border-bottom: #617da6 1px solid">
-                            <tr>
-                                <td style="border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
-                                    width: 67px; border-bottom: #617da6 1px solid">
-                                    <asp:CheckBox ID="chkAll"  runat="server" Text="select all transactions" OnCheckedChanged="chkAll_CheckedChanged" Width="215px" /></td>
-                                <td style="border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
-                                    width: 175px; border-bottom: #617da6 1px solid">
-                                    &nbsp;<asp:Button ID="pendTransaction" runat="server" OnClick="pendTransaction_Click" Text="Pend transactions" CausesValidation="True" OnClientClick="if (!pend()) return false;" /></td>
-                                <td style="border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid;
-                                    width: 169px; border-bottom: #617da6 1px solid">
-                                    </td>
-                            </tr>
-                        </table>
+                       
+                                    <asp:CheckBox ID="chkAll"  runat="server" Text="select all transactions" OnCheckedChanged="chkAll_CheckedChanged" Width="215px" />
+                                
+                                <asp:Button ID="pendTransaction" runat="server" OnClick="pendTransaction_Click" Text="Pend transactions" CausesValidation="True" OnClientClick="if (!pend()) return false;" />
+                            
                         <br />
                     </asp:View>
-                </asp:MultiView></td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px;" align='left'>
-            <hr />
-                                    </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 2px">
-                <asp:DataGrid ID="DataGrid1"  runat="server" AllowPaging="True" AutoGenerateColumns="False"
+                </asp:MultiView>
+    
+       
+                <asp:DataGrid ID="DataGrid1"  runat="server" AllowPaging="True" AutoGenerateColumns="False" CssClass="table"
                     CellPadding="4" Font-Bold="False" Font-Italic="False" Font-Names="Courier New"
                     Font-Overline="False" Font-Strikeout="False" Font-Underline="False" ForeColor="#333333"
                     GridLines="Horizontal" HorizontalAlign="Justify" OnItemCommand="DataGrid1_ItemCommand"
@@ -342,13 +238,10 @@
                     </Columns>
                     <HeaderStyle BackColor="#FEFECE" Font-Bold="True" Font-Italic="False" Font-Overline="False"
                         Font-Strikeout="False" Font-Underline="False" ForeColor="Black" />
-                </asp:DataGrid></td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 2px">
-                <asp:Label ID="lblTotal" runat="server" Font-Bold="True" ForeColor="#0000C0" Text="."></asp:Label></td>
-        </tr>
-    </table>
+                </asp:DataGrid>
+       
+                <asp:Label ID="lblTotal" runat="server" Font-Bold="True" ForeColor="#0000C0" Text="."></asp:Label>
+    
     <br />
     <ajaxToolkit:ToolkitScriptManager id="ScriptManager1" runat="Server" EnableScriptGlobalization="true"
         EnableScriptLocalization="true">

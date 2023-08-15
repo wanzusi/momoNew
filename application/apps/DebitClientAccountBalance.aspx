@@ -7,136 +7,82 @@
  Namespace="AjaxControlToolkit" 
  TagPrefix="ajaxToolkit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table style="width: 100%">
-        <tr>
-            <td style="width: 98%; height: 2px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                    <tr>
-                        <td class="InterfaceHeaderLabel">
-                            DEBIT
-                            CLIENT</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px">
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 5px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 98%; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;">
-                    <tr>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            AGENT</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            AGENT-ACCOUNT NUMBER</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            AGENT-ACCOUNT BALANCE</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            AMOUNT TO DEBIT</td>
-                        
-                    </tr>
-                    <tr>
-                        <td class="ddcolortabsline2" colspan="5" style="vertical-align: middle; text-align: center; height: 1px;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="vertical-align: middle; width: 20%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:DropDownList ID="cboVendor" runat="server" CssClass="InterfaceDropdownList"
-                                Width="95%" style="font: menu" OnDataBound="cboVendor_DataBound" OnSelectedIndexChanged="cboVendor_SelectedIndexChanged" AutoPostBack="True">
-                            </asp:DropDownList></td>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:TextBox ID="txtAgentAccountNumber"  Enabled="False" runat="server" Style="font: menu" Width="90%"></asp:TextBox>
-                            </td>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:TextBox ID="txtAgentAccountBalance" Enabled="False" runat="server" Style="font: menu" Width="90%"></asp:TextBox>
-                            </td>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:TextBox ID="txtAgentDebitAmount"  Font-Bold="True" runat="server" onkeyup = "javascript:this.value=Comma(this.value);" Style="font: menu" Width="90%" ForeColor="#C00000"></asp:TextBox>
-                            </td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            border-top-color: #617da6; height: 1px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            </td>
-                    </tr>
-                </table>
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 98%; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;">
-                     <tr>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            PEGASUS ACCOUNT NAME</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            PEGASUS-ACCOUNT NUMBER</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            PEGASUS-ACCOUNT BALANCE</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            NETWORK</td>
-                        
-                    </tr>
-                    <tr>
-                        <td class="ddcolortabsline2" colspan="5" style="vertical-align: middle; text-align: center; height: 1px;">
-                            </td>
-                    </tr>
-                    <tr>
-                     <td style="vertical-align: middle; width: 20%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:DropDownList ID="cboPegasusAccountName" runat="server" CssClass="InterfaceDropdownList"
-                                Width="95%" style="font: menu" OnDataBound="cboPegasusAccountName_DataBound" OnSelectedIndexChanged="cboPegasusAccountName_SelectedIndexChanged" AutoPostBack="True">
-                            </asp:DropDownList></td>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:TextBox ID="txtPegasusAccountNo"  Enabled="False" runat="server" Style="font: menu" Width="90%"></asp:TextBox>
-                            </td>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:TextBox ID="txtPegasusAccountBalance" Enabled="False" runat="server" Style="font: menu" Width="90%"></asp:TextBox>
-                            </td>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:TextBox ID="cboNetwork" Enabled="False" runat="server" Style="font: menu" Width="90%"></asp:TextBox>
-                            </td>
-                    </tr>
-                </table>
-                 <asp:Button ID="btnDebit" runat="server" Font-Size="9pt" Height="23px" OnClick="btnDebit_Click"
-                                Text="DEBIT" Width="85px" style="font: menu" 
-                                OnClientClick="return confirm('Do you really want to debit the client?');" /></td>
-          
-        </tr>
+
+    <section class="section">
+        <div class="text-center">
+            <h5 class="card-title"> DEBIT CLIENT</h5>
+        </div>
+    </section>
+
+    <section clas="section">
+        <div class="row justify-content-center">
+<div class="col-lg-12" style="display: flex; justify-content:space-evenly">
+
+      
+        <div class="col-md-2">
+            <label for="inputState" class="form-label">Agent</label>
+            <asp:DropDownList ID="cboVendor" runat="server" CssClass="form-select"
+                            OnDataBound="cboVendor_DataBound" OnSelectedIndexChanged="cboVendor_SelectedIndexChanged" AutoPostBack="True">
+                            </asp:DropDownList>
+          </div>
+
+         <div class="col-md-2">
+            <label for="inputState" class="form-label">Agent-Account Number</label>
+               <asp:TextBox ID="txtAgentAccountNumber"  Enabled="False" runat="server" class="form-control"></asp:TextBox>
+          </div>
+
+          <div class="col-md-2">
+            <label for="inputState" class="form-label">Agent-Account Balance</label>
+               <asp:TextBox ID="txtAgentAccountBalance" Enabled="False" runat="server" CssClass="form-control"></asp:TextBox>
+          </div>
+
+         <div class="col-md-2">
+            <label for="inputState" class="form-label">Amount To Debit</label>
+             <asp:TextBox ID="txtAgentDebitAmount"  Font-Bold="True" runat="server" onkeyup = "javascript:this.value=Comma(this.value);" CssClass="form-control" ForeColor="#C00000"></asp:TextBox>
+          </div>
+    </div>
+    <div class="col-lg-12 justify-content-evenly d-flex mt-4">
+
+   
+    
+         <div class="col-md-2">
+            <label for="inputState" class="form-label">Pegasus Account Name</label>
+             <asp:DropDownList ID="cboPegasusAccountName" runat="server" CssClass="form-select"
+                               OnDataBound="cboPegasusAccountName_DataBound" OnSelectedIndexChanged="cboPegasusAccountName_SelectedIndexChanged" AutoPostBack="True">
+                            </asp:DropDownList>
+          </div>
+         <div class="col-md-2">
+            <label for="inputState" class="form-label">Pegasus Account Number</label>
+              <asp:TextBox ID="txtPegasusAccountNo"  Enabled="False" runat="server" class="form-control"></asp:TextBox>
+                            
+          </div>
         
-        <tr>
-            <td style="width: 98%; height: 1px;">
-            <hr />
-            </td>
-        </tr>
-       
-        
-    </table>
-    <br />
+            <div class="col-md-2">
+            <label for="inputState" class="form-label">Pegasus Account Balance</label>
+                    <asp:TextBox ID="txtPegasusAccountBalance" Enabled="False" runat="server" CssClass="form-control"></asp:TextBox>
+          </div>
+    <div class="col-md-2">
+            <label for="inputState" class="form-label">Network</label>
+               <asp:TextBox ID="cboNetwork" Enabled="False" runat="server" CssClass="form-control"></asp:TextBox>
+          </div>
+   
+      </div>
+
+
+              <div class="col-lg-2 text-center mt-4" >
+              
+              <div class="col-md-2">
+                  <asp:Button ID="btnDebit" runat="server" OnClick="btnDebit_Click"
+                                Text="DEBIT" class="btn btn-primary" Width="125" 
+                                OnClientClick="return confirm('Do you really want to debit the client?');" />
+
+              </div>
+                 
+          </div>
+   
+    </div>
+    </section>
+
     <ajaxToolkit:ToolkitScriptManager id="ScriptManager1" runat="Server" EnableScriptGlobalization="true"
         EnableScriptLocalization="true">
     </ajaxToolkit:ToolkitScriptManager>

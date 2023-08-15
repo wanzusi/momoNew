@@ -3,21 +3,15 @@
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+
+        <section class="section">
+                <div class="text-center">
+                    <h5 class="card-title">SUSPICIOUS TRANSACTIONS</h5>
+                </div>
+            </section>
+
     <table style="width: 100%">
-        <tr>
-            <td style="width: 98%; height: 2px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                    <tr>
-                        <td class="InterfaceHeaderLabel">
-                            SUSPICIOUS TRANSACTIONS</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px">
-            </td>
-        </tr>
+      
         <tr>
             <td style="width: 98%; height: 5px">
                 &nbsp;<asp:MultiView ID="MultiView3" runat="server">

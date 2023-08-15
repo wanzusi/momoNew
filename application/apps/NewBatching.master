@@ -217,7 +217,7 @@
         </div>
           <span class="ButtonLink-label  text-color-blue Text-fontSize--12 Text-fontWeight--medium Text-lineHeight--16 
           Text-numericSpacing--proportional Text-typeface--base Text-wrap--wrap Text-display--block" style="margin-left: 4px; margin-top: -1px;">
-          <span><asp:LinkButton runat="server" ID="LinkButton1" OnClick="LinkButton1_Click" > </asp:LinkButton> </span></span></div></div>
+          <span><asp:LinkButton runat="server" ID="LinkButton1" OnClick="LinkButton1_Click" >Sign Out</asp:LinkButton> </span></span></div></div>
        
         </div>
           <div class="PressableCore-overlay PressableCore-overlay--extendBy1 Box-root Box-background--white"></div>

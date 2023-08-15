@@ -2,98 +2,57 @@
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <table style="width: 100%">
-        <tr>
-            <td style="width: 98%; height: 2px">
-                <ajaxToolkit:ToolkitScriptManager ID="ScriptManager1" runat="Server" EnableScriptGlobalization="true"
+
+    
+     <section class="section">
+        <div class="text-center">
+            <h5 class="card-title">APPROVE AGENTS</h5>
+        </div>
+    </section>
+       <ajaxToolkit:ToolkitScriptManager ID="ScriptManager1" runat="Server" EnableScriptGlobalization="true"
                     EnableScriptLocalization="true">
                 </ajaxToolkit:ToolkitScriptManager>
-                <table align="center" border="0" cellpadding="0" cellspacing="0" class="InterfaceInforTable "
-                    style="width: 90%">
-                    <tr style="color: #000000">
-                        <td class="InterfaceHeaderLabel" colspan="2" style="vertical-align: top; height: 19px;
-                            text-align: center">
-                            &nbsp;Approve AGENTS</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 5px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 95%; border-right: #617da6 1px solid;
-                    border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;">
-                    <tr>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 30%; height: 18px;
-                            text-align: center">
-                            AGENT CODE</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 24%; height: 18px;
-                            text-align: center">
-                            FROM DATE</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; height: 30px; text-align: center"
-                            colspan="2">
-                            TO DATE</td>
-                        <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 25%; height: 18px;
-                            text-align: center">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="ddcolortabsline2" colspan="1" style="vertical-align: middle; height: 1px;
-                            text-align: center">
-                        </td>
-                        <td class="ddcolortabsline2" colspan="5" style="vertical-align: middle; text-align: center;
-                            height: 1px;">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                            border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                            width: 30%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                            border-right-color: #617da6">
-                            <asp:TextBox ID="txtCustName" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                        <td style="vertical-align: middle; width: 24%; height: 23px; text-align: center;
-                            border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px;
-                            border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px;
-                            border-right-color: #617da6;">
-                            <asp:TextBox ID="txtfromDate" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                        <td colspan="2" style="border-top-width: 1px; width: 30%; border-left-width: 1px;
-                            border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6;
-                            vertical-align: middle; border-top-color: #617da6; height: 23px; text-align: center;
-                            border-right-width: 1px; border-right-color: #617da6">
-                            <asp:TextBox ID="txttoDate" runat="server" Style="font: menu" Width="90%"></asp:TextBox>&nbsp;</td>
-                        <td style="vertical-align: middle; width: 17%; height: 23px; text-align: center;
-                            border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px;
-                            border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px;
-                            border-right-color: #617da6;">
-                            <asp:Button ID="btnOK" runat="server" Font-Size="9pt" Height="23px" OnClick="btnOK_Click"
-                                Text="Search" Width="85px" Style="font: menu" />&nbsp;</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px;">
-                <hr />
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 2px">
-                &nbsp;<asp:MultiView ID="MultiView1" runat="server">
+     <div class="row mb-2 justify-content-center">
+<div class="col-lg-8" style="display: flex; justify-content:space-evenly">
+          <div class="col-md-2">
+            <label for="inputEmail5" class="form-label">Agent Code</label>
+       <asp:TextBox ID="txtCustName" runat="server" CssClass="form-control"></asp:TextBox>
+          </div>
+          <div class="col-md-2">
+            <label for="UserCategory" class="form-label">From Date</label>
+                <asp:TextBox ID="txtfromDate" runat="server" class="form-control"></asp:TextBox>
+          </div>
+
+
+    <div class="col-md-2">
+            <label for="UserCategory" class="form-label">To Date</label>
+    <asp:TextBox ID="txttoDate" runat="server" class="form-control"></asp:TextBox>
+          </div>
+
+    <div class="col-md-2">
+            <label for="UserCategory" class="form-label"></label>
+           <asp:Button ID="btnOK" runat="server"  OnClick="btnOK_Click" style="margin-top:18px" CssClass="btn btn-primary" Text="Search" />
+          </div>
+      
+    </div>
+
+      </div>
+
+<asp:MultiView ID="MultiView1" runat="server">
                     <asp:View ID="View1" runat="server">
-                        <table style="width: 100%">
-                            <tr>
-                                <td style="width: 98%; height: 2px">
-                                    <asp:Button ID="btnApprove" runat="server" Font-Bold="True" Font-Size="9pt" Height="23px"
-                                        OnClick="btnApprove_Click" Text="APPROVE" Width="150px" />
-                                    </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 98%; height: 2px; text-align: right;">
+                  
+                                   <div class="text-center">
+                                    <div class="col-md-2">
+                                    <asp:Button ID="btnApprove" runat="server" CssClass="btn btn-primary w-75"
+                                        OnClick="btnApprove_Click" Text="APPROVE" />
+                                        </div>
+                            </div>
+                        <div class="">
                                     <asp:CheckBox ID="chkAll" runat="server" AutoPostBack="True" Font-Bold="True" Font-Names="Cambria"
                                         Font-Size="12pt" OnCheckedChanged="chkTransactions_CheckedChanged" Text="Select All Agents"
-                                        Visible="False" /></td>
-                            </tr>
-                            <tr>
-                                <td style="width: 98%; height: 5px">
+                                        Visible="False" />
+                            </div>
+                            
                                     <asp:DataGrid ID="DataGrid1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
                                         CellPadding="4" ForeColor="#333333" GridLines="Horizontal" OnPageIndexChanged="DataGrid1_PageIndexChanged"
                                         Width="100%" Style="text-align: justify; font: menu; border-right: #617da6 1px solid;
@@ -137,16 +96,13 @@
                                         </Columns>
                                         <HeaderStyle BackColor="#FEFECE" Font-Bold="True" ForeColor="Black" Font-Italic="False"
                                             Font-Overline="False" Font-Strikeout="False" Font-Underline="False" />
-                                    </asp:DataGrid></td>
-                            </tr>
-                        </table>
+                                    </asp:DataGrid>
+                         
                     </asp:View>
-                    &nbsp;
-                </asp:MultiView></td>
-        </tr>
-    </table>
-    <br />
-    <br />
+            
+                </asp:MultiView>
+       
+    
     <ajaxToolkit:CalendarExtender ID="CalendarExtender1" runat="server" CssClass="MyCalendar"
         Format="dd MMMM yyyy" PopupPosition="TopLeft" TargetControlID="txttoDate">
     </ajaxToolkit:CalendarExtender>

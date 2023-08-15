@@ -12,23 +12,15 @@
  <ajaxToolkit:ToolkitScriptManager runat="Server" EnableScriptGlobalization="true"
  EnableScriptLocalization="true" ID="ScriptManager1" />
   
+
+           <section class="section">
+        <div class="text-center">
+            <h5 class="card-title">VAS TRANSACTIONS FILE RECONCILIATION</h5>
+        </div>
+    </section>
+
   <table cellpadding="0" cellspacing="0" class="style12" style="width: 90%">
-        <tr>
-            <td style="text-align: center; vertical-align: middle; height: 41px;">
-                            <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                                <tr>
-                                    <td class="InterfaceHeaderLabel">
-                                        VAS TRANSACTIONS FILE RECONCILIATION</td>
-                                </tr>
-                            </table>
-            </td>
-        </tr>
-        </table>
-             <table cellpadding="0" cellspacing="0" class="style12">
-        <tr>
-            <td style="width: 100%"></td>
-        </tr>
-    </table>
+        
     <table style="width: 90%" align="center">
                     <tr>
                         <td style="width: 100%; text-align: center; height: 2px;"><table cellpadding="0" cellspacing="0" class="style12" align="center" width="92%">

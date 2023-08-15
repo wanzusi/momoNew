@@ -165,7 +165,7 @@
         </tr>
         <tr>
             <td style="width: 98%; height: 2px">
-                <asp:DataGrid ID="DataGrid1" runat="server" AutoGenerateColumns="False"
+                <asp:DataGrid ID="DataGrid1" runat="server" AutoGenerateColumns="False" 
                     CellPadding="4" ForeColor="#333333" GridLines="Horizontal" OnItemCommand="DataGrid1_ItemCommand"
                     OnPageIndexChanged="DataGrid1_PageIndexChanged" Width="100%" style="text-align: justify; font: menu; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid; width: 100%;" Font-Bold="False" Font-Italic="False" Font-Names="Courier New" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" HorizontalAlign="Justify" AllowPaging="True" PageSize="50">
                     <FooterStyle BackColor="InactiveCaption" Font-Bold="False" ForeColor="White" />

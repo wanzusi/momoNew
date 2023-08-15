@@ -124,9 +124,9 @@ ddtabmenu.definemenu("ddtabs5", -1) //initialize Tab Menu #5 with NO tabs select
                     </div>
 
  
-                    <div class="col-12">
+                    <div class="col-12 mb-2">
 
-                         <asp:Button ID="Btnlogin" runat="server" class="btn btn-primary w-100" Text="Login"  Onclick="Btnlogin_Click"/>
+                         <asp:Button ID="Btnlogin" runat="server" class="btn btn-primary w-100 " Text="Login"  Onclick="Btnlogin_Click"/>
                      
                     </div>
                    
@@ -299,12 +299,7 @@ ddtabmenu.definemenu("ddtabs5", -1) //initialize Tab Menu #5 with NO tabs select
       <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
-
-              <div class="d-flex justify-content-center py-4">
-                
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><!-- End Logo -->
-
+            <div class="col-lg-6 col-md-6 d-flex flex-column align-items-center justify-content-center">
               <div class="card mb-3">
 
                 <div class="card-body">

@@ -9,10 +9,10 @@
 
               <div class="d-flex justify-content-center py-4">
                 <a href="#" class="logo d-flex align-items-center w-auto">
-                  <img src="images/peglogo.png" alt="">
+                  <img src="images/peglogo.png" alt=""/>
                   <span class="d-none d-lg-block">Pegasus Technologies</span>
                 </a>
-</div><!-- End Logo -->
+</div>
 
               <div class="card mb-3">
 
@@ -23,7 +23,7 @@
                     <p class="text-center small">Enter Prefered New password </p>
                   </div>
 
-                  <form class="row g-3 needs-validation" novalidate runat="server" id="form2">
+                  <div class="row g-3 needs-validation" novalidate runat="server" id="form2">
 
                        <div class="col-12">
                       <label for="yourUsername" class="form-label">Old Password</label>
@@ -59,7 +59,7 @@
                     </div>
 
  
-                    <div class="col-12" style="margin-left:auto;margin-right:auto">
+                    <div class="col-12 text-center">
                  
                         
                                <asp:Button ID="BtnSave" runat="server" CssClass="btn btn-primary w-50"  OnClick="BtnSave_Click"  Text="Change Password" />
@@ -80,7 +80,7 @@
                    </script>
                       </div>
                    
-                  </form>
+                  </div>
 
                 </div>
               </div>

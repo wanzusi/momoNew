@@ -143,7 +143,7 @@
                 </tr>
                 <tr>
                     <td style="width: 100%; text-align: center; height: 2px;">
-                        <asp:DataGrid ID="DataGrid1" runat="server" AutoGenerateColumns="False"
+                        <asp:DataGrid ID="DataGrid1" runat="server" AutoGenerateColumns="False" class="table"
                             CellPadding="4" Font-Bold="False" Font-Italic="False" Font-Names="Courier New"
                             Font-Overline="False" Font-Strikeout="False" Font-Underline="False" ForeColor="#333333"
                             GridLines="Horizontal" HorizontalAlign="Justify" PageSize="50" Style="border-right: #617da6 1px solid;

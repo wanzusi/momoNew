@@ -17,123 +17,52 @@
             }
         </script>
 
+       <section class="section">
+              <div class="text-center">
+            <h5 class="card-title ">FAILED TRANSACTIONS TO COMPLETE</h5>
 
-    <table style="width: 100%">
-        <tr>
-            <td style="width: 98%; height: 2px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                    <tr>
-                        <td class="InterfaceHeaderLabel">
-                            FAILED TRANSACTIONS TO COMPLETE</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 3px">
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 5px">
-                &nbsp;<asp:MultiView ID="MultiView3" runat="server">
+        </div>
+          </section>
+  
+
+   <asp:MultiView ID="MultiView3" runat="server">
                     <asp:View ID="View4" runat="server">
-                        &nbsp;<table style="width: 100%">
-                            <tr>
-                                <td style="width: 98%; height: 5px">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="border-right: #617da6 1px solid;
-                                        border-top: #617da6 1px solid; border-left: #617da6 1px solid; width: 98%; border-bottom: #617da6 1px solid">
-                                        <tr>
-                                            <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                                                text-align: center">
-                                                CUSTOMER CODE</td>
-                                            <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                                                text-align: center">
-                                                BATCH NO</td>
-                                            <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                                                text-align: center">
-                                                recorded by</td>
-                                            <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                                                text-align: center">
-                                                from DATE</td>
-                                            <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                                                text-align: center">
-                                                to DATE</td>
-                                            <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                                                text-align: center">
-                                                STATUS
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="ddcolortabsline2" colspan="5" style="vertical-align: middle; height: 1px;
-                                                text-align: center">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                                border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                                width: 20%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                                border-right-color: #617da6">
-                                                &nbsp;
-                                                <asp:TextBox ID="customerCode" runat="server" Width="225px"></asp:TextBox></td>
-                                            <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                                border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                                width: 20%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                                border-right-color: #617da6">
-                                                &nbsp;
-                                                <asp:TextBox ID="batchNo" runat="server" Width="225px"></asp:TextBox></td>
-                                            <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                                border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                                width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                                border-right-color: #617da6">
-                                                <asp:TextBox ID="recordedBy" runat="server" Width="225px"></asp:TextBox></td>
-                                            <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                                border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                                width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                                border-right-color: #617da6">
-                                                <asp:TextBox ID="fromDate" runat="server" Style="font: menu" Width="90%"></asp:TextBox>
-                                            </td>
-                                            <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                                border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                                width: 17%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                                border-right-color: #617da6">
-                                                &nbsp;<asp:TextBox ID="toDate" runat="server" Style="font: menu" Width="90%"></asp:TextBox></td>
-                                            <td style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                                border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                                width: 25%; border-top-color: #617da6; height: 23px; text-align: center; border-right-width: 1px;
-                                                border-right-color: #617da6">
-                                                
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5" style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                                border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                                border-top-color: #617da6; height: 1px; text-align: center; border-right-width: 1px;
-                                                border-right-color: #617da6">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="5" style="border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6;
-                                                border-bottom-width: 1px; border-bottom-color: #617da6; vertical-align: middle;
-                                                border-top-color: #617da6; height: 1px; text-align: center; border-right-width: 1px;
-                                                border-right-color: #617da6">
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                            <asp:Button ID="btnOK" runat="server" Font-Size="9pt" Height="23px" OnClick="btnOK_Click"
-                                Text="Search" Width="85px" style="font: menu" /></asp:View>
+                 
+                            <div class="row mb-4 justify-content-center">
+<div class="col-lg-12" style="display: flex; justify-content:space-evenly">
+          <div class="col-md-2">
+            <label for="inputEmail5" class="form-label">Customer Code</label>
+  <asp:TextBox ID="customerCode" runat="server" CssClass= "form-control"></asp:TextBox>
+          </div>
+    
+     <div class="col-md-2">
+            <label for="inputEmail5" class="form-label">Batch No</label>
+       <asp:TextBox ID="batchNo" runat="server" class="form-control" />
+          </div>
+          <div class="col-md-2">
+            <label for="UserCategory" class="form-label">Recorded By</label>
+               
+                  <asp:TextBox ID="recordedBy" runat="server" class="form-control" />
+          </div>
+     <div class="col-md-2">
+            <label for="UserCategory" class="form-label">From Date</label>
+                <asp:TextBox ID="fromDate" runat="server" class="form-control" />
+          </div>
+       <div class="col-md-2">
+            <label for="UserCategory" class="form-label">To Date</label>
+               <asp:TextBox ID="toDate" runat="server" class="form-control" />
+          </div>
+    <div class="col-md-2">
+            <label for="UserCategory" class="form-label"></label>
+               
+<asp:Button ID="btnOK"  runat="server" Style="margin-top:20px;" CssClass="btn btn-primary w-75" Text="Search" OnClick="btnOK_Click" /> 
+          </div>
+    </div>
+                                       </div>
+
+                    </asp:View>
                 </asp:MultiView>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px;">
-            <hr />
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 2px">
+     
                 <asp:MultiView ID="MultiView1" runat="server">
                     <asp:View ID="View1" runat="server">
                 <table style="width: 100%">
@@ -151,14 +80,14 @@
                                 OnCheckedChanged="chkSelect_CheckedChanged" Text="Select All" Visible="False" /></td>
                     </tr>
                 </table><hr />
-                        <asp:Label ID="lblTotal" runat="server" Text="." Font-Bold="True" ForeColor="#0000C0"></asp:Label></asp:View>
-                </asp:MultiView></td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 2px">
+                        <asp:Label ID="lblTotal" runat="server" Text="." Font-Bold="True" ForeColor="#0000C0"></asp:Label>
+
+                    </asp:View>
+                </asp:MultiView>
+     
                 <asp:MultiView ID="MultiView2" runat="server">
                     <asp:View ID="View2" runat="server">
-                <asp:DataGrid ID="DataGrid1" runat="server" AutoGenerateColumns="False"
+                <asp:DataGrid ID="DataGrid1" runat="server" AutoGenerateColumns="False" CssClass="table"
                     CellPadding="4" ForeColor="#333333" GridLines="Horizontal" OnItemCommand="DataGrid1_ItemCommand"
                     OnPageIndexChanged="DataGrid1_PageIndexChanged" Width="100%" style="text-align: justify; font: menu; border-right: #617da6 1px solid; border-top: #617da6 1px solid; border-left: #617da6 1px solid; border-bottom: #617da6 1px solid;" Font-Bold="False" Font-Italic="False" Font-Names="Courier New" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" HorizontalAlign="Justify">
                     <FooterStyle BackColor="InactiveCaption" Font-Bold="False" ForeColor="White" />
@@ -329,19 +258,18 @@
                             </tr>
                         </table>
                     </asp:View>
-                </asp:MultiView></td>
-        </tr>
-    </table>
+                </asp:MultiView>
+   
     <br />
     <ajaxToolkit:ToolkitScriptManager id="ScriptManager1" runat="Server" EnableScriptGlobalization="true"
         EnableScriptLocalization="true">
     </ajaxToolkit:ToolkitScriptManager>
     <br />
     <ajaxToolkit:CalendarExtender id="CalendarExtender1" runat="server" CssClass="MyCalendar"
-        Format="dd MMMM yyyy" PopupPosition="TopLeft" TargetControlID="fromDate">
+        Format="dd MMMM yyyy" PopupPosition="BottomRight" TargetControlID="fromDate">
     </ajaxToolkit:CalendarExtender>
     <ajaxToolkit:CalendarExtender id="CalendarExtender2" runat="server" CssClass="MyCalendar"
-        Format="dd MMMM yyyy" PopupPosition="TopLeft" TargetControlID="toDate">
+        Format="dd MMMM yyyy" PopupPosition="BottomRight" TargetControlID="toDate">
     </ajaxToolkit:CalendarExtender>
     
     

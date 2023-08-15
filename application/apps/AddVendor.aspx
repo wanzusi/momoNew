@@ -16,289 +16,139 @@ UICulture="auto" %>
 
     <ajaxToolkit:ToolkitScriptManager runat="Server" EnableScriptGlobalization="true"
         EnableScriptLocalization="true" ID="ScriptManager1" />
-            <table cellpadding="0" cellspacing="0" class="style12">
-        <tr>
-            <td style="width: 100%">
-                                                                </td>
-        </tr>
-    </table>
-    <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
-        <asp:View ID="View1" runat="server">
+    
+   <section class="section">
+       <div class="text-center">
+        <h5 class="card-title">CREATE AGENT</h5>
 
+    </div>
+   </section>
     
-    
-    <table cellpadding="0" cellspacing="0" class="style12" style="width: 90%">
-        <tr>
-            <td style="text-align: center; vertical-align: middle; height: 41px;">
-                            <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                                <tr>
-                                    <td class="InterfaceHeaderLabel">
-                                        CREATE AGENT</td>
-                                </tr>
-                            </table>
-            </td>
-        </tr>
-        </table>
-                <table style="width: 90%" align="center">
-                    <tr>
-                        <td style="width: 100%; text-align: center; height: 2px;"><table cellpadding="0" cellspacing="0" class="style12" align="center" width="92%">
-                            <tr>
-                                <td style="width: 50%; vertical-align: top; height: 5px; text-align: left;">
-                                    <table style="width: 98%" align="center" cellpadding="0" cellspacing="0" >
-                                        <tbody>
-                                            <tr>
-                                                <td class="InterfaceHeaderLabel2" style="height: 18px">
-                                                    AGENT DETAILS</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td style="vertical-align: top; width: 2%; height: 5px; text-align: center">
-                                </td>
-                                <td style="vertical-align: top; width: 48%; height: 5px; text-align: left" >
-                                    <table align="center" cellpadding="0" cellspacing="0" style="width: 98%">
-                                        <tbody>
-                                            <tr>
-                                                <td class="InterfaceHeaderLabel2" style="height: 18px">
-                                                    System Accessiblity Details</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" style="vertical-align: top; height: 4px; text-align: left">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="vertical-align: top; width: 50%; height: 5px; text-align: left">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="width: 98%">
-                                        <tr>
-                                            <td class="InterFaceTableLeftRowUp">
-                                                Code</td>
-                                            <td class="InterFaceTableMiddleRowUp" style="width: 2%">
-                                            </td>
-                                            <td class="InterFaceTableRightRow">
-                                                <asp:TextBox ID="txtCode" runat="server" CssClass="InterfaceTextboxLongReadOnly"
-                                                    Width="60%"></asp:TextBox></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="InterFaceTableLeftRowUp">
-                                                Bill System Code</td>
-                                            <td class="InterFaceTableMiddleRowUp" style="width: 2%">
-                                            </td>
-                                            <td class="InterFaceTableRightRow">
-                                                <asp:TextBox ID="txtBillSystemCode" runat="server" CssClass="InterfaceTextboxLongReadOnly"
-                                                    Width="60%"></asp:TextBox></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="InterFaceTableLeftRowUp" style="height: 20px">
-                                                Name</td>
-                                            <td class="InterFaceTableMiddleRowUp" style="width: 2%; height: 20px;">
-                                            </td>
-                                            <td class="InterFaceTableRightRow" style="height: 20px">
-                                                <asp:TextBox ID="txtName" runat="server" CssClass="InterfaceTextboxLongReadOnly"
-                                                    Width="60%"></asp:TextBox></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="InterFaceTableLeftRowUp" style="height: 20px">
-                                                Contact Name</td>
-                                            <td class="InterFaceTableMiddleRowUp" style="width: 2%; height: 20px;">
-                                            </td>
-                                            <td class="InterFaceTableRightRow" style="height: 20px">
-                                                <asp:TextBox ID="txtcontact" runat="server" CssClass="InterfaceTextboxLongReadOnly"
-                                                    Width="60%"></asp:TextBox></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="InterFaceTableLeftRowUp">
-                                                Relationship Manager</td>
-                                            <td class="InterFaceTableMiddleRowUp">
-                                            </td>
-                                             <td class="InterFaceTableRightRow" style="height: 20px">
-                                                <asp:TextBox ID="txtAccountManager" runat="server" CssClass="InterfaceTextboxLongReadOnly"
-                                                    Width="60%"></asp:TextBox></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="InterFaceTableLeftRowUp">
-                                                Relationship Representative</td>
-                                            <td class="InterFaceTableMiddleRowUp">
-                                            </td>
-                                             <td class="InterFaceTableRightRow" style="height: 20px">
-                                                <asp:TextBox ID="txtAccountRep" runat="server" CssClass="InterfaceTextboxLongReadOnly"
-                                                    Width="60%"></asp:TextBox></td>
-                                        </tr>
-                                    </table>
-                                    <asp:TextBox ID="minBalance" runat="server" Visible="False"></asp:TextBox></td>
-                                <td style="vertical-align: top; width: 2%; height: 10px; text-align: center">
-                                </td>
-                                <td style="vertical-align: top; width: 48%; height: 5px; text-align: left">
-                                    <table align="center" cellpadding="0" cellspacing="0" style="width: 98%">
-                                        <tr>
-                                            <td class="InterFaceTableLeftRowUp">
-                                                Email</td>
-                                            <td class="InterFaceTableMiddleRowUp">
-                                            </td>
-                                            <td class="InterFaceTableRightRow">
-                                                <asp:TextBox ID="txtemail" runat="server" CssClass="InterfaceTextboxLongReadOnly"
-                                                    Width="60%"></asp:TextBox></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="InterFaceTableLeftRowUp" style="height: 20px">
-                                                        Confirm Email</td>
-                                                    <td class="InterFaceTableMiddleRowUp" style="height: 20px">
-                                                    </td>
-                                                    <td class="InterFaceTableRightRow" style="height: 20px">
-                                                        <asp:TextBox ID="txtconfirmemail" runat="server" CssClass="InterfaceTextboxLongReadOnly"
-                                                            Width="60%"></asp:TextBox></td>
-                                                </tr>
-                                        <tr>
-                                            <td class="InterFaceTableLeftRowUp">
-                                                Pegasus Charge Type</td>
-                                            <td class="InterFaceTableMiddleRowUp">
-                                            </td>
-                                            <td class="InterFaceTableRightRow">
-                                                <asp:DropDownList ID="cboChargeType" runat="server" CssClass="InterfaceDropdownList"
-                                                    OnDataBound="cboChargeType_DataBound" Style="font: menu" Width="95%">
-                                                </asp:DropDownList></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="InterFaceTableLeftRowUp">
-                                                Pegasus Charge</td>
-                                            <td class="InterFaceTableMiddleRowUp">
-                                            </td>
-                                            <td class="InterFaceTableRightRow">
-                                                <asp:TextBox ID="txtPegPayCharge" runat="server" CssClass="InterfaceTextboxLongReadOnly"
-                                                    Width="60%"></asp:TextBox></td>
-                                        </tr><%--
-                                                <tr>
-                                                    <td class="InterFaceTableLeftRowUp">
-                                                        Is Active</td>
-                                                    <td class="InterFaceTableMiddleRowUp">
-                                                    </td>
-                                                    <td class="InterFaceTableRightRow"><asp:CheckBox ID="chkIsActive" runat="server" Text="Tick To Activate" Font-Bold="True" /></td>
-                                                </tr>--%>
-                                        <tr>
-                                            <td class="InterFaceTableLeftRowUp">
-                                                Is Required Certificate&nbsp;</td>
-                                            <td class="InterFaceTableMiddleRowUp">
-                                            </td>
-                                            <td class="InterFaceTableRightRow">
-                                                <asp:CheckBox ID="chkcert" runat="server" Text="Tick If Certificate" Font-Bold="True" /></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="InterFaceTableLeftRowUp">
-                                                User</td>
-                                            <td class="InterFaceTableMiddleRowUp">
-                                            </td>
-                                            <td class="InterFaceTableRightRow">
-                                                <asp:TextBox ID="txtUser" runat="server" BackColor="#E0E0E0" CssClass="InterfaceTextboxLongReadOnly"
-                                                    ReadOnly="True" Width="60%"></asp:TextBox></td>
-                                        </tr>
-                                            </table>
-                                    &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" style="vertical-align: top; width: 100%; height: 2px; text-align: center">
-                                    </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" style="vertical-align: top; height: 2px; text-align: center">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" style="vertical-align: top; height: 5px; text-align: center">
-                                    <asp:MultiView ID="MultiView2" runat="server">
-                                        <asp:View ID="View2" runat="server">
-                                            <table cellpadding="0" cellspacing="0" class="style12" align="center" width="92%">
-                                                <tr>
-                                                    <td style="width: 50%; vertical-align: top; height: 5px; text-align: left;">
-                                                        <table style="width: 98%" align="center" cellpadding="0" cellspacing="0" >
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="InterfaceHeaderLabel2" style="height: 18px">
-                                                        Password</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                    <td style="vertical-align: top; width: 2%; height: 5px; text-align: center">
-                                                    </td>
-                                                    <td style="vertical-align: top; width: 48%; height: 5px; text-align: left" >
-                                                        <table align="center" cellpadding="0" cellspacing="0" style="width: 98%">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="InterfaceHeaderLabel2" style="height: 18px">
-                                                                        Email</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="3" style="vertical-align: top; height: 1px; text-align: left">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="vertical-align: top; width: 50%; height: 10px; text-align: left">
-                                                        <table align="center" cellpadding="0" cellspacing="0" style="width: 98%">
-                                                            <tr>
-                                                                <td class="InterFaceTableLeftRowUp">
-                                                                    Reset</td>
-                                                                <td class="InterFaceTableMiddleRowUp" style="width: 2%">
-                                                                </td>
-                                                                <td class="InterFaceTableRightRow">
-                                                                    <asp:CheckBox ID="chkResetPassword" runat="server" Text="Tick To Reset" Font-Bold="True" AutoPostBack="True" OnCheckedChanged="chkResetPassword_CheckedChanged" /></td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                    <td style="vertical-align: top; width: 2%; height: 10px; text-align: center">
-                                                    </td>
-                                                    <td style="vertical-align: top; width: 48%; height: 10px; text-align: left">
-                                                        <table align="center" cellpadding="0" cellspacing="0" style="width: 98%">
-                                                            <tr>
-                                                                <td class="InterFaceTableLeftRowUp">
-                                                                    Resend</td>
-                                                                <td class="InterFaceTableMiddleRowUp">
-                                                                </td>
-                                                                <td class="InterFaceTableRightRow">
-                                                                    <asp:CheckBox ID="chkResend" runat="server" Text="Tick To Resend" Font-Bold="True" AutoPostBack="True" OnCheckedChanged="chkResend_CheckedChanged" /></td>
-                                                            </tr>
-                                                        </table>
-                                                        &nbsp;</td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="3" style="vertical-align: top; height: 5px; text-align: center" class="InterFaceTableLeftRowUp">
-                                            </td>
-                                                </tr>
-                                            </table>
-                                            </asp:View>
-                                    </asp:MultiView></td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" style="vertical-align: top; width: 100%; height: 5px; text-align: center">
-                                    <table style="width: 80%" align="center">
-                                        <tr>
-                                            <td class="InterFaceTableLeftRowUp" style="width: 35%">
-                                                Browse PegPay Certificate</td>
-                                            <td class="InterFaceTableLeftRowUp" style="width: 65%">
-                                                <asp:FileUpload ID="FileUpload1" runat="server" /></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 100%; text-align: center; height: 30px;" class="InterFaceTableLeftRowUp">
-                                                                <asp:Button ID="btnOK" runat="server" Font-Size="9pt" Height="23px"
-                                                                    Text="SAVE AGENT" Width="150px" Font-Bold="True" OnClick="btnOK_Click" style="font: menu" /></td>
-                    </tr>
-                </table>
-        </asp:View>
-        &nbsp;
-    </asp:MultiView>
-                <asp:Label ID="lblCode" runat="server" Text="0" Visible="False"></asp:Label><br />
+ <asp:MultiView ID="MultiView1" runat="server" ActiveViewIndex="0">
+        <asp:View ID="View1" runat="server">
+      <section class="section">
+   <div class="row justify-content-center">
+<div class="col-lg-10">
+
+    <div class="card" style="margin: 10px;">
+      <div class="card-body">
+        <h5 class="card-title">Agent Details</h5>
+  
+        <!-- Multi Columns Form -->
+        <div class="row g-3">
+          
+          <div class="col-md-6">
+            <label for="inputEmail5" class="form-label">Code</label>
+            <asp:TextBox ID="txtCode" runat="server" class="form-control" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword5" class="form-label"> Bill System Code</label>
+            <asp:TextBox ID="txtBillSystemCode" runat="server"  class="form-control" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputAddress5" class="form-label">Name</label>
+            <asp:TextBox ID="txtName" runat="server"  class="form-control" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputAddress2" class="form-label">Contact Name</label>
+            <asp:TextBox ID="txtcontact" runat="server" class="form-control"/>
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Relationship Manager</label>
+            <asp:TextBox ID="txtAccountManager" runat="server" class="form-control"/>
+          </div>
+          <div class="col-md-6">
+            <label for="inputState" class="form-label">Relationship Representative</label>
+               <asp:TextBox ID="txtAccountRep" runat="server" class="form-control" TextMode="MultiLine" ></asp:TextBox>
+          </div>
+            <asp:TextBox ID="minBalance" CssClass="form-control" runat="server" Visible="False"></asp:TextBox>
+
+   <h5 class="card-title">System Accessibility Details</h5>
+            <!-- Multi Columns Form -->
+      <div class="row g-3">
+          
+          <div class="col-md-6">
+            <label for="inputState" class="form-label">Email</label>
+               <asp:TextBox ID="txtemail" runat="server" class="form-control"  ></asp:TextBox>
+          </div>
+           <div class="col-md-6">
+            <label for="inputState" class="form-label">Confirm Email</label>
+               <asp:TextBox ID="txtconfirmemail" runat="server" class="form-control"></asp:TextBox>
+          </div>
+
+           <div class="col-md-6">
+            <label for="inputState" class="form-label">Pegasus Charge Type </label>
+               <<asp:DropDownList ID="cboChargeType" runat="server" CssClass="form-select" OnDataBound="cboChargeType_DataBound" >
+                                                </asp:DropDownList>
+          </div>
+
+
+           <div class="col-md-6">
+            <label for="inputState" class="form-label">Pegasus Charge</label>
+               <asp:TextBox ID="txtPegPayCharge" runat="server" class="form-control" ></asp:TextBox>
+          </div>
+
+        <div class="col-md-6">
+          <div class="form-check"  style="margin-top:20px">
+            <label for="inputCity" class="form-label">Is Certificate Required</label>
+            <asp:CheckBox runat="server" type="checkbox"  class="form-check-input" ID="chkcert"/>
+         
+          </div>
+        </div>
+
+            <div class="col-md-6">
+               <label for="inputUser" class="form-label">User</label>
+               <asp:TextBox ID="txtUser" ReadOnly="True" runat="server" class="form-control"  ></asp:TextBox>
+          </div>
+
+          
+ <asp:MultiView ID="MultiView2" runat="server">
+                 <asp:View ID="View2" runat="server">
+                     <h5>Password</h5>
+                     <div class="row g-3">
+                          <div class="col-md-6">
+          <div class="form-check">
+            <label for="inputCity" class="form-label">Reset</label>
+            <asp:CheckBox ID="chkResetPassword" runat="server"  class="form-check-input" type="checkbox" />
+         
+          </div>
+        </div>
+                     </div>
+                     <h5>Email</h5>
+                     <div class="row g-3">
+                          <div class="col-md-6">
+          <div class="form-check" style="margin-top:20px" >
+            <label for="inputCity" class="form-label">Resend</label>
+            <asp:CheckBox ID="chkResend" runat="server"  class="form-check-input" type="checkbox" />
+         
+          </div>
+        </div>
+                     </div>
+              </asp:View>
+                </asp:MultiView>
+    <div class="col-md-6"> 
+           <label for="inputUser" class="form-label">Browse PegPay Certificates</label>
+               <asp:FileUpload ID="FileUpload1" runat="server" />
+    </div>
+
+    <div class="col-md-2">
+                <asp:Button ID="btnOK" runat="server" CssClass="btn btn-primary w-100" Text="Save Agent"  OnClick="btnOK_Click" style="font: menu" />
+            </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+ </section>
+</asp:View>
+
+ </asp:MultiView>
+
+  <asp:Label ID="lblCode" runat="server" Text="0" Visible="False"></asp:Label>
+  
+</div>
 
 </asp:Content>
 

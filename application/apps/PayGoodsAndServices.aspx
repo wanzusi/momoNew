@@ -12,207 +12,131 @@
         EnableScriptLocalization="true" ID="ScriptManager1" />
     <asp:MultiView ID="MultiView1" runat="server">
         <asp:View ID="View1" runat="server">
-            <table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
-                <tr>
-                    <td style="padding-bottom: 10px; vertical-align: top; height: 50px; text-align: center">
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="InterfaceInforTable "
-                            style="width: 90%">
-                            <tr style="color: #000000">
-                                <td class="InterfaceHeaderLabel" colspan="2" style="vertical-align: top; height: 19px;
-                                    text-align: center">
-                                    ONLINE PaymEnt</td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-bottom: 10px; vertical-align: top; text-align: center">
+
+               <section class="section">
+        <div class="text-center">
+            <h5 class="card-title">ONLINE PAYMENT</h5>
+        </div></section>
+
                         <asp:MultiView ID="MultiView2" runat="server">
                             <asp:View ID="View2" runat="server">
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" class="InterfaceInforTable2 "
-                                    style="width: 90%">
-                                    <tr style="color: #000000">
-                                        <td class="InterFaceTableRightRow" colspan="4" style="vertical-align: top; height: 2px;
-                                            background-color: white; text-align: left">
-                                        </td>
-                                    </tr>
-                                    <tr style="color: #000000">
-                                        <td class="InterFaceTableLeftRowUp InterfaceTableColor" colspan="4" style="vertical-align: top;
-                                            height: 24px; text-align: left">
-                                            <table id="TABLE1" align="center" cellpadding="0" cellspacing="0" style="border-right: #617da6 1px solid;
-                                                border-top: #617da6 1px solid; border-left: #617da6 1px solid; width: 80%; border-bottom: #617da6 1px solid">
-                                                <tr>
-                                                    <td class="InterfaceHeaderLabel2" colspan="4" style="vertical-align: middle; height: 18px;
-                                                        text-align: center">
-                                                        PURCHASE GOODs AND SERVICES</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="ddcolortabsline2" colspan="4" style="vertical-align: middle; height: 1px;
-                                                        text-align: center">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="InterfaceHeaderLabel2" colspan="2" style="vertical-align: middle; width: 50%;
-                                                        height: 18px; text-align: center">
-                                                        &nbsp;Select Service</td>
-                                                    <td class="InterfaceHeaderLabel2" colspan="2" style="vertical-align: middle; width: 50%;
-                                                        height: 18px; text-align: center">
-                                                        Select Option</td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
-                                                        <table align="center" style="width: 80%">
-                                                            <tr>
-                                                                <td class="InterFaceTableLeftRowUp" style="width: 50%; text-align: center; height: 20px;">
-                                                                    &nbsp;<asp:DropDownList ID="cboService" runat="server" Width="60%" OnSelectedIndexChanged="cboService_SelectedIndexChanged" AutoPostBack="true">
+       <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+              <div class="card mb-3">
+
+                <div class="card-body">
+                  <div class="text-center"> 
+                      <h5 class="card-title">PURCHASE GOODs AND SERVICES</h5>
+                  </div>
+                  <div class="row g-3 needs-validation" novalidate runat="server" id="form4">
+
+                    <div class="col-12">
+                      <label for="otp" class="form-label">Select Service</label>
+                 
+                       <asp:DropDownList ID="cboService" runat="server" CssClass="form-select" OnSelectedIndexChanged="cboService_SelectedIndexChanged" AutoPostBack="true">
                                                                         <asp:ListItem Value="0">---Select Service---</asp:ListItem>
                                                                         <asp:ListItem Value="001">WebHosting</asp:ListItem>
                                                                         <asp:ListItem Value="002">AirUganda Ticket</asp:ListItem>
-                                                                    </asp:DropDownList></td>
-                                                                <td class="InterFaceTableLeftRowUp" style="width: 50%; text-align: center; height: 20px;"><asp:DropDownList ID="cboSubservice" runat="server" Width="60%" OnDataBound="cboSubservice_OnDataBound" OnSelectedIndexChanged="cboSubservice_SelectedIndexChanged" AutoPostBack="true">
-                                                                </asp:DropDownList></td>
-                                                            </tr>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
-                                                        Select Account : &nbsp;&nbsp;
-                                                        <asp:DropDownList ID="cboCustomerAccount" runat="server" Width="35%" OnDataBound="cboCustomerAccount_OnDataBound">
-                                                        </asp:DropDownList></td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
-                                                        Amount To Transfer: &nbsp;&nbsp;
-                                                        <asp:TextBox ID="txtAmount" runat="server"  CssClass="DataEntryFormTableTextbox DataEntryFormTableTextboxWidth" Width="40%" Font-Bold="True" ForeColor="Red" Enabled="False" ></asp:TextBox></td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
-                                                        </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr style="color: #000000">
-                                        <td class="InterFaceTableLeftRowUp InterfaceTableColor" colspan="4" style="padding-bottom: 25px;
-                                            vertical-align: top; padding-top: 25px; height: 17px; text-align: center">
-                                            <asp:Button ID="btnSave" runat="server" CssClass="DataEntryFormTableButtons" Font-Bold="True" OnClick="btnSave_Click" Text="Process Tranfer" Width="140px" /></td>
-                                    </tr>
-                                </table>
+                                                                    </asp:DropDownList>
+               
+                    <div class="col-12">
+                   <label for="otp" class="form-label">Select Option</label>
+                            <asp:DropDownList ID="cboSubservice" runat="server" CssClass="form-select" OnDataBound="cboSubservice_OnDataBound" OnSelectedIndexChanged="cboSubservice_SelectedIndexChanged" AutoPostBack="true">
+                                                                </asp:DropDownList>
+                      </div>
+                        
+                    </div>
+
+             <div class="col-12">
+                   <label for="otp" class="form-label">Select Account</label>
+                       <asp:DropDownList ID="cboCustomerAccount" runat="server" Width="35%" OnDataBound="cboCustomerAccount_OnDataBound" OnSelectedIndexChanged="cboCustomerAccount_SelectedIndexChanged">
+                                                        </asp:DropDownList>
+
+             </div>
+                        <div class="col-12">
+                   <label for="otp" class="form-label">Amount To Transfer</label>
+                      <asp:TextBox ID="txtAmount" runat="server"  CssClass="form-control" Font-Bold="True" ForeColor="Red" Enabled="False" ></asp:TextBox>
+                        
+                    </div>
+
+                      <div class="col-12">
+                             <asp:Button ID="btnSave" runat="server" CssClass="btn btn-primary w-100" Font-Bold="True" OnClick="btnSave_Click" Text="Process Tranfer" />
+                      </div>
+                   
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+      </section>
                             </asp:View>
-                            &nbsp;&nbsp;&nbsp;<asp:View ID="View3" runat="server"><table align="center" border="0" cellpadding="0" cellspacing="0" class="InterfaceInforTable2 "
-                                    style="width: 90%">
-                                <tr style="color: #000000">
-                                    <td class="InterfaceHeaderLabel2" colspan="4" style="vertical-align: top; height: 2px; text-align: center">
-                                        Confirm Payemt And Proceed</td>
-                                </tr>
-                                <tr style="color: #000000">
-                                    <td class="InterFaceTableLeftRowUp InterfaceTableColor" colspan="4" style="vertical-align: top;
-                                        height: 24px; text-align: center">
-                                    </td>
-                                </tr>
-                                <tr style="color: #000000">
-                                    <td class="InterFaceTableLeftRowUp InterfaceTableColor" colspan="4" style="vertical-align: top;
-                                        height: 24px; text-align: center"><table id="Table2" align="center" cellpadding="0" cellspacing="0" style="border-right: #617da6 1px solid;
-                                                border-top: #617da6 1px solid; border-left: #617da6 1px solid; width: 80%; border-bottom: #617da6 1px solid">
-                                            <tr>
-                                                <td class="InterfaceHeaderLabel2" colspan="4" style="vertical-align: middle; height: 18px;
-                                                        text-align: center">
-                                                    Fun TransFEr Account Details</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="ddcolortabsline2" colspan="4" style="vertical-align: middle; height: 1px;
-                                                        text-align: center">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="InterfaceHeaderLabel2" colspan="2" style="vertical-align: middle; width: 50%;
-                                                        height: 18px; text-align: center">
-                                                    &nbsp;Service</td>
-                                                <td class="InterfaceHeaderLabel2" colspan="2" style="vertical-align: middle; width: 50%;
-                                                        height: 18px; text-align: center">
-                                                    Sub Service</td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
-                                                    <table align="center" style="width: 80%">
-                                                        <tr>
-                                                            <td class="InterFaceTableLeftRowUp" style="width: 50%; text-align: center">
-                                        <asp:TextBox ID="txtViewService" runat="server" CssClass="DataEntryFormTableTextbox DataEntryFormTableTextboxWidth" Enabled="False"></asp:TextBox></td>
-                                                            <td class="InterFaceTableLeftRowUp" style="width: 50%; text-align: center">
-                                        <asp:TextBox ID="txtViewSubservice" runat="server" CssClass="DataEntryFormTableTextbox DataEntryFormTableTextboxWidth" Enabled="False"></asp:TextBox></td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
-                                                    Select Account : &nbsp;
-                                                    <asp:DropDownList ID="cboviewAccount" runat="server" Width="35%" OnDataBound="cboviewAccount_OnDataBound" Enabled="False">
-                                                    </asp:DropDownList></td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
-                                                    Amount To Transfer: &nbsp;&nbsp;
-                                                    <asp:TextBox ID="txtViewAmount" runat="server" CssClass="DataEntryFormTableTextbox DataEntryFormTableTextboxWidth" Enabled="False" Width="40%" Font-Bold="True" ForeColor="Red"></asp:TextBox></td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="4" style="vertical-align: middle; height: 18px; text-align: center">
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr style="color: #000000">
-                                    <td class="InterFaceTableLeftRowUp InterfaceTableColor" colspan="4" style="vertical-align: top;
-                                            height: 17px; text-align: center">
-                                        &nbsp;</td>
-                                </tr>
-                                <tr style="color: #000000">
-                                    <td class="InterFaceTableLeftRowUp InterfaceTableColor" colspan="4" style="padding-bottom: 25px;
-                                            vertical-align: top; padding-top: 25px; text-align: center">
-                                    <asp:Button ID="btnCancel" runat="server" CssClass="DataEntryFormTableButtons" Font-Bold="True" OnClick="btnCancel_Click" Text="NO" Width="140px" />
-                                                    <asp:Button ID="btnConfirm" runat="server" CssClass="DataEntryFormTableButtons" Font-Bold="True" OnClick="btnConfirm_Click" Text="YES" Width="140px" /></td>
-                                </tr>
-                            </table>
+                         
+                            
+                            <asp:View ID="View3" runat="server">
+                                <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+              <div class="card mb-3">
+
+                <div class="card-body">
+                  <div class="text-center"> 
+                      <h5 class="card-title">Confirm Payemt And Proceed</h5>
+                      <h6 class="card-title">Funds Transfer Account Details</h6>
+                  </div>
+                  <div class="row g-3 needs-validation" novalidate runat="server" id="Div1">
+
+                    <div class="col-12">
+                      <label for="otp" class="form-label">Service</label>
+                 
+                     <asp:TextBox ID="txtViewService" runat="server" CssClass="form-select" Enabled="False"></asp:TextBox>
+               
+                    <div class="col-12">
+                   <label for="otp" class="form-label">Sub Service</label>
+                        <asp:TextBox ID="txtViewSubservice" runat="server" CssClass="form-control" Enabled="False"></asp:TextBox>
+                      </div>
+                        
+                    </div>
+
+             <div class="col-12">
+                   <label for="otp" class="form-label">Select Account</label>
+                     <asp:DropDownList ID="cboviewAccount" runat="server" class="form-select" OnDataBound="cboviewAccount_OnDataBound" Enabled="False">
+                                                    </asp:DropDownList>
+                        
+                    </div>
+                        <div class="col-12">
+                   <label for="otp" class="form-label">Amount To Transfer</label>
+                  <asp:TextBox ID="txtViewAmount" runat="server" CssClass="form-control " Enabled="False"  Font-Bold="True" ForeColor="Red"></asp:TextBox>
+                        
+                    </div>
+
+                      <div class="col-12">
+                          <div class="row justify-content-evenly">
+                          <div class="col-md-4"><asp:Button ID="btnCancel" runat="server" CssClass="btn btn-danger w-50" Font-Bold="True" OnClick="btnCancel_Click" Text="NO"  /></div>
+                           <div class="col-md-4">
+                               <asp:Button ID="btnConfirm" runat="server" CssClass="btn btn-success ww-50" Font-Bold="True" OnClick="btnConfirm_Click" Text="YES" />
+                             
+                           </div>
+                                 </div>                   
+                      </div>
+                   
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+      </section>
+
                             </asp:View>
                         </asp:MultiView>
                         <asp:Label ID="lblCustName" runat="server" Visible="False"></asp:Label></td>
-                </tr>
-                <tr>
-                    <td style="vertical-align: top; padding-top: 30px; text-align: center">
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-bottom: 10px; vertical-align: top; width: 870px; text-align: center">
-                        &nbsp;&nbsp;
-                    </td>
-                </tr>
-            </table>
+             
         </asp:View>
     </asp:MultiView>
     <ajaxToolkit:FilteredTextBoxExtender ID="FilteredTextBoxExtender3" runat="server"

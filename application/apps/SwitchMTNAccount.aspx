@@ -8,47 +8,18 @@
  Namespace="AjaxControlToolkit" 
  TagPrefix="ajaxToolkit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <table style="width: 100%">
-        <tr>
-            <td style="width: 98%; height: 2px">
-                <table align="center" cellpadding="0" cellspacing="0" style="width: 50%">
-                    <tr>
-                        <td class="InterfaceHeaderLabel">
-                            SWITCH MTN ACCOUNTS
-                            </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 1px">
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 5px">
-             
-                <table style="width: 100%">
-                            <tr>
-                             <td class="InterfaceHeaderLabel2" style="vertical-align: middle; width: 17%; height: 18px;
-                            text-align: center">
-                            SWITCH TO
-                            </td> 
-                            </tr>
-                            <tr>         
-                            <td style="vertical-align: middle; width: 20%; height: 23px; text-align: center; border-top-width: 1px; border-left-width: 1px; border-left-color: #617da6; border-bottom-width: 1px; border-bottom-color: #617da6; border-top-color: #617da6; border-right-width: 1px; border-right-color: #617da6;">
-                            &nbsp;<asp:DropDownList ID="cboMtnAccountUsername" runat="server" CssClass="InterfaceDropdownList"
-                                Width="45%" style="font: menu" OnDataBound="cboMtnAccountUsername_DataBound" OnSelectedIndexChanged="cboMtnAccountUsername_SelectedIndexChanged" AutoPostBack="True">
+    <section class="section">
+        <div class="text-center">
+            <h5 class="card-title"> SWITCH MTN ACCOUNTS</h5>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">Switch To</label>
+            <asp:DropDownList ID="cboMtnAccountUsername" runat="server" CssClass="form-select"
+                                OnDataBound="cboMtnAccountUsername_DataBound" OnSelectedIndexChanged="cboMtnAccountUsername_SelectedIndexChanged" AutoPostBack="True">
                             </asp:DropDownList>
-                            </td>
-                            
-                            </tr> 
-               </table> 
-         </td>          
-         </tr>
-                  
-       
-        <tr>
-            <td style="width: 98%; height: 2px">
+        </div>
+    </section>
+    
              <asp:MultiView ID="MultiView1" runat="server">
                     <asp:View ID="View1" runat="server">
             <script type="text/javascript" language="javascript">
@@ -195,20 +166,19 @@
                 </asp:View>
                                       
                 </asp:MultiView>
-                </td>
-        </tr>
-        <tr>
-            <td style="width: 98%; height: 2px" colspan = "5">
+                
+        
+       
              <asp:HiddenField ID="hfCount" runat="server" Value = "0" />
-                <asp:Button ID="btnSwitch" runat="server" Font-Size="9pt" Height="23px" Text="Switch"
+    <div class="col-md-2 text-center">
+        <asp:Button ID="btnSwitch" runat="server"  Text="Switch" CssClass="btN btn-primary w-75"
                    OnClientClick = "return ConfirmSwitch();" Visible="false" 
-                 Style="font: menu"  Width="125px" OnClick="btnSwitch_Click"/>
+             OnClick="btnSwitch_Click"/>
+    </div>
+                
                   
-                 </td>
-        </tr>
-    </table>
-    <br /> 
-    <br />   
+     
+ 
     <CR:CrystalReportViewer ID="CrystalReportViewer1" runat="server" AutoDataBind="true"
         Visible="False" />
 </asp:Content>
